@@ -27,8 +27,8 @@
     font-size: 16px;
   }
   body {
-    font-family: "Pretendard-Regular", "Noto Sans KR", sans-serif;
-    font-size: 14px;
+    font-family: "NanumSquareNeo-Variable", "Noto Sans KR", sans-serif;
+    font-size: 12px;
     line-height: 1;
     letter-spacing: -0.68px;
     word-break: keep-all;

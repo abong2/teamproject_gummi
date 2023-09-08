@@ -8,8 +8,8 @@
   .inner {
     position: relative;
     width: 100%;
-    /* padding: 0px 25px; */
+    padding: 0px 25px;
     margin: 0 auto;
-    max-width: 1920px;
+    max-width: 1600px;
     height: 100%;
   }
