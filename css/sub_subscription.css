@@ -24,6 +24,23 @@
     margin: 0 auto;
     width: 100%;
     height: 100%;
-    padding: 0 250px;
 }
-  
+  .subscription_wrap{
+    background-color: aquamarine;
+    display: flex;
+  }
+  .subscription_cate {
+    padding: 25px 0 15px 0;
+  }
+  .subscription_img_sub img {
+    width: 20%;
+    padding-top: 15px;
+    margin-left: 5px;
+  }
+  .subscription_left {
+    width: 50%;
+  }
+  .subscription_right {
+    width: 50%;
+    background-color: bisque;
+  }
