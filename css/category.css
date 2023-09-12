@@ -4,3 +4,21 @@
     height: 100%;
     padding: 0 250px;
 }
+.cate_wrap{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.cate_iist{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+.cate_iist > span{
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 15px;
+    text-align: center;
+}
