@@ -36,7 +36,7 @@
     font-weight: 400;
     min-width: 320px;
   }
-  #wrap {
+  .wrap {
     width: 100%;
     position: relative;
   }
