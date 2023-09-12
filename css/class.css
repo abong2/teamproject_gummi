@@ -1,6 +1,69 @@
-.class .inner{
-    margin: 0 auto;
+@charset "utf-8";
+.class {
+    padding: 50px 0;
+}
+.myclass {
     width: 100%;
     height: 100%;
-    padding: 0 250px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.class h1 {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.myclass2 {
+    width: 49%;
+}
+.myclass2podo{
+    font-size: 23px;
+    padding-bottom: 30px;
+}
+.podo22{
+    font-size: 30px;
+    color:  #683cf8;
+}
+.podo33{
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.808);
+}
+/* .myclass2podo2{
+    font-size: 27px;
+    line-height: 35px;
+} */
+.myclass3podo{
+    padding-bottom: 30px;
+    font-size: 15px;
+}
+.podo2 {
+    font-size: 19px;
+    color:  #683cf8;
+}
+.podo2so{
+    padding-bottom: 20px;
+    font-size: 21px;
+}
+.podo3{
+    font-size: 20px;
+}
+.myclass3 {
+    width: 49%;
+    height: 400px;
+    background: url("../images/popularclass-diy.png.jpg") no-repeat;
+    background-size: cover;
+    background-color: rgb(73, 46, 172);
+}
+.myclass3::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+/* 반응형 디자인 */
+@media all and (max-width: 1024px) {
+}
+@media all and (max-width: 320px) {
+  
 }
