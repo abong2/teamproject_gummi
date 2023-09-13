@@ -56,11 +56,11 @@
     background-size: cover;
     background-color: rgb(73, 46, 172);
 }
-.myclass3::after {
+/* .myclass3::after {
     content: "";
     display: block;
     padding-bottom: 100%;
-}
+} */
 /* 반응형 디자인 */
 @media all and (max-width: 1024px) {
 }
