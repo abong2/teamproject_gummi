@@ -26,21 +26,45 @@
     height: 100%;
 }
   .subscription_wrap{
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     display: flex;
   }
   .subscription_cate {
     padding: 25px 0 15px 0;
   }
-  .subscription_img_sub img {
-    width: 20%;
-    padding-top: 15px;
-    margin-left: 5px;
-  }
+  
   .subscription_left {
     width: 50%;
   }
   .subscription_right {
     width: 50%;
     background-color: bisque;
+  }
+  /* 이미지 */
+  .subscription_img {
+    border: 1px solid #dddd;
+    cursor: pointer;
+  }
+  .subscription_img_sub img:first-child {
+    margin-left: 10px;
+  }
+  .subscription_img_sub img {
+    width: 20%;
+    padding: 10px 0 10px 0;
+    margin-left: 5px;
+  }
+  /* 리뷰 */
+  .subscription_review {
+    padding-top: 20px;
+    text-align: center;
+  }
+  .subscription_review p {
+    display: inline-block;
+    color: #6b6b6b;
+  }
+  .subscription_review span {
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0 5px 0 5px;
   }
