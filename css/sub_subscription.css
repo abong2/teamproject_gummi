@@ -43,7 +43,6 @@
   /* 이미지 */
   .subscription_img {
     border: 1px solid #dddd;
-    cursor: pointer;
   }
   .subscription_img_sub img:first-child {
     margin-left: 10px;
@@ -52,6 +51,7 @@
     width: 20%;
     padding: 10px 0 10px 0;
     margin-left: 5px;
+    cursor: pointer;
   }
   /* 리뷰 */
   .subscription_review {
@@ -62,9 +62,13 @@
     display: inline-block;
     color: #6b6b6b;
   }
-  .subscription_review span {
+  .subscription_review .review_rating {
     color: black;
     font-size: 20px;
     font-weight: 600;
     padding: 0 5px 0 5px;
+    user-select: none;
+  }
+  .subscription_review .review_total{
+    cursor: pointer;
   }
