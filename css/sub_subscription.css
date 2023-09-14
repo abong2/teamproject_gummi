@@ -59,6 +59,10 @@
     margin-left: 5px;
     cursor: pointer;
   }
+  .subscription_img_sub img:hover {
+    filter: brightness(0.8);
+    transition: 0.2s;
+  }
   /* 리뷰 */
   .subscription_review {
     padding-top: 20px;
