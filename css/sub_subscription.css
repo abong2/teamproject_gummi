@@ -26,21 +26,159 @@
     height: 100%;
 }
   .subscription_wrap{
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     display: flex;
   }
   .subscription_cate {
     padding: 25px 0 15px 0;
+    user-select: none;
   }
-  .subscription_img_sub img {
-    width: 20%;
-    padding-top: 15px;
-    margin-left: 5px;
+  .subscription_cate span:hover{
+    cursor: pointer;
+    border-bottom: solid 2px #bbbbbb;
   }
   .subscription_left {
     width: 50%;
   }
   .subscription_right {
     width: 50%;
-    background-color: bisque;
+    padding-left:30px ;
+    /* background-color: bisque; */
+  }
+  /* 이미지 */
+  .subscription_img {
+    border: 1px solid #dddd;
+  }
+  .subscription_img_sub img:first-child {
+    margin-left: 10px;
+  }
+  .subscription_img_sub img {
+    width: 20%;
+    padding: 10px 0 10px 0;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  /* 리뷰 */
+  .subscription_review {
+    padding-top: 20px;
+    text-align: center;
+  }
+  .subscription_review p {
+    display: inline-block;
+    color: #6b6b6b;
+  }
+  .subscription_review .review_rating {
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0 5px 0 5px;
+  }
+  .subscription_review{
+    user-select: none;
+  }
+  .subscription_review .review_total{
+    cursor: pointer;
+  }
+  /* 강좌 전체 박스 */
+  .subscription_box{
+    border: 1px solid #dddd;
+    padding: 10px;
+  }
+  /* 공유하기, 찜하기 아이콘 */
+  .subscription_icon{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0 15px 0;
+  }
+  .subscription_icon i {
+    cursor: pointer;
+  }
+  .subscription_icon span {
+    font-family: 'Pretendard-Regular';
+    padding-left: 5px;
+  }
+  .subscription_icon i:last-child{
+    padding-right: 15px;
+  }
+  /* 강좌명 */
+  .subscription_title{
+    padding-bottom: 15px;
+  }
+  /* 선생님 프로필 */
+  .subscription_profile_wrap {
+    border: 1px solid #dddd;
+  }
+  .subscription_profile {
+  position: relative;
+  }
+  .subscription_profile img{
+    width: 18%;
+    position: absolute;
+    top: 10px;
+    right: 50px;
+  }
+  .subscription_profile h3{
+    font-size: 19px;
+    padding: 12px 24px;
+    background-color: #F2F3F7;
+  }
+  .subscription_profile_basic {
+  padding: 15px 10px;
+  padding: 15px 10px 50px 20px;
+  }
+  .subscription_profile_basic span {
+    font-weight: bold;
+  }
+  .subscription_profile_box ul {
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    padding:5px;
+    background-color: #F2F3F7;
+    margin: 10px;
+  }
+  /* .subscription_profile_box li:nth-child(2){
+    border-left:1px solid #aaaaaa;
+    border-right: 1px solid #aaaaaa;
+  } */
+  .subscription_profile_basic li:first-child{
+    padding-bottom: 6px;
+  }
+  .subscription_profile_box li {
+    display: flex;
+    flex-direction: column;
+    padding-top: 8px;
+  }
+  .subscription_profile_box span {
+    display: inline-block;
+    padding-bottom: 8px;
+    white-space: nowrap;
+  }
+  .subscription_profile_box_1 {
+    font-weight: bold;
+  }
+  .subscription_info {
+    padding: 10px 0 ;
+  }
+  /* 수강신청 버튼 */
+  .subscription_btn{
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .subscription_btn button {
+    border: none;
+    background-color: #8d8d8d;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 7px;
+    cursor: pointer;
+  }
+  .subscription_btn button:active{
+    background-color: #707070;
+  }
+  .subscription_btn button:first-child {
+    margin-bottom: 5px;
   }

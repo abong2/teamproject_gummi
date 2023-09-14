@@ -4,6 +4,7 @@
     box-sizing: border-box;
     outline-style: none;
     scroll-behavior: smooth;
+    color: #31302b;
   }
   ul,
   li {
