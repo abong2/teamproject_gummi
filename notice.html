@@ -1,76 +1,361 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- SEO적용 -->
-    <meta name="mobile-web-app-capable" content="yes"/>
-    <meta name="format-detection" content="telephone=no"/>
-    <meta name="apple-mobile-web-app-capable" content="yes"/>
-    <meta name="description" content="슬로건"/>
-    <meta name="keywords" content="검색 키워드"/>
-    <meta property="og:title" content="Gummi"/>
-    <meta property="keyword" content="검색 키워드"/>
-    <meta property="og:url" content="https://gummi.com/"/>
-    <meta property="og:image" content="https://gummi.com/img/url_image.jpg"/>
-    <meta property="og:description" content="슬로건"/>
-    <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:title" content="Gummi"/>
-    <meta name="twitter:url" content="https://gummi.com/"/>
-    <meta name="twitter:image" content="https://gummi.com/img/logo.png"/>
-    <meta name="twitter:description" content="슬로건"/>
-    <!-- css -->
-    <link rel="stylesheet" href="css/sub_notice.css">
-    <link rel="stylesheet" href="css/font.css">
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/footer.css">   
-    <!--js  -->
-    <script src="https://code.jquery.com/jquery-3.7.1.slim.js" integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
-    <script src="js/header.js"></script>
-    <script src="js/sub_notice.js"></script>
-    <script src="js/footer.js"></script>
-    <!-- fontawesome -->
-    <script src="https://kit.fontawesome.com/e2b37e629b.js" crossorigin="anonymous"></script>
-    <!-- aos -->
-    <link rel="stylesheet" href="css/aos.css"/>
-    <script src="js/aos.js"></script>
-    <!-- XEIcon -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
-    <!-- css -->
-    <link rel="stylesheet" href="css/reset.css"/>
-    <!--[if lt IE 9]>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- SEO적용 -->
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="description" content="슬로건" />
+        <meta name="keywords" content="검색 키워드" />
+        <meta property="og:title" content="Gummi" />
+        <meta property="keyword" content="검색 키워드" />
+        <meta property="og:url" content="https://gummi.com/" />
+        <meta
+            property="og:image"
+            content="https://gummi.com/img/url_image.jpg"
+        />
+        <meta property="og:description" content="슬로건" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Gummi" />
+        <meta name="twitter:url" content="https://gummi.com/" />
+        <meta name="twitter:image" content="https://gummi.com/img/logo.png" />
+        <meta name="twitter:description" content="슬로건" />
+        <!-- css -->
+        <link rel="stylesheet" href="css/sub_notice.css" />
+        <link rel="stylesheet" href="css/font.css" />
+        <link rel="stylesheet" href="css/base.css" />
+        <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="css/header.css" />
+        <link rel="stylesheet" href="css/footer.css" />
+        <!--js  -->
+        <script
+            src="https://code.jquery.com/jquery-3.7.1.slim.js"
+            integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc="
+            crossorigin="anonymous"
+        ></script>
+        <script src="js/header.js"></script>
+        <script src="js/sub_notice.js"></script>
+        <script src="js/footer.js"></script>
+        <!-- fontawesome -->
+        <script
+            src="https://kit.fontawesome.com/e2b37e629b.js"
+            crossorigin="anonymous"
+        ></script>
+        <!-- aos -->
+        <link rel="stylesheet" href="css/aos.css" />
+        <script src="js/aos.js"></script>
+        <!-- XEIcon -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
+        />
+        <!-- css -->
+        <link rel="stylesheet" href="css/reset.css" />
+        <!--[if lt IE 9]>
     <script src="js/respond.min.js"></script>
     <script src="js/html5shiv.js"></script>
     [endif]-->
-    <!-- <script src="js/prefixfree.min.js"></script> -->
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-    <title>게시판</title>
-</head>
-<body>
-    <div class="wrap">
-        <!-- 헤더 -->
-        <header class="header">
-            <div class="inner">
-    
-            </div>
-        </header>
-        <!-- 개인작업 공간 -->
-        <div class="sub_notice">
-            <div class="inner">
-                
-            </div>
+        <!-- <script src="js/prefixfree.min.js"></script> -->
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
+        />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+        <title>게시판</title>
+    </head>
+    <body>
+        <div class="wrap">
+            <!-- header부분 -->
+            <header class="header">
+                <div class="inner">
+                    <h1 class="h_logo"><a href="index.html">Gummi</a></h1>
+                    <nav class="h_nav">
+                        <ul class="searchbar">
+                            <li>
+                                <input
+                                    type="text"
+                                    name="searchtext"
+                                    id="searchtext"
+                                    placeholder="Search"
+                                />
+                            </li>
+                            <li>
+                                <a href="#"
+                                    ><i class="fa-solid fa-magnifying-glass"></i
+                                ></a>
+                            </li>
+                        </ul>
+                        <ul class="gnb">
+                            <li>
+                                <a href="#">비지니스</a>
+                                <ul class="submenu">
+                                    <li><a href="#">번역</a></li>
+                                    <li><a href="#">통역</a></li>
+                                    <li><a href="#">마케팅</a></li>
+                                    <li><a href="#">창업 컨설팅</a></li>
+                                    <li><a href="#">재테크</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">교육</a>
+                                <ul class="submenu">
+                                    <li><a href="#">초등교육</a></li>
+                                    <li><a href="#">중등교육</a></li>
+                                    <li><a href="#">고등교육</a></li>
+                                    <li><a href="#">IT</a></li>
+                                    <li><a href="#">디자인</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">리빙</a>
+                                <ul class="submenu">
+                                    <li><a href="#">정리</a></li>
+                                    <li><a href="#">청소</a></li>
+                                    <li><a href="#">인테리어</a></li>
+                                    <li><a href="#">수리</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">취미 생활</a>
+                                <ul class="submenu">
+                                    <li><a href="#">DIY</a></li>
+                                    <li><a href="#">요리</a></li>
+                                    <li><a href="#">뷰티</a></li>
+                                    <li><a href="#">마술</a></li>
+                                    <li><a href="#">악기</a></li>
+                                    <li><a href="#">드로잉</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">기타</a>
+                                <ul class="submenu">
+                                    <li><a href="#">자동차</a></li>
+                                    <li><a href="#">편의시설</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="login">
+                            <li><a href="login.html">로그인</a></li>
+                            <li>&ensp;/&ensp;</li>
+                            <li><a href="login.html">회원가입</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="mb_nav">
+                        <ul class="mb_h_nav">
+                            <li>
+                                <a href="#"
+                                    ><i class="fa-solid fa-magnifying-glass"></i
+                                ></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-solid fa-bars"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    ><i class="fa-solid fa-xmark"></i
+                                ></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <section class="notice">
+                <div class="page-img">
+                    <img src="images/sub_top_bg3.jpg" alt="">
+                </div>
+                <div class="page-title">
+                    <div class="container">
+                        <h3>Gummi 소식</h3>
+                        <h5>Gummi의 새 소식을 확인할 수 있습니다.</h5>
+                    </div>
+                </div>
+
+                <!-- board seach area -->
+                <div id="board-search">
+                    <div class="container">
+                        <div class="search-window">
+                            <form action="">
+                                <div class="search-wrap">
+                                    <label for="search" class="blind"
+                                        >공지사항 내용 검색</label
+                                    >
+                                    <input
+                                        id="search"
+                                        type="search"
+                                        name=""
+                                        placeholder="검색어를 입력해주세요."
+                                        value=""
+                                    />
+                                    <button type="submit" class="btn btn-dark">
+                                        검색
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- board list area -->
+                <div id="board-list">
+                    <div class="container">
+                        <table class="board-table">
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="th-num">번호</th>
+                                    <th scope="col" class="th-title">제목</th>
+                                    <th scope="col" class="th-date">등록일</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>11</td>
+                                    <th>
+                                        <a href="#!"
+                                            >[2023.10.17 ~ 11.02] 장소
+                                            대여합니다.</a
+                                        >
+                                        <p>테스트</p>
+                                    </th>
+                                    <td>2023.10.13</td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <th>
+                                        <a href="#!"
+                                            >[2023.06.10 ~ 09.02] IT수업 같이
+                                            들을 사람 모집합니다.</a
+                                        >
+                                        <p>테스트</p>
+                                    </th>
+                                    <td>2023.06.10</td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <th>
+                                        <a href="#!"
+                                            >[2023.04.17 ~ 06.02] 장소
+                                            대여합니다.</a
+                                        >
+                                        <p>테스트</p>
+                                    </th>
+                                    <td>2023.04.11</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <th>
+                                        <a href="#!"
+                                            >[2023.03.17 ~ 04.02] 장소
+                                            대여합니다.</a
+                                        >
+                                        <p>테스트</p>
+                                    </th>
+                                    <td>2023.03.15</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <th>
+                                        <a href="#!"
+                                            >[2023.02.18 ~ 04.02] 마리모 수업
+                                            같이 들을 사람 모집합니다.</a
+                                        >
+                                        <p>테스트</p>
+                                    </th>
+                                    <td>2023.02.18</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <th>
+                                        <a href="#!"
+                                            >[2022.09.29 ~ 02.02] 장소
+                                            대여합니다.</a
+                                        >
+                                        <p>테스트</p>
+                                    </th>
+                                    <td>2022.09.29</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <th>
+                                        <a href="#!"
+                                            >[2022.07.13 ~ 09.02] 장소
+                                            대여합니다.</a
+                                        >
+                                        <p>테스트</p>
+                                    </th>
+                                    <td>2022.07.13</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <th>
+                                        <a href="#!"
+                                            >[2022.04.17 ~ 07.02] 장소
+                                            대여합니다.</a
+                                        >
+                                        <p>테스트</p>
+                                    </th>
+                                    <td>2022.04.17</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <th>
+                                        <a href="#!"
+                                            >[2022.03.12 ~ 04.02] 마리모 수업
+                                            같이 들을 사람 모집합니다.</a
+                                        >
+                                        <p>테스트</p>
+                                    </th>
+                                    <td>2022.03.12</td>
+                                </tr>
+
+                                <tr>
+                                    <td>2</td>
+                                    <th>
+                                        <a href="#!"
+                                            >[2022.02.24 ~ 03.02] IT수업 같이
+                                            들을 사람 모집합니다.</a
+                                        >
+                                    </th>
+                                    <td>2022.02.24</td>
+                                </tr>
+
+                                <tr>
+                                    <td>1</td>
+                                    <th>
+                                        <a href="#!"
+                                            >[2022.01.13 ~ 02.13] 쿠킹수업 같이
+                                            들을 사람 모집합니다.</a
+                                        >
+                                    </th>
+                                    <td>2022.01.13</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="page-box">
+                    <a class="btn" href="#">&lt;&lt;</a>
+                    <a class="btn" href="#">&lt;</a>
+
+                    <!--  숫자 버튼  -->
+                    <a class="btn number" href="#">1</a>
+                    <a class="btn number" href="#">2</a>
+                    <a class="btn number on" href="#">3</a>
+                    <a class="btn number" href="#">4</a>
+                    <a class="btn number" href="#">5</a>
+
+                    <a class="btn" href="#">&gt;</a>
+                    <a class="btn" href="#">&gt;&gt;</a>
+                </div>
+            </section>
+
+            <!-- 푸터 -->
+            <footer class="footer">
+                <div class="inner"></div>
+            </footer>
         </div>
-        <!-- 푸터 -->
-        <footer class="footer">
-            <div class="inner">
-    
-            </div>
-        </footer>
-    </div>
-</body>
+    </body>
 </html>

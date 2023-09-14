@@ -19,9 +19,18 @@ $(document).ready(function() {
       prevEl: ".swiper-button-prev"
     },
     breakpoints: {
-      768: {
+      320: {
         spaceBetween: 1,
-        slidesPerView: 3,
+        slidesPerView: 1,
+      },
+    
+      758: {
+        spaceBetween: 1,
+        slidesPerView: 2,
+      },
+      1920: {
+        spaceBetween: 1,
+        slidesPerView:3,
       }
     
     }
