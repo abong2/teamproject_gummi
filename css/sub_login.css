@@ -1,28 +1,155 @@
-/* 공통 */
-/* .header .inner {
-    width: 100%;
-    padding: 0px 25px;
-    margin: 0 auto;
-    max-width: 1420px;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400|Lora"); */
+
+/* div box styling */
+.container {
+  margin: auto;
+  width: 650px;
+  height: 550px;
+  position: relative;
 }
-.footer .inner {
-    width: 100%;
-    padding: 0px 25px;
-    margin: 0 auto;
-    max-width: 1420px;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-} */
-/* 페이지 공간 */
-.sub_login .inner{
-    margin: 0 auto;
-    width: 100%;
-    height: 100%;
-    padding: 0 250px;
+
+.welcome {
+  background: #f6f6f6;
+  width: 650px;
+  height: 415px;
+  position: absolute;
+  top: 25%;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.pinkbox {
+  position: absolute;
+  top: -10%;
+  left: 5%;
+  background: #9f91cc;
+  width: 320px;
+  height: 500px;
+  border-radius: 5px;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease-in-out;
+  z-index: 2;
+}
+
+.nodisplay {
+  display: none;
+  transition: all 0.5s ease;
+}
+
+.leftbox, .rightbox {
+  position: absolute;
+  width: 50%;
+  transition: 1s all ease;
+}
+
+
+.rightbox {
+  right: -2%;
+}
+
+/* font & button styling */
+h1 {
+  /* font-family: "Open Sans", sans-serif; */
+  text-align: center;
+  margin-top: 95px;
+  text-transform: uppercase;
+  color: #f6f6f6;
+  font-size: 2em;
+  letter-spacing: 8px;
+}
+
+.title {
+  /* font-family: "Lora", serif; */
+  color: #8E9AAF;
+  font-size: 1.8em;
+  line-height: 1.1em;
+  letter-spacing: 3px;
+  text-align: center;
+  font-weight: 300;
+  margin-top: 20%;
+}
+
+.desc {
+  margin-top: -8px;
+}
+
+.account {
+  margin-top: 45%;
+  color: #535353;
+  font-size: 15px;
+}
+
+p {
+  /* font-family: "Open Sans", sans-serif; */
+  font-size: 0.7em;
+  letter-spacing: 2px;
+  color: #8E9AAF;
+  text-align: center;
+}
+
+span {
+  color: #9f91cc;
+}
+
+.podo {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  top: 40%;
+  left: 30%;
+  opacity: 0.7;
+}
+
+.smaller {
+  width: 90px;
+  height: 100px;
+  top: 48%;
+  left: 38%;
+  /* opacity: 0.9; */
+}
+
+button {
+  padding: 12px;
+  /* font-family: "Open Sans", sans-serif; */
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 14px;
+  border-radius: 10px;
+  margin: auto;
+  outline: none;
+  display: block;
+}
+button:hover {
+  background: #9f91cc;
+  color: #fff;
+  transition: background-color 1s ease-out;
+  border: solid 1px #fff;
+}
+
+.button {
+  margin-top: 3%;
+  background: #fff;
+  color: #9f91cc;
+  border: solid 1px #9f91cc;
+  font-weight: bold;
+}
+
+/* form styling */
+form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 7px;
+}
+
+.more-padding {
+  padding-top: 35px;
+}
+.more-padding input {
+  padding: 12px;
+}
+
+/*# sourceMappingURL=sub_login.css.map */
+input{
+    margin: 10px 0;
 }

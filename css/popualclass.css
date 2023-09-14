@@ -1,4 +1,9 @@
 @charset "utf-8";
+.popualclass{
+  padding: 70px 0;
+  padding-bottom: 41px;
+  /* background-color: rgb(211, 205, 247); */
+}
 .popualclass h1 {
   position: relative;
   font-size: 20px;
@@ -61,7 +66,7 @@
   flex-wrap: wrap;
   align-content: flex-end;
   justify-content: center;
-  padding-bottom: 10px;
+  padding-bottom: 33px;
 }
 .diy2-h3{
   width: 100%;
@@ -70,14 +75,18 @@
 }
 .diy2 h3 {
   position: relative;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 200;
   /* padding-bottom: 27px; */
   color: #394867;
   text-align: center;
-  line-height: 25px;
+  line-height: 30px;
 }
-
+.diy2-h3 h3 span{
+  font-size: 25px;
+  font-weight: 600;
+  color: #683cf8;
+}
 .diy2 h2 {
   position: relative;
   font-size: 15px;
@@ -87,7 +96,7 @@
 #bt1 {
   color: #fff;
   background-color: #7e5ee9;
-  padding: 9px 18px;
+  padding: 21px 18px;
   border: none;
   /* position: absolute; */
   text-align: center;
@@ -95,10 +104,11 @@
   width: 100%;
   cursor: pointer;
   min-width: 80px;
+  font-weight: bold;
 }
 #bt1:hover {
   background-color: #683cf8;
-  padding: 9px 18px;
+  padding: 21px 18px;
   border: none;
 }
 
@@ -106,6 +116,23 @@
 @media all and (max-width: 1024px) {
 
 }
+@media all and (max-width: 760px) {
+
+}
 @media all and (max-width: 320px) {
- 
+  .diy2 h3 {
+    position: relative;
+    font-size: 13px;
+    font-weight: 200;
+    /* padding-bottom: 27px; */
+    color: #394867;
+    text-align: center;
+    line-height: 20px;
+  }
+  .diy2 h2 {
+    position: relative;
+    font-size:10px;
+    color: #394867; 
+    line-height: 20px;
+  }
 }
