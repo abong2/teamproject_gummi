@@ -1,6 +1,7 @@
 @charset "utf-8";
 .class {
-    padding: 50px 0;
+    padding: 70px 0;
+    /* background-color: #d1c3ff52; */
 }
 .myclass {
     width: 100%;
@@ -13,41 +14,117 @@
 }
 .class h1 {
     font-size: 20px;
-    margin-bottom: 30px;
+    padding-bottom: 50px;
+    color: #393939;
 }
 .myclass2 {
     width: 49%;
+    height: 50%;
 }
-.myclass2podo{
-    font-size: 23px;
-    padding-bottom: 30px;
-}
-.podo22{
+.myclass2podo {
     font-size: 30px;
-    color:  #683cf8;
-}
-.podo33{
-    font-size: 15px;
-    color: rgba(0, 0, 0, 0.808);
-}
-/* .myclass2podo2{
-    font-size: 27px;
-    line-height: 35px;
-} */
-.myclass3podo{
-    padding-bottom: 30px;
-    font-size: 15px;
-}
-.podo2 {
-    font-size: 19px;
-    color:  #683cf8;
-}
-.podo2so{
     padding-bottom: 20px;
-    font-size: 21px;
+    letter-spacing: 1px;
 }
-.podo3{
-    font-size: 20px;
+.myclass2-1 {
+    width: 100%;
+    /* padding-bottom: 6%; */
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: solid #dddddd 1px;
+}
+.myclass2-2 {
+    width: 100%;
+    padding-bottom: 2%;
+    /* background-color: #f36b6b; */
+    background-color: #474444;
+    /* border-radius: 10px; */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.myclass2-2 h2 {
+    font-size: 17px;
+    color: #fff;
+    padding-left: 50px;
+    padding-top: 15px;
+}
+.myh1 {
+    white-space: nowrap;
+    color: #ffffff;
+    padding-left: 30px;
+    padding-top: 0px;
+}
+.th1 {
+    font-size: 18px;
+    font-weight: 700;
+    padding-top: 20px;
+}
+.myclass2-22 {
+    width: 50%;
+    height: 50%;
+    background-color: #683cf8;
+}
+table {
+    border-collapse: collapse;
+} /*이중선 제거*/
+th,
+td {
+    padding-top: 25px;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    /* border: 1px solid #000; */
+    font-size: 15px;
+    vertical-align: top; /* 위 */
+    vertical-align: bottom; /* 아래 */
+    vertical-align: middle; /* 가운데 */
+}
+.th1 {
+    font-size: 18px;
+    font-weight: 700;
+}
+.th2 {
+    font-size: 16px;
+    font-weight: 600;
+}
+.td2 {
+    color: #9f91cc;
+    width: 15%;
+    font-weight: 700;
+    cursor: pointer;
+}
+.td2:hover {
+    color: #7850fa;
+    width: 15%;
+    font-weight: 700;
+    cursor: pointer;
+}
+.td3 {
+    color: #9cd083;
+    width: 15%;
+    font-weight: 700;
+    cursor: pointer;
+}
+.td3:hover {
+    color: #41a512;
+    width: 15%;
+    font-weight: 700;
+    cursor: pointer;
+}
+.myclass2-3 {
+    width: 100%;
+    padding-bottom: 3%;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.podo22 {
+    font-size: 30px;
+    color: #683cf8;
+}
+.podo33 {
+    font-size: 15px;
+    color: #9a9ba7;
 }
 .myclass3 {
     width: 49%;
@@ -56,14 +133,144 @@
     background-size: cover;
     background-color: rgb(73, 46, 172);
 }
-.myclass3::after {
+/* .myclass3::after {
     content: "";
     display: block;
     padding-bottom: 100%;
-}
+} */
 /* 반응형 디자인 */
 @media all and (max-width: 1024px) {
 }
+@media all and (max-width: 760px) {
+    table {
+        border-collapse: collapse;
+    } /*이중선 제거*/
+    th,
+    td {
+        width: 200px;
+        height: 50px;
+        text-align: center;
+        /* border: 1px solid #000; */
+        font-size: 12px;
+        vertical-align: top; /* 위 */
+        vertical-align: bottom; /* 아래 */
+        vertical-align: middle; /* 가운데 */
+    }
+    .th1 {
+        font-size: 18px;
+        font-weight: 700;
+    }
+    .th2 {
+        font-size: 13px;
+        font-weight: 600;
+    }
+    .td2 {
+        color: #9f91cc;
+        width: 15%;
+        font-weight: 700;
+        cursor: pointer;
+    }
+    .td2:hover {
+        color: #7850fa;
+        width: 15%;
+        font-weight: 700;
+        cursor: pointer;
+    }
+    .td3 {
+        color: #9cd083;
+        width: 15%;
+        font-weight: 700;
+        cursor: pointer;
+    }
+    .td3:hover {
+        color: #41a512;
+        width: 15%;
+        font-weight: 700;
+        cursor: pointer;
+    }
+}
+@media all and (max-width: 1680px) {
+}
+@media all and (max-width: 1280px) {
+}
+@media all and (max-width: 1024px) {
+    .class h1 {
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+    .myclass2podo {
+        font-size: 20px;
+        padding-bottom: 20px;
+        line-height: 36px;
+    }
+}
+@media all and (max-width: 760px) {
+    .myclass2-2 {
+        width: 100%;
+        padding-bottom: 9%;
+        background-color: #9f91cc;
+        /* border-radius: 10px; */
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+}
+@media all and (max-width: 480px) {
+}
 @media all and (max-width: 320px) {
-  
+    .myclass2podo {
+        font-size: 15px;
+        padding-bottom: 20px;
+        line-height: 25px;
+    }
+    .myclass2podo span {
+        font-size: 14px;
+        padding-bottom: 20px;
+    }
+    .th1 {
+        font-size: 13px;
+        white-space: nowrap;
+    }
+    .th2 {
+        font-size: 10px;
+    }
+    .myclass3 {
+        display: none;
+    }
+    .myclass2-1 {
+        padding-right: 270px;
+    }
+
+    .myclass2-2 {
+        width: 100%;
+        padding-right: 270px;
+        background-color: #9f91cc;
+        /* border-radius: 10px; */
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .class h1 {
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+    th,
+    td {
+        font-size: 12px;
+        /* width: 500px; */
+        white-space: nowrap;
+        padding: 1.5px;
+    }
+    .myclass2podo span {
+        font-size: 13px;
+        padding-bottom: 20px;
+        white-space: nowrap;
+    }
+
+    .myclass2-2 > h2 {
+        font-size: 14px;
+        color: #fff;
+        padding-left: 11px;
+        padding-bottom: 10px;
+        white-space: nowrap;
+       
+    }
 }
