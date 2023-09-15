@@ -5,10 +5,10 @@
     margin: 0 auto;
     max-width: 1460px;
     height: 100%;
+    padding: 0 50px;
   }
   section {
     position: relative;
     display: block;
     width: 100%;
   }
-
