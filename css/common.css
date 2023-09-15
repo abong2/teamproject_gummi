@@ -5,6 +5,7 @@
     margin: 0 auto;
     max-width: 1460px;
     height: 100%;
+    padding: 0 25px;
   }
   section {
     position: relative;
