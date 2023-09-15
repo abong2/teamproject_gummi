@@ -18,8 +18,9 @@
     color: #393939;
 }
 .myclass2 {
-    width: 49%;
+    width: 50%;
     height: 50%;
+    padding-right: 20px;
 }
 .myclass2podo {
     font-size: 30px;
@@ -88,7 +89,8 @@ td {
     font-weight: 600;
 }
 .td2 {
-    color: #9f91cc;
+    /* color: #31302b; */
+    color: #7850fa;
     width: 15%;
     font-weight: 700;
     cursor: pointer;
@@ -100,7 +102,7 @@ td {
     cursor: pointer;
 }
 .td3 {
-    color: #9cd083;
+    color: #31302b;
     width: 15%;
     font-weight: 700;
     cursor: pointer;
@@ -122,22 +124,105 @@ td {
     font-size: 30px;
     color: #683cf8;
 }
+
 .podo33 {
     font-size: 15px;
     color: #9a9ba7;
 }
 .myclass3 {
-    width: 49%;
+    width: 50%;
     height: 400px;
-    background: url("../images/popularclass-diy.png.jpg") no-repeat;
     background-size: cover;
-    background-color: rgb(73, 46, 172);
+    padding-left: 20px;
+    
 }
-/* .myclass3::after {
+
+.mini-cal-wrap {
+    float: left;
+    /* width: 31.5%; */
+    width: 100%;
+    padding: 30px 3.16% 0;
+    min-height: 400px;
+    background-color: #474444;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.mini-cal-navi-box {
+    margin: 0 0 28px 0;
+    text-align: center;
+}
+.mini-cal-navi-box a {
+    display: inline-block;
+    padding: 20px 0 0 0;
+    line-height: 1;
+    vertical-align: top;
+}
+.mini-cal-navi-box p {
+    display: inline-block;
+    padding: 0 20px;
+}
+.mini-cal-navi-box p span:nth-of-type(1) {
+    display: block;
+    margin: 0 0 8px 0;
+    font-weight: 500;
+    font-size: 40px;
+    color: #fff;
+}
+.mini-cal-navi-box p span:nth-of-type(2) {
+    display: block;
+    color: #fff;
+}
+.mini-cal {
+    width: 100%;
+}
+.mini-cal th {
+    padding: 0 0 12px 0;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+}
+.mini-cal td {
+    position: relative;
+    padding: 9px 0;
+    color: #fff;
+    text-align: center;
+}
+.mini-cal td span {
+    position: relative;
+    z-index: 10;
+    color: #fff;
+}
+.mini-cal-today:after {
     content: "";
     display: block;
-    padding-bottom: 100%;
-} */
+    position: absolute;
+    top: 8px;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    margin: 0 auto;
+    width: 32px;
+    height: 32px;
+    background-color: #f2f2f2;
+    border-radius: 32px;
+}
+.mini-cal-today {
+    font-weight: 500;
+    color: #266205;
+}
+.mini-cal .mini-cal-today > a {
+    color: #266205;
+}
+.mini-cal a {
+    display: inline-block;
+    position: relative;
+    color: #fff;
+}
+.hide{
+    color: #fff;
+}
+
 /* 반응형 디자인 */
 @media all and (max-width: 1024px) {
 }
