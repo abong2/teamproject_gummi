@@ -5,6 +5,7 @@ window.addEventListener("load", function() {
     },
     loop: true,
     slidesPerView: 2,
+    spaceBetween: 30,
     autoHeight: true,
     pagination: {
       el: '.interview_section .swiper-pagination',
