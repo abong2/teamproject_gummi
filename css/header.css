@@ -124,7 +124,7 @@
     display: flex;
     justify-content: right;
     font-size: 24px;
-    background-color: #a53232;
+    /* background-color: #a53232; */
     align-items: center;
 }
 .mb_h_nav > li:last-child {
