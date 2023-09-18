@@ -1,54 +1,58 @@
 /* @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400|Lora"); */
-
+.sub_login .inner{
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
 /* div box styling */
-.container {
+.login_container {
   margin: auto;
   width: 650px;
   height: 550px;
   position: relative;
 }
 
-.welcome {
+.login_container .welcome {
   background: #f6f6f6;
-  width: 650px;
+  width: 700px;
   height: 415px;
   position: absolute;
-  top: 25%;
+  top: 22%;
   border-radius: 5px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
-.pinkbox {
+.login_container .pinkbox {
   position: absolute;
   top: -10%;
   left: 5%;
   background: #9f91cc;
-  width: 320px;
-  height: 500px;
+  width: 350px;
+  height: 456px;
   border-radius: 5px;
   box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
   transition: all 0.5s ease-in-out;
   z-index: 2;
 }
 
-.nodisplay {
+.login_container .nodisplay {
   display: none;
   transition: all 0.5s ease;
 }
 
-.leftbox, .rightbox {
+.login_container .leftbox, .rightbox {
   position: absolute;
   width: 50%;
   transition: 1s all ease;
 }
 
 
-.rightbox {
+.login_container .rightbox {
   right: -2%;
 }
 
 /* font & button styling */
-h1 {
+.login_container h1 {
   /* font-family: "Open Sans", sans-serif; */
   text-align: center;
   margin-top: 95px;
@@ -58,7 +62,7 @@ h1 {
   letter-spacing: 8px;
 }
 
-.title {
+.login_container .title {
   /* font-family: "Lora", serif; */
   color: #8E9AAF;
   font-size: 1.8em;
@@ -69,17 +73,17 @@ h1 {
   margin-top: 20%;
 }
 
-.desc {
+.login_container .desc {
   margin-top: -8px;
 }
 
-.account {
+.login_container .account {
   margin-top: 45%;
   color: #535353;
   font-size: 15px;
 }
 
-p {
+.login_container p {
   /* font-family: "Open Sans", sans-serif; */
   font-size: 0.7em;
   letter-spacing: 2px;
@@ -87,11 +91,11 @@ p {
   text-align: center;
 }
 
-span {
+.login_container span {
   color: #9f91cc;
 }
 
-.podo {
+.login_container .podo {
   position: absolute;
   width: 120px;
   height: 120px;
@@ -100,7 +104,7 @@ span {
   opacity: 0.7;
 }
 
-.smaller {
+.login_container .smaller {
   width: 90px;
   height: 100px;
   top: 48%;
@@ -108,7 +112,7 @@ span {
   /* opacity: 0.9; */
 }
 
-button {
+.login_container button {
   padding: 12px;
   /* font-family: "Open Sans", sans-serif; */
   text-transform: uppercase;
@@ -119,14 +123,14 @@ button {
   outline: none;
   display: block;
 }
-button:hover {
+.login_container button:hover {
   background: #9f91cc;
   color: #fff;
   transition: background-color 1s ease-out;
   border: solid 1px #fff;
 }
 
-.button {
+.login_container .button {
   margin-top: 3%;
   background: #fff;
   color: #9f91cc;
@@ -135,21 +139,21 @@ button:hover {
 }
 
 /* form styling */
-form {
+.login_container form {
   display: flex;
   align-items: center;
   flex-direction: column;
   padding-top: 7px;
 }
 
-.more-padding {
+.login_container .more-padding {
   padding-top: 35px;
 }
-.more-padding input {
+.login_container .more-padding input {
   padding: 12px;
 }
 
 /*# sourceMappingURL=sub_login.css.map */
-input{
+.login_container input{
     margin: 10px 0;
 }
