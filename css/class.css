@@ -12,20 +12,22 @@
     justify-content: space-between;
     align-items: flex-start;
 }
-.class h1 {
+.class h2{
     font-size: 20px;
-    padding-bottom: 50px;
+    padding: 20px 0px;
     color: #393939;
 }
 .myclass2 {
     width: 50%;
     height: 50%;
-    padding-right: 20px;
+    padding-right: 70px;
+    border-right: 1px solid #eee;
 }
 .myclass2podo {
     font-size: 30px;
     padding-bottom: 20px;
     letter-spacing: 1px;
+    padding-top: 20px;
 }
 .myclass2-1 {
     width: 100%;
@@ -36,10 +38,7 @@
 }
 .myclass2-2 {
     width: 100%;
-    padding-bottom: 2%;
-    /* background-color: #f36b6b; */
-    background-color: #474444;
-    /* border-radius: 10px; */
+    background-color: #969497;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
@@ -47,7 +46,6 @@
     font-size: 17px;
     color: #fff;
     padding-left: 50px;
-    padding-top: 15px;
 }
 .myh1 {
     white-space: nowrap;
@@ -90,13 +88,13 @@ td {
 }
 .td2 {
     /* color: #31302b; */
-    color: #7850fa;
+    color: #ae85c9;
     width: 15%;
     font-weight: 700;
     cursor: pointer;
 }
 .td2:hover {
-    color: #7850fa;
+    color: #a07bb9;
     width: 15%;
     font-weight: 700;
     cursor: pointer;
@@ -108,7 +106,7 @@ td {
     cursor: pointer;
 }
 .td3:hover {
-    color: #41a512;
+    color: #a07bb9;
     width: 15%;
     font-weight: 700;
     cursor: pointer;
@@ -122,111 +120,148 @@ td {
 
 .podo22 {
     font-size: 30px;
-    color: #683cf8;
+    color: #ae85c9;
 }
 
 .podo33 {
     font-size: 15px;
     color: #9a9ba7;
 }
-.myclass3 {
+.myclass3{
     width: 50%;
-    height: 400px;
+    height: 500px;
+
+}
+.myclass33{
+    width: 100%;
+    margin: 0 auto;
+    height: 373px;
+    overflow: auto;
+    padding-top: 20px;
+}
+#myclass322{
+    padding-left: 60px;
+}
+.myclass3-inner {
+    height: 240px;
     background-size: cover;
-    padding-left: 20px;
+    display: flex;
+    justify-content: flex-end;
+
+}
+.myclass33::-webkit-scrollbar {
+    width: 4px;  
+    height: 20px; 
+}
+.myclass33::-webkit-scrollbar-thumb {
+    /* background: #ae85c9; */
+    background: #cdccce;
+    /* border: 2px solid #9b6a2f;  */
+    border-radius: 12px 12px 12px 12px;
+}
+.myclass33::-webkit-scrollbar-thumb:hover {
+	background-color:#a0a0a5;
+}
+.myclass33::-webkit-scrollbar-track {
+    background:#f7f7f7;  
+}
+.myclass3-1{
+    width: 30%;   
+    overflow: hidden;
+}
+.myclass3-1 img{
+    width: 80%;  
+    cursor: pointer;
     
 }
+.myclass3-1 img:hover{
+    filter: brightness(1.2);
+    
+}
+.myclass3-2{
+    padding: 5px 0px;
+}
+.myclass3-1 h3{
+    font-size: 0.875rem;
 
-.mini-cal-wrap {
-    float: left;
-    /* width: 31.5%; */
-    width: 100%;
-    padding: 30px 3.16% 0;
-    min-height: 400px;
-    background-color: #474444;
-    box-sizing: border-box;
-    border-radius: 20px;
+    line-height: 20px;
 }
-
-.mini-cal-navi-box {
-    margin: 0 0 28px 0;
-    text-align: center;
+.myclass3-2 h4{
+    color: #ababab;
+    font-size: 0.6875rem;
+    line-height: 0.875rem;
+    font-weight: 400;
 }
-.mini-cal-navi-box a {
-    display: inline-block;
-    padding: 20px 0 0 0;
-    line-height: 1;
-    vertical-align: top;
-}
-.mini-cal-navi-box p {
-    display: inline-block;
-    padding: 0 20px;
-}
-.mini-cal-navi-box p span:nth-of-type(1) {
-    display: block;
-    margin: 0 0 8px 0;
-    font-weight: 500;
-    font-size: 40px;
-    color: #fff;
-}
-.mini-cal-navi-box p span:nth-of-type(2) {
-    display: block;
-    color: #fff;
-}
-.mini-cal {
-    width: 100%;
-}
-.mini-cal th {
-    padding: 0 0 12px 0;
-    font-weight: 700;
-    color: #fff;
-    text-align: center;
-}
-.mini-cal td {
-    position: relative;
-    padding: 9px 0;
-    color: #fff;
-    text-align: center;
-}
-.mini-cal td span {
-    position: relative;
-    z-index: 10;
-    color: #fff;
-}
-.mini-cal-today:after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 8px;
-    left: 0;
-    right: 0;
-    z-index: 0;
-    margin: 0 auto;
-    width: 32px;
-    height: 32px;
-    background-color: #f2f2f2;
-    border-radius: 32px;
-}
-.mini-cal-today {
-    font-weight: 500;
-    color: #266205;
-}
-.mini-cal .mini-cal-today > a {
-    color: #266205;
-}
-.mini-cal a {
-    display: inline-block;
-    position: relative;
-    color: #fff;
-}
-.hide{
-    color: #fff;
-}
-
 /* 반응형 디자인 */
+@media all and (max-width: 1680px) {
+}
+@media all and (max-width: 1280px) {
+}
 @media all and (max-width: 1024px) {
+    .class h1 {
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+    .myclass2podo {
+        font-size: 20px;
+        padding-bottom: 20px;
+        line-height: 36px;
+    }
+    #myclass322 {
+        padding-left: 45px;
+    }
+    .myclass3-inner {
+        height: 200px;
+        background-size: cover;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .myclass33 {
+        width: 100%;
+        margin: 0 auto;
+        height: 395px;
+        overflow: auto;
+        padding-top: 20px;
+    }
 }
 @media all and (max-width: 760px) {
+    .myclass2 {
+        width: 50%;
+        height: 50%;
+        padding-right: 42px;
+        border-right: 1px solid #eee;
+    }
+    .myclass33 {
+        width: 100%;
+        margin: 0 auto;
+        height: 395px;
+        overflow: auto;
+        padding-top: 20px;
+    }
+    .myclass2-2 {
+        width: 100%;
+        background-color: #969497;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .myclass2-2 h2 {
+        font-size: 17px;
+        color: #fff;
+        padding-left: 27px;
+    }
+    #myclass322 {
+        padding-left: 33px;
+    }
+    .myclass3-1 h3{
+        font-size: 11px;
+    }
+    .myclass3-1 h4{
+        font-size: 6px;
+    }
+    .podo33 {
+        font-size: 13px;
+        color: #9a9ba7;
+    }
     table {
         border-collapse: collapse;
     } /*이중선 제거*/
@@ -240,6 +275,7 @@ td {
         vertical-align: top; /* 위 */
         vertical-align: bottom; /* 아래 */
         vertical-align: middle; /* 가운데 */
+        padding: 10px;
     }
     .th1 {
         font-size: 18px;
@@ -256,106 +292,157 @@ td {
         cursor: pointer;
     }
     .td2:hover {
-        color: #7850fa;
+        color: #a07bb9;
         width: 15%;
         font-weight: 700;
         cursor: pointer;
     }
     .td3 {
-        color: #9cd083;
+
         width: 15%;
         font-weight: 700;
         cursor: pointer;
     }
     .td3:hover {
-        color: #41a512;
+        color: #a07bb9;
         width: 15%;
         font-weight: 700;
         cursor: pointer;
     }
 }
-@media all and (max-width: 1680px) {
-}
-@media all and (max-width: 1280px) {
-}
-@media all and (max-width: 1024px) {
-    .class h1 {
-        font-size: 20px;
-        padding-bottom: 20px;
-    }
-    .myclass2podo {
-        font-size: 20px;
-        padding-bottom: 20px;
-        line-height: 36px;
-    }
-}
-@media all and (max-width: 760px) {
-    .myclass2-2 {
-        width: 100%;
-        padding-bottom: 9%;
-        background-color: #9f91cc;
-        /* border-radius: 10px; */
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-    }
-}
 @media all and (max-width: 480px) {
-}
-@media all and (max-width: 320px) {
-    .myclass2podo {
-        font-size: 15px;
-        padding-bottom: 20px;
-        line-height: 25px;
+    .class {
+        padding: 30px 0;
     }
-    .myclass2podo span {
-        font-size: 14px;
-        padding-bottom: 20px;
+    .myclass {
+        flex-direction: column;
+        align-items: center;
     }
-    .th1 {
-        font-size: 13px;
-        white-space: nowrap;
-    }
-    .th2 {
-        font-size: 10px;
-    }
-    .myclass3 {
-        display: none;
+    .myclass2 {
+        width: 100%;
+        padding-right: 0;
+        border-right: none;
     }
     .myclass2-1 {
-        padding-right: 270px;
+        margin-bottom: 20px;
     }
-
-    .myclass2-2 {
-        width: 100%;
-        padding-right: 270px;
-        background-color: #9f91cc;
-        /* border-radius: 10px; */
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
+    .myclass2-2 h2 {
+        font-size: 16px;
+        padding-left: 20px;
     }
-    .class h1 {
-        font-size: 20px;
-        padding-bottom: 20px;
-    }
-    th,
-    td {
-        font-size: 12px;
-        /* width: 500px; */
-        white-space: nowrap;
-        padding: 1.5px;
-    }
-    .myclass2podo span {
-        font-size: 13px;
-        padding-bottom: 20px;
-        white-space: nowrap;
-    }
-
-    .myclass2-2 > h2 {
+    .th1,
+    .th2,
+    .td2,
+    .td3 {
         font-size: 14px;
-        color: #fff;
-        padding-left: 11px;
+    }
+    .myclass2podo {
+        font-size: 24px;
+        padding-bottom: 11px;
+        letter-spacing: 0.5px;
+        padding-top: 10px;
+        padding-right: 278px;
+        text-align: center;
+        width: 500px;
+    }
+    .podo33 {
+        display: none;
+    } 
+    .myclass3 {
+        width: 100%;
+        border-right: none;
+        height: auto;
+    }
+    .myclass33 {
+        height: 395px;
+        overflow: auto;
+    }
+    #myclass322 {
+        padding-left: 0px;
+    }
+    .myclass3-inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    .myclass3-1 {
+        margin-bottom: 20px;
+        overflow: hidden;
+    }
+    .myclass3-1 img {
+        width: 100%;
+    }
+    .myclass3-2 h3 {
+        font-size: 14px;
+    }
+    .myclass3-2 h4 {
+        font-size: 12px;
+    }
+}
+
+@media all and (max-width: 320px) {
+    .myclass2podo {
+        font-size: 24px;
         padding-bottom: 10px;
-        white-space: nowrap;
-       
+        letter-spacing: 0.5px;
+        padding-top: 10px;
+        padding-right: 279px;
+        text-align: center;
+    }
+    .podo33 {
+        display: none;
+    }
+    .class {
+        padding: 30px 0; 
+    }
+    .myclass {
+        flex-direction: column; 
+        align-items: center; 
+    }
+    .myclass2 {
+        width: 100%; 
+        padding-right: 0; 
+        border-right: none; 
+    }
+    .myclass2-1 {
+        margin-bottom: 20px; 
+    }
+    .myclass2-2 h2 {
+        font-size: 16px; 
+        padding-left: 20px;
+    }
+    .th1,
+    .th2,
+    .td2,
+    .td3 {
+        font-size: 14px; 
+    }
+    .myclass3 {
+        width: 100%; 
+        border-right: none; 
+        height: auto; 
+    }
+    .myclass33 {
+        height: 395px;
+        overflow: auto;
+    }
+    #myclass322 {
+        padding-left: 0px;
+    }
+    .myclass3-inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    .myclass3-1 {
+        margin-bottom: 20px; 
+        overflow: hidden;
+    }
+    .myclass3-1 img {
+        width: 100%; 
+    }
+    .myclass3-2 h3 {
+        font-size: 14px; 
+    }
+    .myclass3-2 h4 {
+        font-size: 12px; 
     }
 }

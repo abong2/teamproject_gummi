@@ -118,40 +118,6 @@
 .mb_nav {
   display: none;
 }
-
-@media all and (max-width: 1680px){
-  .searchbar > li > #searchtext {
-      width: 210px;
-  }
-  .gnb > li > a {
-      padding: 10px 45px;
-  }
-}
-@media all and (max-width: 1280px){
-  .searchbar > li > #searchtext {
-      width: 170px;
-  }
-  .gnb > li > a {
-      padding: 10px 25px;
-  }
-}
-@media all and (max-width: 1024px){
-  .h_nav {
-      display: none;
-  }
-  .mb_nav {
-      display: block;
-  }
-}
-@media all and (max-width: 760px){
-  
-}
-@media all and (max-width: 480px){
-  
-}
-@media all and (max-width: 320px){
-  
-}
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -362,77 +328,107 @@ table {
   .page-box a.btn.on {
     background-color: #9F91CC;
   }
-  @media all and (max-width: 480px){
-    
-  }
-  @media all and (max-width: 320px){
-    .sub_notice .inner {
-      padding: 0 10px; /* 페이지 내용의 좌우 여백을 줄입니다. */
-  }
 
-  .header .inner {
-      padding: 0 10px; /* 헤더 내용의 좌우 여백을 줄입니다. */
-  }
 
-  .h_logo {
-      width: auto; /* 로고의 너비를 자동으로 조정합니다. */
-      padding: 10px 0; /* 로고의 여백을 조정합니다. */
+@media all and (max-width: 1680px){
+  .searchbar > li > #searchtext {
+      width: 210px;
+  }
+  .gnb > li > a {
+      padding: 10px 45px;
+  }
+}
+@media all and (max-width: 1280px){
+  .searchbar > li > #searchtext {
+      width: 170px;
+  }
+  .gnb > li > a {
+      padding: 10px 25px;
+  }
+}
+@media all and (max-width: 1024px){
+  .h_nav {
+      display: none;
+  }
+  .mb_nav {
+      display: block;
+  }
+}
+@media all and (max-width: 760px){
+  .container {
+    width: 781px;
+    margin: 0 auto;
+}
+}
+@media screen and (max-width: 480px) {
+    .container {
+      width: 493px;
+      margin: 0 auto;
+  }
+}
+@media screen and (max-width: 320px) {
+  .container {
+    width: 100%;
+    padding: 0 10px;
   }
 
   .h_nav {
-      display: none; /* 네비게이션 바를 숨깁니다. */
+    display: none;
   }
-
   .mb_nav {
-      display: block; /* 모바일 네비게이션 바를 표시합니다. */
-  }
-
-  .searchbar {
-      padding: 5px; /* 검색바의 여백을 줄입니다. */
+    display: block;
   }
 
   .searchbar > li > #searchtext {
-      width: 80%; /* 검색 텍스트 입력 필드의 너비를 조정합니다. */
+    width: 100%; 
+    padding: 7px; 
   }
 
+  .gnb {
+    display: none;
+  }
+  .gnb > li {
+    display: block; 
+    margin-bottom: 10px; 
+  }
   .gnb > li > a {
-      padding: 10px 15px; /* 메뉴 항목의 패딩을 조정합니다. */
-  }
-
-  .submenu > li > a {
-      padding: 10px; /* 하위 메뉴 항목의 패딩을 조정합니다. */
-  }
-
-  .login {
-      display: none; /* 로그인 및 회원가입 링크를 숨깁니다. */
-  }
-
-  .page-img {
-      padding-bottom: 60px; /* 페이지 이미지의 하단 여백을 줄입니다. */
-  }
-
-  .page-title h3 {
-      font-size: 24px; /* 페이지 제목의 글꼴 크기를 조정합니다. */
-  }
-
-  .page-title h5 {
-      font-size: 12px; /* 페이지 부제목의 글꼴 크기를 조정합니다. */
-  }
-
-  #board-search .search-window .search-wrap input {
-      width: 100%; /* 검색 입력 필드의 너비를 100%로 설정합니다. */
-  }
-
-  .board-table a {
-      font-size: 12px; /* 테이블 내 링크 텍스트의 글꼴 크기를 조정합니다. */
+    padding: 10px; 
   }
 
   .page-box {
-      padding-top: 10px; /* 페이지 버튼 상단 여백을 줄입니다. */
+    padding-top: 20px;
+    text-align: center;
   }
-
   .page-box a.btn {
-      padding: 5px 5px; /* 페이지 버튼의 패딩을 조정합니다. */
-      font-size: 10px; /* 페이지 버튼의 글꼴 크기를 조정합니다. */
+    display: inline-block;
+    padding: 7px; 
+    font-size: 12px; 
   }
+  .board-table {
+    display: block;
+  }
+  .board-table a {
+    color: #333;
+    display: inline-block;
+    line-height: 1.4;
+    font-size: 10px;
+    word-break: break-all;
+    vertical-align: middle;
+}
+  .board-table th,
+  .board-table td {
+    padding: 7px; 
+  }
+  .board-table .th-num,
+  .board-table .th-date {
+    width: auto; 
+  }
+  .board-table tbody th {
+    padding: 7px;
+  }
+  .board-table tbody td {
+    border-top: 1px solid #e7e7e7;
+    text-align: center;
+    font-size: 10px;
+}
 }
