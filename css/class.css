@@ -179,11 +179,11 @@ td {
     
 }
 .myclass3-2{
+    width: 60%;
     padding: 5px 0px;
 }
 .myclass3-1 h3{
     font-size: 0.875rem;
-
     line-height: 20px;
 }
 .myclass3-2 h4{
@@ -191,12 +191,32 @@ td {
     font-size: 0.6875rem;
     line-height: 0.875rem;
     font-weight: 400;
+
 }
 /* 반응형 디자인 */
-@media all and (max-width: 1680px) {
+@media all and (max-width: 1420px){
+    .myclass33 {
+        width: 100%;
+        margin: 0 auto;
+        height: 395px;
+        overflow: auto;
+        padding-top: 20px;
+    }
+    .myclass3-2{
+        width: 80%;
+        padding: 5px 0px;
+    }
+    .myclass3-1 h3{
+        font-size: 0.875rem;
+        line-height: 20px;
+        display: block;
+       overflow: hidden;
+     text-overflow: ellipsis;
+     white-space: nowrap; 
+    }
+
 }
-@media all and (max-width: 1280px) {
-}
+
 @media all and (max-width: 1024px) {
     .class h1 {
         font-size: 20px;
@@ -223,6 +243,19 @@ td {
         overflow: auto;
         padding-top: 20px;
     }
+    .myclass3-2{
+        width: 80%;
+        padding: 5px 0px;
+    }
+    .myclass3-1 h3{
+        font-size: 0.875rem;
+        line-height: 20px;
+        display: block;
+       overflow: hidden;
+     text-overflow: ellipsis;
+     white-space: nowrap; 
+    }
+  
 }
 @media all and (max-width: 760px) {
     .myclass2 {
@@ -377,6 +410,18 @@ td {
     .myclass3-2 h4 {
         font-size: 12px;
     }
+    .myclass3-2{
+        width: 100%;
+        padding: 5px 0px;
+    }
+    .myclass3-1 h3{
+        font-size: 0.875rem;
+        line-height: 20px;
+        display: block;
+       overflow: hidden;
+     text-overflow: ellipsis;
+     white-space: nowrap; 
+    }
 }
 
 @media all and (max-width: 320px) {
@@ -439,10 +484,20 @@ td {
     .myclass3-1 img {
         width: 100%; 
     }
-    .myclass3-2 h3 {
-        font-size: 14px; 
+    .myclass3-2{
+        width: 60%;
+        padding: 5px 0px;
     }
-    .myclass3-2 h4 {
-        font-size: 12px; 
+    .myclass3-2{
+        width: 100%;
+        padding: 5px 0px;
+    }
+    .myclass3-1 h3{
+        font-size: 0.875rem;
+        line-height: 20px;
+        display: block;
+       overflow: hidden;
+     text-overflow: ellipsis;
+     white-space: nowrap; 
     }
 }
