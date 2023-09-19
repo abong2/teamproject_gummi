@@ -5,7 +5,8 @@
 /* 페이지 공간 */
 .sub_success {
     position: relative;
-    background-color: #dfceb6;
+    padding: 100px 0px 120px 0px;
+    background-color: #ffffff;
 }
 .sub_success .inner{
     position: relative;
@@ -19,15 +20,23 @@
     width: 100%;
     position: relative;
     display: block;
-    background-color: #a8b6df;
+    margin-bottom: 150px;
 }
 .interview_video_text {
     position: relative;
-    width: 55%;
+    width: 100%;
+}
+.interview_video_text > h2 {
+    font-size: 1.6rem;
+}
+.interview_video_text > p {
+    padding: 15px 0px 20px 0px;
+    font-size: 0.9rem;
 }
 .interview_video > video {
     position: relative;
-    width: 100%;
+    width: 90%;
+    border-radius: 10px;
 }
 /* 인터뷰 */
 .interview_section {
@@ -35,22 +44,75 @@
     position: relative;
     display: block;
     overflow: hidden;
+    margin-bottom: 150px;
 }
-.swiper {
+.interview_section > h2 {
+    padding-bottom: 20px;
+    font-size: 1.6rem;
+}
+.interview_section .swiper {
     width: 100%;
+}
+.interview_section .interview_content {
+    position: relative;
+    display: block;
+    height: 40vw;
+    min-height: 380px;
+    max-height: 600px;
+}
+.interview_text {
+    padding: 20px 0;
+    font-size: 0.9rem;
+}
+.interview_text > h4 {
+    font-size: 1.2rem;
+}
+.interview_text > p {
+    padding: 15px 0px;
+    line-height: 1.6;
+    color: #9c9c9c;
+}
+.interview_text > span {
+    color: #9c9c9c;
 }
 /* 이미지 */
 .img_section {
     width: 100%;
     position: relative;
     display: block;
+    margin-bottom: 150px;
 }
 .big_img_section {
     width: 100%;
 }
+.small_img_section {
+    width: 100%;
+    position: relative;
+    display: block;
+} 
+.small_img_list {
+    width: 100%;
+    position: relative;
+    display: block;
+    /* background-color: #ddd; */
+}
+.small_img_list > li {
+    width: 100%;
+    display: flex;
+}
+.small_img_list > li:nth-child(2n) {
+    justify-content: end;
+}
+.small_img_list > li > img {
+    width: 50%;
+}
 /* 혜택 */
 .benefits {
     width: 100%;
+}
+.benefits h2 {
+    padding-bottom: 20px;
+    font-size: 1.6rem;
 }
 .benefits_ul_text {
     width: 100%;
@@ -60,4 +122,35 @@
     width: calc(100% / 3);
     display: flex;
     flex-direction: column;
+}
+.benefits_ul_text > ul {
+    padding: 0px 10px;
+}
+.benefits_ul_text > ul > h4 {
+    font-size: 1.4rem;
+    margin: 20px 0px 30px 0px;
+}
+.benefits_ul_text > ul > li {
+    padding: 0px 0px 50px 0;
+}
+.benefit_text li:first-child img {
+    width: 55px;
+}
+.benefit_text > li:nth-child(2) {
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 20px 0px 10px 0px;
+}
+@media all and (max-width: 1280px){
+}
+@media all and (max-width: 1024px){
+}
+@media all and (max-width: 760px){    
+}
+@media all and (max-width: 480px){
+    .interview_video > video {
+        width: 100%;
+    }
+}
+@media all and (max-width: 320px){    
 }
