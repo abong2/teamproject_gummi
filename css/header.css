@@ -24,10 +24,10 @@
     flex-wrap: wrap;
 }
 .h_logo {
-    width: 200px;
+    width: 180px;
     height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     font-size: 3rem;
     background-color: #fff;
@@ -103,7 +103,6 @@
     background-color: #f5f5f5;
 }
 .submenu > li > a:hover {
-    /* background-color: #8f8f8f; */
     color: #AE85C9;
 }
 .login {
@@ -131,7 +130,7 @@
     align-items: center;
 }
 .mb_h_nav > li:last-child {
-    padding: 10px 10px 10px 15px;
+    padding: 10px 0px 10px 20px;
 }
 .mb_nav_gnb {
     position: absolute;
@@ -210,7 +209,7 @@
 }
 @media all and (max-width: 1680px){
     .searchbar > li > #searchtext {
-        width: 210px;
+        width: 250px;
     }
     .gnb > li > a {
         padding: 10px 45px;
@@ -218,7 +217,7 @@
 }
 @media all and (max-width: 1280px){
     .searchbar > li > #searchtext {
-        width: 170px;
+        width: 200px;
     }
     .gnb > li > a {
         padding: 10px 25px;
@@ -230,6 +229,9 @@
     }
     .h_nav {
         display: none;
+    }
+    .searchbar > li > #searchtext {
+        width: 200px;
     }
     .mb_nav {
         display: flex;
