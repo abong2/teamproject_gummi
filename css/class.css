@@ -474,8 +474,10 @@ td {
         padding-left: 0px;
     }
     .myclass3-inner {
+        height: 150px;
         display: flex;
-        justify-content: space-between;
+        align-content: stretch;
+        align-items: center;
     }
     .myclass3-1 {
         margin-bottom: 20px; 
@@ -495,9 +497,6 @@ td {
     .myclass3-1 h3{
         font-size: 0.875rem;
         line-height: 20px;
-        display: block;
-       overflow: hidden;
-     text-overflow: ellipsis;
-     white-space: nowrap; 
+        
     }
 }
