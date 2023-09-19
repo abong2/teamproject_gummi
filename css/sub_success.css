@@ -123,22 +123,23 @@
     display: flex;
     flex-direction: column;
 }
-.benefits_ul_text > ul:nth-child(2n) {
-    padding: 0px 20px;
+.benefits_ul_text > ul {
+    padding: 0px 10px;
+}
+.benefits_ul_text > ul > h4 {
+    font-size: 1.4rem;
+    margin: 20px 0px 30px 0px;
 }
 .benefits_ul_text > ul > li {
-    padding: 50px 0;
+    padding: 0px 0px 50px 0;
 }
 .benefit_text li:first-child img {
-    width: 60px;
+    width: 55px;
 }
-.benefits_ul_text > ul > li:last-child {
-    padding: 50px 0 0 0;
-}
-.benefit_text > li:nth-child(2n) {
-    font-size: 1.3rem;
+.benefit_text > li:nth-child(2) {
+    font-size: 1.2rem;
     font-weight: 700;
-    padding: 20px 0px 20px 0px;
+    padding: 20px 0px 10px 0px;
 }
 @media all and (max-width: 1280px){
 }
