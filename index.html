@@ -1,134 +1,93 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- SEO적용 -->
-        <meta name="mobile-web-app-capable" content="yes" />
-        <meta name="format-detection" content="telephone=no" />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="description" content="슬로건" />
-        <meta
-            name="keywords"
-            content="재능기부, 기부, 무료학습, 무료, 취약계층, 포도알"
-        />
-        <meta property="og:title" content="Gummi" />
-        <meta
-            property="keyword"
-            content="재능기부, 기부, 무료학습, 무료, 취약계층, 포도알"
-        />
-        <meta property="og:url" content="https://gummi.com/" />
-        <meta
-            property="og:image"
-            content="https://gummi.com/img/url_image.jpg"
-        />
-        <meta property="og:description" content="슬로건" />
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:title" content="Gummi" />
-        <meta name="twitter:url" content="https://gummi.com/" />
-        <meta name="twitter:image" content="https://gummi.com/img/logo.png" />
-        <meta name="twitter:description" content="슬로건" />
-        <!-- Google Tag Manager -->
-        <script>
-            (function (w, d, s, l, i) {
-                w[l] = w[l] || [];
-                w[l].push({
-                    "gtm.start": new Date().getTime(),
-                    event: "gtm.js",
-                });
-                var f = d.getElementsByTagName(s)[0],
-                    j = d.createElement(s),
-                    dl = l != "dataLayer" ? "&l=" + l : "";
-                j.async = true;
-                j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-                f.parentNode.insertBefore(j, f);
-            })(window, document, "script", "dataLayer", "GTM-PWWFZ87G");
-        </script>
-        <!-- End Google Tag Manager -->
-        <title>Gummi</title>
-        <!-- 웹브라우저 호환성 -->
-        <!--[if lt IE 9]>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO적용 -->
+    <meta name="mobile-web-app-capable" content="yes"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="description" content="나의 꿈이 이루어지는 공간 구미 Gummi!"/>
+    <meta name="keywords" content="재능기부, 기부, 무료학습, 무료, 취약계층, 포도알"/>
+    <meta property="og:title" content="Gummi"/>
+    <meta property="keyword" content="재능기부, 기부, 무료학습, 무료, 취약계층, 포도알"/>
+    <meta property="og:url" content="https://gummi.com/"/>
+    <meta property="og:image" content="https://gummi.com/img/url_image.jpg"/>
+    <meta property="og:description" content="나의 꿈이 이루어지는 공간 구미 Gummi!"/>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:title" content="Gummi"/>
+    <meta name="twitter:url" content="https://gummi.com/"/>
+    <meta name="twitter:image" content="https://gummi.com/img/logo.png"/>
+    <meta name="twitter:description" content="나의 꿈이 이루어지는 공간 구미 Gummi!"/>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PWWFZ87G');</script>
+    <!-- End Google Tag Manager -->
+    <title>Gummi</title>
+    <!-- 웹브라우저 호환성 -->
+    <!--[if lt IE 9]>
     <script src="js/respond.min.js"></script>
     <script src="js/html5shiv.js"></script>
     [endif]-->
-        <!-- <script src="js/prefixfree.min.js"></script> -->
-        <!-- jQuery -->
-        <script src="https://code.jquery.com/jquery-3.7.1.slim.js"></script>
-        <!-- fontawesome -->
-        <script
-            src="https://kit.fontawesome.com/e2b37e629b.js"
-            crossorigin="anonymous"
-        ></script>
-        <!-- aos -->
-        <link rel="stylesheet" href="css/aos.css" />
-        <script src="js/aos.js"></script>
-        <!-- Swiper JS -->
-        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
-        <!-- swiper -->
-        <link rel="stylesheet" href="js/swiper/swiper.min.css" />
-        <script src="js/swiper/swiper.min.js"></script>
-        <!-- bx slide -->
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
-        />
-        <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-        <!-- XEIcon -->
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
-        />
-        <!-- css -->
-        <link rel="stylesheet" href="css/reset.css" />
-        <link rel="stylesheet" href="css/main.css" />
-        <link rel="stylesheet" href="css/font.css" />
-        <link rel="stylesheet" href="css/base.css" />
-        <link rel="stylesheet" href="css/common.css" />
-        <!--js  -->
-        <script src="js/header.js"></script>
-        <script src="js/visual.js"></script>
-        <script src="js/banner01.js"></script>
-        <script src="js/category.js"></script>
-        <script src="js/teacher.js"></script>
-        <script src="js/recruit.js"></script>
-        <script src="js/banner02.js"></script>
-        <script src="js/popualclass.js"></script>
-        <script src="js/class.js"></script>
-        <script src="js/footer.js"></script>
-    </head>
-    <body>
-        <!-- Google Tag Manager (noscript) -->
-        <noscript
-            ><iframe
-                src="https://www.googletagmanager.com/ns.html?id=GTM-PWWFZ87G"
-                height="0"
-                width="0"
-                style="display: none; visibility: hidden"
-            ></iframe
-        ></noscript>
-        <!-- End Google Tag Manager (noscript) -->
-        <div class="wrap">
-            <!-- header부분 -->
-            <header class="header">
-                <div class="inner">
-                    <h1 class="h_logo"><a href="index.html">Gummi</a></h1>
-                    <nav class="h_nav">
-                        <ul class="searchbar">
-                            <li>
-                                <input
-                                    type="text"
-                                    name="searchtext"
-                                    id="searchtext"
-                                    placeholder="Search"
-                                />
-                            </li>
-                            <li>
-                                <a href="#"
-                                    ><i class="fa-solid fa-magnifying-glass"></i
-                                ></a>
-                            </li>
-                        </ul>
+    <!-- <script src="js/prefixfree.min.js"></script> -->
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/e2b37e629b.js" crossorigin="anonymous"></script>
+    <!-- aos -->
+    <link rel="stylesheet" href="css/aos.css"/>
+    <script src="js/aos.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+    <!-- swiper -->
+    <link rel="stylesheet" href="js/swiper/swiper.min.css"/>
+    <script src="js/swiper/swiper.min.js"></script>
+    <!-- bx slide -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"/>    
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <!-- slick slider -->
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> 
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <!-- XEIcon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">   
+    <!--js  -->
+    <script src="js/header.js"></script>
+    <script src="js/visual.js"></script>
+    <script src="js/banner01.js"></script>
+    <script src="js/category.js"></script>
+    <script src="js/teacher.js"></script>
+    <script src="js/recruit.js"></script>
+    <script src="js/banner02.js"></script>
+    <script src="js/popualclass.js"></script>
+    <script src="js/class.js"></script>
+    <script src="js/footer.js"></script>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PWWFZ87G"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="wrap">
+        <!-- header부분 -->
+        <header class="header">
+            <div class="inner">
+                <h1 class="h_logo"><a href="index.html">Gummi</a></h1>
+                <nav class="h_nav">
+                    <ul class="searchbar">
+                        <li><input type="text" name="searchtext" id="searchtext" placeholder="Search"></li>
+                        <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    </ul>
                         <ul class="gnb">
                             <li>
                                 <a href="#">비지니스</a>
@@ -200,29 +159,134 @@
                                 ></a>
                             </li>
                         </ul>
-                    </nav>
-                </div>
-            </header>
-            <!-- 메인 -->
-            <div class="main">
-                <!-- 비주얼부분 -->
-                <section class="visual">
-                    <div class="inner"></div>
-                </section>
-                <!-- 배너01 -->
-                <section class="banner01">
-                    <div class="inner">
-                        <div class="banner_left">
-                            <img
-                                src="images/banner_people.png"
-                                alt="bannerpeople"
-                            />
+                    <ul class="login">
+                        <li><a href="login.html">로그인</a></li>
+                        <li>&ensp;/&ensp;</li>
+                        <li><a href="login.html">회원가입</a></li>
+                    </ul>
+                </nav>
+                <nav class="mb_nav">
+                    <ul class="mb_h_nav">
+                        <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                        <li><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+                    </ul>
+                    <div class="mb_nav_gnb">
+                        <div class="mb_nav_top">
+                            <ul class="mb_login">
+                                <li><a href="login.html"><i class="fa-regular fa-user"></i></a></li>
+                                <li><a href="login.html">로그인&ensp;<i class="fa-solid fa-chevron-right"></i></a></li>
+                            </ul>
+                            <a href="#"><i class="fa-solid fa-xmark"></i></a>
                         </div>
-                        <div class="banner_right">
-                            <img
-                                src="images/banner01_text.png"
-                                alt="bannertext"
-                            />
+                        <ul class="mb_gnb">
+                            <li>
+                                <a href="#">
+                                    비지니스
+                                    <div class="more">
+                                        <span class="plus"><i class="fa-solid fa-plus"></i></span>
+                                        <span class="minus"><i class="fa-solid fa-minus"></i></span>
+                                    </div>
+                                </a>
+                                <ul class="mb_submenu">
+                                    <li><a href="#">번역</a></li>
+                                    <li><a href="#">통역</a></li>
+                                    <li><a href="#">마케팅</a></li>
+                                    <li><a href="#">창업 컨설팅</a></li>
+                                    <li><a href="#">재테크</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    교육
+                                    <div class="more">
+                                        <span class="plus"><i class="fa-solid fa-plus"></i></span>
+                                        <span class="minus"><i class="fa-solid fa-minus"></i></span>
+                                    </div>
+                                </a>
+                            <ul class="mb_submenu">
+                                <li><a href="#">초등교육</a></li>
+                                <li><a href="#">중등교육</a></li>
+                                <li><a href="#">고등교육</a></li>
+                                <li><a href="#">IT</a></li>
+                                <li><a href="#">디자인</a></li>
+                            </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    리빙
+                                    <div class="more">
+                                        <span class="plus"><i class="fa-solid fa-plus"></i></span>
+                                        <span class="minus"><i class="fa-solid fa-minus"></i></span>
+                                    </div>
+                                </a>
+                            <ul class="mb_submenu">
+                                <li><a href="#">정리</a></li>
+                                <li><a href="#">청소</a></li>
+                                <li><a href="#">인테리어</a></li>
+                                <li><a href="#">수리</a></li>
+                            </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    취미 생활
+                                    <div class="more">
+                                        <span class="plus"><i class="fa-solid fa-plus"></i></span>
+                                        <span class="minus"><i class="fa-solid fa-minus"></i></span>
+                                    </div>
+                                </a>
+                            <ul class="mb_submenu">
+                                <li><a href="#">DIY</a></li>
+                                <li><a href="#">요리</a></li>
+                                <li><a href="#">뷰티</a></li>
+                                <li><a href="#">마술</a></li>
+                                <li><a href="#">악기</a></li>
+                                <li><a href="#">드로잉</a></li>
+                            </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    기타
+                                    <div class="more">
+                                        <span class="plus"><i class="fa-solid fa-plus"></i></span>
+                                        <span class="minus"><i class="fa-solid fa-minus"></i></span>
+                                    </div>
+                                </a>
+                            <ul class="mb_submenu">
+                                <li><a href="#">자동차</a></li>
+                                <li><a href="#">편의시설</a></li>
+                            </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- 메인 -->
+        <div class="main">
+            <!-- 비주얼부분 -->
+            <section class="visual">
+                <div class="inner">
+                    <div class="autoplay">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                    </div>
+                </div>
+            </section>
+            <!-- 배너01 -->
+            <section class="banner01">
+                <div class="inner">
+                    <div class="banner_left">
+                        <img src="images/banner_people.png" alt="bannerpeople">
+                    </div>
+                    <div class="banner_right">
+                        <img src="images/banner01_text.png" alt="bannertext">
                             <div class="banner_right_txt">
                                 <p>#당신의 재능으로 취약 계층을 도와주세요</p>
                                 <button type="button" id="banner_btn">
@@ -230,6 +294,56 @@
                                         재능 기부 성공사례 보러가기
                                     </a>
                                 </button>
+                            </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 카테고리 -->
+            <section class="category">
+                <div class="inner">
+                    <div class="cate_wrap">
+                        <div id="cate_list1">
+                            <div class="cate_iist">
+                                <img src="images/business.png" alt="business">
+                                <span>비즈니스</span>
+                            </div>
+                            <div class="cate_iist">
+                                <img src="images/hobby.png" alt="hobby">
+                                <span>취미생활</span>
+                            </div>
+                            <div class="cate_iist">
+                                <img src="images/living.png" alt="living">
+                                <span>리빙</span>
+                            </div>
+                            <div class="cate_iist">
+                                <img src="images/study.png" alt="study">
+                                <span>교육</span>
+                            </div>
+                            <div class="cate_iist">
+                                <img src="images/etc.png" alt="etc">
+                                <span>기타</span>
+                            </div>
+                        </div>
+                        <div id="cate_list2">
+                            <div class="cate_iist">
+                                <img src="images/it.png" alt="it">
+                                <span>IT</span>
+                            </div>
+                            <div class="cate_iist">
+                                <img src="images/car.png" alt="car">
+                                <span>자동차</span>
+                            </div>
+                            <div class="cate_iist">
+                                <img src="images/cleaning.png" alt="cleaning">
+                                <span>청소</span>
+                            </div>
+                            <div class="cate_iist">
+                                <img src="images/art.png" alt="art">
+                                <span>미술</span>
+                            </div>
+                            <div class="cate_iist">
+                                <img src="images/trans.png" alt="trans">
+                                <span>번역</span>
                             </div>
                         </div>
                     </div>
@@ -744,10 +858,32 @@
                     </div>
                 </section>
             </div>
-            <!-- footer -->
-            <footer class="footer">
-                <div class="inner"></div>
-            </footer>
-        </div>
-    </body>
+        <!-- footer -->
+        <footer class="footer">
+            <div class="inner">
+                <div class="textbox">
+                    <ul class="sns">
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-solid fa-blog"></i></a></li>
+                    </ul>
+                    <div class="footertext">
+                        <p>
+                            (주)구미 | 대구광역시 중구 중앙대로 394 제일빌딩 5F | 대표 : 김연우 | 개인정보관리책임자 : 김연우 | 사업자등록번호 : 012-34-56789<br>
+                            통신판매업신고 : 2023-대구-01234 | 유로직업소개사업등록번호 : 제2023-01234567-89-0-12345호 | 고객센터 : 1234-5678 | help@gummi.com
+                        </p>
+                        <p>
+                            (주)구미는 통신판매중개자이며, 통신판매의 당사자가 아닙니다. 상품, 상품정보, 거래에 관한 의무와 책임은 판매회원에게 있습니다.<br>
+                            (주)구미 사이트의 상품/판매회원/중개 서비스/거래 정보, 콘텐츠, UI 등에 대한 무단복제, 전송, 배포, 스크래핑 등의 행위는 저작권법, 콘텐츠산업 진흥법 등 관련법령에 의하여 엄격히 금지됩니다.
+                        </p>
+                        <p>
+                            Copyright ⓒ 2023 gummi Inc.All rights reserved
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
 </html>
