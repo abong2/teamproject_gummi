@@ -75,6 +75,15 @@
 .interview_text > span {
     color: #9c9c9c;
 }
+.swiper-button-prev,
+.swiper-button-next {
+    color: #AE85C9;
+}
+.swiper-pagination-bullet,
+.swiper-pagination-bullet-active {
+    color: #ae85c9;
+    background-color: #ae85c9;
+}
 /* 이미지 */
 .img_section {
     width: 100%;
