@@ -16,5 +16,20 @@ window.addEventListener("load", function() {
       prevEl: '.interview_section .swiper-button-prev',
       nextEl: '.interview_section .swiper-button-next',
     },
+
+    breakpoints: {
+        
+      320: {
+        slidesPerView: 1,  //브라우저가 320보다 클 때
+      },
+      480: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      760: {
+        slidesPerView: 2,
+        spaceBetween: 50,
+      },
+    },
   });
 });
