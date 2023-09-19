@@ -8,6 +8,7 @@
 .footer .inner {
     display: flex;
     flex-wrap: wrap;
+    background-color: #fff;
 }
 .footer .textbox {
     width: 100%;
