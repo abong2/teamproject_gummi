@@ -182,6 +182,7 @@ padding: 5%;
 .subscription_info p {
   font-size: 14px;
   padding-bottom: 50px;
+  line-height: 20px;
 }
 .subscription_info ul {
   display: flex;
@@ -632,7 +633,6 @@ padding: 5%;
 }
 
 /* 모바일 */
-
 @media all and (max-width: 320px){
 .subscription_left {
   width: 100%;
