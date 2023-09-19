@@ -425,6 +425,9 @@ td {
 }
 
 @media all and (max-width: 320px) {
+    .myclass3 {
+        /* padding: 70px 0; */
+    }
     .myclass2podo {
         font-size: 24px;
         padding-bottom: 10px;

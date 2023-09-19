@@ -12,3 +12,7 @@
     display: block;
     width: 100%;
   }
+  ::selection{
+    background-color: #ae85c9;
+    color: white;
+  }
