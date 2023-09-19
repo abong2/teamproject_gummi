@@ -26,7 +26,7 @@
   position: absolute;
   top: -10%;
   left: 5%;
-  background: #9f91cc;
+  background: #AE85C9;
   width: 350px;
   height: 456px;
   border-radius: 5px;
@@ -92,7 +92,7 @@
 }
 
 .login_container span {
-  color: #9f91cc;
+  color: #AE85C9;
 }
 
 .login_container .podo {
@@ -100,7 +100,7 @@
   width: 120px;
   height: 120px;
   top: 40%;
-  left: 30%;
+  left: 33%;
   opacity: 0.7;
 }
 
@@ -124,7 +124,7 @@
   display: block;
 }
 .login_container button:hover {
-  background: #9f91cc;
+  background: #AE85C9;
   color: #fff;
   transition: background-color 1s ease-out;
   border: solid 1px #fff;
@@ -133,7 +133,7 @@
 .login_container .button {
   margin-top: 3%;
   background: #fff;
-  color: #9f91cc;
+  color: #AE85C9;
   border: solid 1px #9f91cc;
   font-weight: bold;
 }
