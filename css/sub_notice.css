@@ -137,7 +137,13 @@ table {
 .board-table th {
     text-align: center;
 }
-
+.board-table tbody th:hover {
+    padding-left: 28px;
+    padding-right: 14px;
+    border-top: 1px solid #e7e7e7;
+    text-align: left;
+    background-color: #f1f0f0;
+}
 .board-table .th-num {
     width: 100px;
     text-align: center;
