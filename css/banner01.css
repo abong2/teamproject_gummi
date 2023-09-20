@@ -1,6 +1,6 @@
 @charset "utf-8";
 .banner01{
-    padding: 0 70px;
+    /* padding: 0 70px; */
 }
 .banner01 .inner{
     margin: 0 auto;
@@ -53,9 +53,6 @@
 /* 반응형 */
 /* 화면 폭이 1680px 이하일 때 */
 @media all and (max-width: 1680px) {
-    .banner01 {
-        padding: 0 50px; /* 패딩 수정 예시 */
-    }
     .banner_left, .banner_right {
         width: 50%; /* 배너의 가로 너비 수정 예시 */
     }
@@ -63,9 +60,6 @@
 
 /* 화면 폭이 1280px 이하일 때 */
 @media all and (max-width: 1280px) {
-    .banner01 {
-        padding: 0 30px; /* 패딩 수정 예시 */
-    }
     .banner_left, .banner_right {
         width: 100%; /* 배너의 가로 너비 수정 예시 */
     }
@@ -74,9 +68,6 @@
     }
 }
 @media all and (max-width: 1175) {
-    .banner01 {
-        padding: 0 30px; /* 패딩 수정 예시 */
-    }
     .banner_left, .banner_right {
         width: 100%; /* 배너의 가로 너비 수정 예시 */
     }
@@ -92,9 +83,6 @@
 
 /* 화면 폭이 1024px 이하일 때 */
 @media all and (max-width: 1024px) {
-    .banner01 {
-        padding: 0 20px; /* 패딩 수정 예시 */
-    }
     .banner_right_txt {
         justify-content: center;
         text-align: center;
@@ -102,9 +90,6 @@
 }
 
 @media all and (max-width: 970px) {
-    .banner01 {
-        padding: 0 /* 패딩 수정 예시 */
-    }
     .banner_right_txt {
         justify-content: center;
         text-align: center;
@@ -116,9 +101,6 @@
     }
 }
 @media all and (max-width: 940px) {
-    .banner01 {
-        padding: 0 20px; /* 패딩 수정 예시 */
-    }
     .banner_right_txt {
         justify-content: center;
         text-align: center;
@@ -132,9 +114,6 @@
     }
 }
 @media all and (max-width: 860px) {
-    .banner01 {
-        padding: 0; /* 패딩 수정 예시 */
-    }
     .banner_right_txt {
         justify-content: center;
         text-align: center;
@@ -199,6 +178,9 @@
     } */
     #banner_btn{
         margin-left: 20px;
+    }
+    .banner_right_txt .b_span{
+        display: none;
     }
 }
 /* 화면 폭이 480px 이하일 때 */
