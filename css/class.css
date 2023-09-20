@@ -533,7 +533,7 @@ padding-bottom: 41px;
   
   .qna .box.text > h2:after {
     content: "\f054";
-    font-family: "Font Awesome 5 Pro";
+    font-family: "Font Awesome 5 free";
     position: absolute;
     right: 0;
     top: 0;
@@ -571,10 +571,10 @@ padding-bottom: 41px;
     border-bottom: 1px solid #f0f0f0;
   }
   .qna-item.on{
-    background-color: #fafafa;
+    background-color: #fcfcfc;
   }
   .qna-item:hover {
-    background: #fafafa;
+    background: #fcfcfc;
   }
   .qna-item .question-article {border-bottom:0;}
   .qna-item:first-child .question-article {border-top:0;}
@@ -605,12 +605,10 @@ padding-bottom: 41px;
 
   @media screen and (max-width:879px){
 
-  .qna .box.text > h2:after {
-    content: "\f054";
-    font-family: "Font Awesome 5 Pro";
-    position: absolute;
+  .qna .box.text > .pobi {
+    /* position: absolute;
     right: -24px;
-    top: 0;
+    top: 0; */
     transform: rotate(0deg);
     transition: 0.25s;
 }
@@ -647,7 +645,7 @@ padding-bottom: 41px;
     }
     .qna .box.text > h2::after {
         content: "";
-        font-family: "Font Awesome 5 Pro";
+        font-family: "Font Awesome 5 free";
         position: absolute;
         right: 0;
         top: 0px;
