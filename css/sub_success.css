@@ -78,13 +78,13 @@
 .interview_content > img {
     width: 100%;
 }
-.swiper-button-prev,
-.swiper-button-next {
+.interview_section .swiper-button-prev,
+.interview_section .swiper-button-next {
     display: block;
     color: #AE85C9;
 }
-.swiper-pagination-bullet,
-.swiper-pagination-bullet-active {
+.interview_section .swiper-pagination-bullet,
+.interview_section .swiper-pagination-bullet-active {
     color: #ae85c9;
     background-color: #ae85c9;
 }
