@@ -118,7 +118,7 @@
     position: relative;
     flex-direction: column;
     z-index: 9999999;
-    font-size: 14px;
+    font-size: 16px;
 }
 .mb_h_nav {
     position: relative;
@@ -212,7 +212,7 @@
         width: 250px;
     }
     .gnb > li > a {
-        padding: 10px 45px;
+        padding: 10px 40px;
     }
 }
 @media all and (max-width: 1280px){
@@ -220,7 +220,7 @@
         width: 200px;
     }
     .gnb > li > a {
-        padding: 10px 25px;
+        padding: 10px 20px;
     }
 }
 @media all and (max-width: 1024px){
