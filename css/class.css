@@ -20,7 +20,7 @@
 .myclass2 {
     width: 50%;
     height: 50%;
-    padding-right: 70px;
+    padding-right: 3%;
     border-right: 1px solid #eee;
 }
 .myclass2podo {
@@ -56,7 +56,6 @@
 .th1 {
     font-size: 18px;
     font-weight: 700;
-    padding-top: 20px;
 }
 .myclass2-22 {
     width: 50%;
@@ -68,7 +67,6 @@ table {
 } /*이중선 제거*/
 th,
 td {
-    padding-top: 25px;
     width: 200px;
     height: 50px;
     text-align: center;
@@ -89,15 +87,12 @@ td {
 .td2 {
     /* color: #31302b; */
     color: #ae85c9;
-    width: 15%;
+    width: 20%;
     font-weight: 700;
     cursor: pointer;
 }
 .td2:hover {
     color: #a07bb9;
-    width: 15%;
-    font-weight: 700;
-    cursor: pointer;
 }
 .td3 {
     color: #31302b;
@@ -113,7 +108,7 @@ td {
 }
 .myclass2-3 {
     width: 100%;
-    padding-bottom: 3%;
+    padding: 20px 0;
     background-color: #ffffff;
     border-radius: 10px;
 }
@@ -130,23 +125,22 @@ td {
 .myclass3{
     width: 50%;
     height: 500px;
-
+padding-left: 3%;
 }
 .myclass33{
+    padding-right: 15px;
     width: 100%;
     margin: 0 auto;
-    height: 373px;
+    max-height: 398px;
     overflow: auto;
     padding-top: 20px;
 }
-#myclass322{
-    padding-left: 60px;
-}
+
 .myclass3-inner {
-    height: 240px;
+    margin-bottom: 20px;
     background-size: cover;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
 
 }
 .myclass33::-webkit-scrollbar {
@@ -170,7 +164,7 @@ td {
     overflow: hidden;
 }
 .myclass3-1 img{
-    width: 80%;  
+    width: 100%;  
     cursor: pointer;
     
 }
@@ -178,9 +172,10 @@ td {
     filter: brightness(1.2);
     
 }
-.myclass3-2{
-    width: 60%;
+.myclass3-2 {
+    width: 100%;
     padding: 5px 0px;
+    max-width: 125px;
 }
 .myclass3-1 h3{
     font-size: 0.875rem;
@@ -227,15 +222,6 @@ td {
         padding-bottom: 20px;
         line-height: 36px;
     }
-    #myclass322 {
-        padding-left: 45px;
-    }
-    .myclass3-inner {
-        height: 200px;
-        background-size: cover;
-        display: flex;
-        justify-content: flex-end;
-    }
     .myclass33 {
         width: 100%;
         margin: 0 auto;
@@ -258,12 +244,7 @@ td {
   
 }
 @media all and (max-width: 760px) {
-    .myclass2 {
-        width: 50%;
-        height: 50%;
-        padding-right: 42px;
-        border-right: 1px solid #eee;
-    }
+
     .myclass33 {
         width: 100%;
         margin: 0 auto;
@@ -282,8 +263,11 @@ td {
         color: #fff;
         padding-left: 27px;
     }
-    #myclass322 {
-        padding-left: 33px;
+    .myclass2-3 {
+        width: 100%;
+        padding: 6px 0;
+        background-color: #ffffff;
+        border-radius: 10px;
     }
     .myclass3-1 h3{
         font-size: 11px;
@@ -320,30 +304,25 @@ td {
     }
     .td2 {
         color: #9f91cc;
-        width: 15%;
         font-weight: 700;
         cursor: pointer;
     }
     .td2:hover {
         color: #a07bb9;
-        width: 15%;
         font-weight: 700;
         cursor: pointer;
     }
     .td3 {
-
-        width: 15%;
         font-weight: 700;
         cursor: pointer;
     }
     .td3:hover {
         color: #a07bb9;
-        width: 15%;
         font-weight: 700;
         cursor: pointer;
     }
 }
-@media all and (max-width: 480px) {
+@media all and (max-width: 700px) {
     .class {
         padding: 30px 0;
     }
@@ -363,11 +342,12 @@ td {
         font-size: 16px;
         padding-left: 20px;
     }
-    .th1,
-    .th2,
-    .td2,
-    .td3 {
-        font-size: 14px;
+    .myclass2-3 {
+        padding: 0;
+    }
+    .th1, .th2, .td2, .td3 {
+        font-size: 12px;
+        font-weight: bold;
     }
     .myclass2podo {
         font-size: 24px;
@@ -390,15 +370,11 @@ td {
         height: 395px;
         overflow: auto;
     }
-    #myclass322 {
-        padding-left: 0px;
-    }
     .myclass3-inner {
         display: flex;
         justify-content: space-between;
     }
     .myclass3-1 {
-        margin-bottom: 20px;
         overflow: hidden;
     }
     .myclass3-1 img {
@@ -425,8 +401,10 @@ td {
 }
 
 @media all and (max-width: 320px) {
-    .myclass3 {
-        /* padding: 70px 0; */
+    .section{
+        width: 100%;
+        height: 5px;
+        background-color: #eeeeeec4;
     }
     .myclass2podo {
         font-size: 24px;
@@ -435,6 +413,9 @@ td {
         padding-top: 10px;
         padding-right: 279px;
         text-align: center;
+    }
+    .myclass2-3 {
+        padding: 0;
     }
     .podo33 {
         display: none;
@@ -458,29 +439,19 @@ td {
         font-size: 16px; 
         padding-left: 20px;
     }
-    .th1,
-    .th2,
-    .td2,
-    .td3 {
-        font-size: 14px; 
+    .th1, .th2, .td2, .td3 {
+        font-size: 12px;
+        font-weight: bold;
     }
     .myclass3 {
-        width: 100%; 
-        border-right: none; 
-        height: auto; 
+        width: 100%;
+        border-right: none;
+        height: auto;
+        padding: 10px 0;
     }
     .myclass33 {
         height: 395px;
         overflow: auto;
-    }
-    #myclass322 {
-        padding-left: 0px;
-    }
-    .myclass3-inner {
-        height: 150px;
-        display: flex;
-        align-content: stretch;
-        align-items: center;
     }
     .myclass3-1 {
         margin-bottom: 20px; 
