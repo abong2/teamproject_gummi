@@ -185,7 +185,13 @@
     .teacher_info p{
         font-size: 14px;
     }
-    .teacher_info > span, p, b{
+    .teacher_info > span{
+      display: none;
+    }
+    .teacher_info > b{
+      display: none;
+    }
+    .teacher_info > p{
       display: none;
     }
     .teacher_btn button ,span{
@@ -203,7 +209,13 @@
     .teacher_info p{
         font-size: 14px;
     }
-    .teacher_info > span, p, b{
+    .teacher_info > span{
+      display: none;
+    }
+    .teacher_info > b{
+      display: none;
+    }
+    .teacher_info > p{
       display: none;
     }
     .teacher_btn button ,span{
@@ -224,9 +236,15 @@
       width: 60%;
       height: 60%; 
     }
-    .teacher_info > span, p, b{
+    .teacher_info > span{
       display: none;
-  }
+    }
+    .teacher_info > b{
+      display: none;
+    }
+    .teacher_info > p{
+      display: none;
+    }
   .teacher_list::after {
     content: url("../images/crown2.png");
     position: absolute;
@@ -250,9 +268,15 @@
       width: 60%;
       height: 60%; 
     }
-    .teacher_info > span, p, b{
+    .teacher_info > span{
       display: none;
-  }
+    }
+    .teacher_info > b{
+      display: none;
+    }
+    .teacher_info > p{
+      display: none;
+    }
   .teacher_list::after {
     content: url("../images/crown2.png");
     position: absolute;

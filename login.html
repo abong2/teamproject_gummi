@@ -220,53 +220,56 @@
       </div>
   </header>
     <!-- 개인작업 공간 -->
-    <div class="sub_login">
-        <div class="inner">
-          <div class="login_container">
-            <div class="welcome">
-              <div class="pinkbox">
-                <div class="signup nodisplay">
-                  <h1>register</h1>
-                  <form autocomplete="off">
-                    <input type="text" placeholder="username">
-                    <input type="email" placeholder="email">
-                    <input type="password" placeholder="password">
-                    <input type="password" placeholder="confirm password">
-                    <button class="button submit"> create account </button>
-                  </form>
+    <div class="login">
+    <div class="login_wrap">
+    <div class="login_container" id="login_container">
+        <div class="form-container sign-up-container">
+            <form action="#">
+                <h1>Create Account</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
                 </div>
-                <div class="signin">
-                  <h1>로그인</h1>
-                  <form class="more-padding" autocomplete="off">
-                    <input type="text" placeholder="username">
-                    <input type="password" placeholder="password">
-                    <div class="checkbox">
-                      <input type="checkbox" id="remember" /><label for="remember"> 정보기억하기 </label>
-                    </div>
-          
-                    <button class="button submit">로그인</button>
-                  </form>
+                <span>or use your email for registration</span>
+                <input type="text" placeholder="Name" />
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Password" />
+                <button>Sign Up</button>
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form action="#">
+                <h1>로그인</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
                 </div>
-              </div>
-              <!-- <div class="leftbox">
-                <h2 class="title"><span>Gummi</span><br>BOUQUET</h2>
-                <p class="desc">pick your perfect <span>bouquet</span></p>
-                <img class="flower smaller" src="https://image.ibb.co/d5X6pn/1357d638624297b.jpg" alt="1357d638624297b" border="0">
-                <p class="account">have an account?</p>
-                <button class="button" id="signin">login</button>
-              </div> -->
-              <div class="rightbox">
-                <h2 class="title"><span><br>GUMMI</span></h2>
-                <img class="podo" src="images/loginpodo.png"/>
-                <p class="account">계정이없습니까?</p>
-                <button class="button" id="signup">가입하기</button>
-              </div>
+                <span>또는 이메일로 로그인</span>
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Password" />
+                <a href="#">비밀번호 찾기</a>
+                <button>로그인</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p>To keep connected with us please login with your personal info</p>
+                    <button class="ghost" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>안녕하세요!</h1>
+                    <p>가입후에 Gummi와 함께 여행을 시작하세요!</p>
+                    <button class="ghost" id="signUp">가입하기</button>
+                </div>
             </div>
-           </div>
-          
-          </div>
         </div>
     </div>
+</div>
+</div>
     <!-- 푸터 -->
     <footer class="footer">
       <div class="inner">
