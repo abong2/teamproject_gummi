@@ -65,10 +65,10 @@
 .teacher_list::after {
   content: url("../images/crown.png");
   position: absolute;
-  top: -70px;
-  left: 180px;
-  width: 100%;
-  height: 100%;
+  top: -20px;
+  left: 130px;
+  width: 50%;
+  height: 50%;
   transform: rotate(-30deg);
   z-index: 9999;
 }
@@ -98,10 +98,10 @@
     .teacher_list::after {
         content: url("../images/crown.png");
         position: absolute;
-        top: -45px;
-        left: 100px;
-        width: 100%;
-        height: 100%;
+        top: -10px;
+        left: 70px;
+        width: 50%;
+        height: 50%;
         transform: rotate(-30deg);
         z-index: 9999;
       }
@@ -109,29 +109,46 @@
 
 @media screen and (max-width: 768px) {
     .teacher_list {
-      width: calc(100% / 3); 
       padding: 50px 10px; /* 패딩 크기 조정 */
+    }
+    .teacher_list img{
+      width: 85%;
+      height: 85%; 
     }
   }
   
-  @media screen and (max-width: 590px) {
+@media screen and (max-width: 590px) {
     .teacher_list {
-      width: calc(100% / 3); /* 화면 크기가 더 작아지면 한 열로 나열 */
-      padding: 50px 10px; /* 패딩 크기 더 조정 */
+      padding: 50px 5px; /* 패딩 크기 더 조정 */
     }
     .teacher_info p{
         font-size: 14px;
     }
   }
 
-  @media screen and (max-width: 560px) {
+
+@media screen and (max-width: 320px) {
     .teacher_list {
-      width: calc(100% / 3); /* 화면 크기가 더 작아지면 한 열로 나열 */
-      padding: 50px 5px; /* 패딩 크기 더 조정 */
-      overflow: hidden;
+      padding: 50px 0px; /* 패딩 크기 더 조정 */
     }
-    .teacher_info span ,p{
+    .teacher_info p{
         font-size: 14px;
-          
+    }
+    .teacher_list img{
+      width: 60%;
+      height: 60%; 
+    }
+    .teacher_info > span, p, b{
+      display: none;
+  }
+  .teacher_list::after {
+      content: url("../images/crown.png");
+      position: absolute;
+      top: -10px;
+      left: 70px;
+      width: 50%;
+      height: 50%;
+      transform: rotate(-30deg);
+      z-index: 9999;
     }
   }

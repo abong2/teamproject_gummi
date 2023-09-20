@@ -149,9 +149,6 @@
 
 /* 화면 폭이 760px 이하일 때 */
 @media all and (max-width: 760px) {
-    .banner01 {
-        padding: 0 10px; /* 패딩 수정 예시 */
-    }
     .banner_right > img {
         padding-top: 10px; /* 이미지 패딩 수정 예시 */
     }
@@ -164,9 +161,6 @@
 }
 
 @media all and (max-width: 700px) {
-    .banner01 {
-        padding: 0 10px; /* 패딩 수정 예시 */
-    }
     .banner_right > img {
         padding-top: 10px; /* 이미지 패딩 수정 예시 */
     }
@@ -187,9 +181,6 @@
     }
 }
 @media all and (max-width: 580px) {
-    .banner01 {
-        padding: 0 10px; /* 패딩 수정 예시 */
-    }
     .banner_right > img {
         padding-top: 10px; /* 이미지 패딩 수정 예시 */
       
@@ -212,9 +203,6 @@
 }
 /* 화면 폭이 480px 이하일 때 */
 @media all and (max-width: 480px) {
-    .banner01 {
-        padding: 0 5px; /* 패딩 수정 예시 */
-    }
     .banner_right_txt > p {
         font-size: 16px; /* 텍스트 크기 수정 예시 */
     }
@@ -222,9 +210,6 @@
 
 /* 화면 폭이 320px 이하일 때 */
 @media all and (max-width: 320px) {
-    .banner01 {
-        padding: 0 2px; /* 패딩 수정 예시 */
-    }
     #banner_btn {
         font-size: 14px; /* 버튼 텍스트 크기 수정 예시 */
     }
