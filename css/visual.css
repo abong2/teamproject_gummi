@@ -27,9 +27,23 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center;
+    object-position: center center;
 }
 .visual .swiper-button-prev,
 .visual .swiper-button-next {
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.1rem;
+}
+.visual .swiper-button-prev:after,
+.visual .swiper-button-next:after {
+    font-size: 1.65rem !important;
+    font-weight: 600 !important;
+    color: #333;
+}
+.visual .swiper-pagination-bullet,
+.visual .swiper-pagination-bullet-active {
+    background-color: #ffffff;
 }
