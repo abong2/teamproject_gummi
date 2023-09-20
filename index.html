@@ -49,10 +49,6 @@
     <!-- bx slide -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"/>    
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-    <!-- slick slider -->
-    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> 
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     <!-- XEIcon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <!-- css -->
@@ -135,7 +131,7 @@
                     <ul class="login">
                         <li><a href="login.html">로그인</a></li>
                         <li>&ensp;|&ensp;</li>
-                        <li><a href="notice.html">게시판</a></li>
+                        <li><a href="login.html">회원가입</a></li>
                     </ul>
                 </nav>
                 <nav class="mb_nav">
@@ -239,16 +235,21 @@
             <!-- 비주얼부분 -->
             <section class="visual">
                 <div class="inner">
-                    <div class="autoplay">
-                        <div>1</div>
-                        <div>2</div>
-                        <div>3</div>
-                        <div>1</div>
-                        <div>2</div>
-                        <div>3</div>
-                        <div>1</div>
-                        <div>2</div>
-                        <div>3</div>
+                    <div class="swiper visualswiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="images/visual_slider01.svg" alt="이미지 슬라이더">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/visual_slider02.svg" alt="이미지 슬라이더">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/visual_slider03.svg" alt="이미지 슬라이더">
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
             </section>
