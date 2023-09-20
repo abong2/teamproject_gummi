@@ -6,11 +6,12 @@ window.addEventListener("load", function() {
     },
     loop: true,
     slidesPerView: 1,
+    // spaceBetween: 30,
     autoWidth: true,
     autoHeight: true,
 
-    // slidesOffsetBefore: 0,
-    // slidesOffsetAfter: 0,
+    slidesOffsetBefore: 0,
+    slidesOffsetAfter: 0,
 
     pagination: {
       el: '.visual .swiper-pagination',

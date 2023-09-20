@@ -4,8 +4,10 @@
 .visual .inner {
     width: 100%;
     height: 100%;
+    padding: 0;
 }
 .visual .swiper {
+    position: relative;
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -21,8 +23,13 @@
     background-color: #fff;
 }
 .visual .swiper-slide img {
-    display: inline-block;
+    display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
+}
+.visual .swiper-button-prev,
+.visual .swiper-button-next {
+    position: absolute;
 }

@@ -241,7 +241,6 @@
     }
     .mb_nav_gnb.active {
         display: block;
-        /* flex-direction: row; */
     }
 }
 @media all and (max-width: 760px){
