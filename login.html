@@ -222,64 +222,49 @@
     <!-- 개인작업 공간 -->
     <div class="sub_login">
         <div class="inner">
-            <div class="login-wrap">
-                <form id="f" name="f" method="post" action="/login/Login.asp">
-                    <input type="hidden" id="site" name="site" value="WWW">
-                    <input type="hidden" id="gourl" name="gourl" value="https://www.alba.co.kr/Main.asp?utm_source=google&amp;utm_medium=paidsearch&amp;utm_campaign=subway&amp;utm_content=pc_cpc&amp;utm_term=%EC%95%8C%EB%B0%94%20%EC%B2%9C%EA%B5%AD&amp;gclid=CjwKCAjwsKqoBhBPEiwALrrqiILTSj8_iIE5BSjAtwlkQYGvKzF8-PeB6thbD29L3jmPf-r6Pqj-qhoCHLgQAvD_BwE">
-                    <input type="hidden" id="usertype" name="usertype" value="P">
-                    <input type="hidden" id="two_fa" name="two_fa" value="Y">
-                    <input type="hidden" id="enc" name="e" value="">
-                    <div class="login-area">
-                        <div class="login-tab">
-                            <button type="button" id="personBtn" class="login-tab__item login-tab__person on">개인회원<span class="login-tab__subtxt">(일자리 찾기)</span></button>
-                            <button type="button" id="bizBtn" class="login-tab__item login-tab__biz">기업회원<span class="login-tab__subtxt">(알바생 찾기)</span></button>
-                        </div>
-    
-                        <fieldset class="login-field">
-                            <legend>로그인</legend>
-                            <div class="login-field__action">
-                                <input type="text" id="userid" name="userid" value="" title="아이디" placeholder="아이디" style="ime-mode:disabled" tabindex="1">
-                                <input type="password" id="passwd" name="passwd" title="비밀번호" placeholder="비밀번호" tabindex="2">
-                                <button type="submit" id="btnLogin" tabindex="3" onclick="doLogin();return false;">로그인</button>
-                            </div>
-    
-                            
-    
-                            <div class="login-field__state">
-                                <span class="login-field__state-check"><input type="checkbox" id="idsave" name="idsave" value="1"><label for="idsave">아이디 저장</label></span>
-                                <span class="login-field__state-security">보안접속 <span class="login-field__state-on">ON</span> <button type="button" class="login-field__state-help" onclick="jQuery('.layerHelp').hide();jQuery('.secretHelp').toggle();return false;">도움말</button></span>
-    
-                                <div id="LoginMaintain" class="loginMaintain layerHelp">
-                                    개인정보보호를 위해<br> <strong>개인PC에서만 사용해주세요</strong>
-                                    <a href="#LoginMaintain" class="layerHelp__close" onclick="jQuery('#LoginMaintain').hide();return false;">닫기</a>
-                                </div>
-                                <div id="SecretHelp" class="secretHelp layerHelp">
-                                    <dl class="layerHelp__guide">
-                                        <dt>보안접속 안내</dt>
-                                        <dd>로그인 시 회원님의 아이디 및 비밀번호를 암호화하여 회원님의 정보를 안전하게 보호해줍니다.</dd>
-                                    </dl>
-                                    <a href="#" class="layerHelp__close" onclick="jQuery('#SecretHelp').hide();return false;">닫기</a>
-                                </div>
-                            </div>
-                        </fieldset>
-    
-                        <div class="login-link">
-                            <a href="https://sign.alba.co.kr/user/join/?site=WWW"><strong>회원가입</strong></a>
-                            <a href="https://sign.alba.co.kr/user/find/IdSearch.asp?site=WWW" onclick="MoveToFindId();return false;">아이디 찾기</a>
-                            <a href="https://sign.alba.co.kr/user/find/PwdSearch.asp?site=WWW" onclick="MoveToFindPwd();return false;">비밀번호 찾기</a>
-                        </div>
-    
-                        <div class="login-sns">
-                            <button type="button" class="naver" onclick="OauthLoginCLS.doLogin('N');snsBtnClick('NAVER');return false;">네이버</button>
-                            <button type="button" class="kakao" onclick="OauthLoginCLS.doLogin('K');snsBtnClick('KAKAO');return false;">카카오톡</button>
-                            <button type="button" class="facebook" onclick="OauthLoginCLS.doLogin('F');snsBtnClick('FACEBOOK');return false;">페이스북</button>
-                            <!--button type="button" class="google" onclick="OauthLoginCLS.doLogin('G');snsBtnClick('GOOGLE');return false;">구글</button-->
-                            <button type="button" class="apple" onclick="OauthLoginCLS.doLogin('A');snsBtnClick('APPLE');return false;">Apple</button>
-                            <div id="OauthFrame"></div>
-                        </div>
+          <div class="login_container">
+            <div class="welcome">
+              <div class="pinkbox">
+                <div class="signup nodisplay">
+                  <h1>register</h1>
+                  <form autocomplete="off">
+                    <input type="text" placeholder="username">
+                    <input type="email" placeholder="email">
+                    <input type="password" placeholder="password">
+                    <input type="password" placeholder="confirm password">
+                    <button class="button submit"> create account </button>
+                  </form>
+                </div>
+                <div class="signin">
+                  <h1>로그인</h1>
+                  <form class="more-padding" autocomplete="off">
+                    <input type="text" placeholder="username">
+                    <input type="password" placeholder="password">
+                    <div class="checkbox">
+                      <input type="checkbox" id="remember" /><label for="remember"> 정보기억하기 </label>
                     </div>
-                </form>
+          
+                    <button class="button submit">로그인</button>
+                  </form>
+                </div>
+              </div>
+              <!-- <div class="leftbox">
+                <h2 class="title"><span>Gummi</span><br>BOUQUET</h2>
+                <p class="desc">pick your perfect <span>bouquet</span></p>
+                <img class="flower smaller" src="https://image.ibb.co/d5X6pn/1357d638624297b.jpg" alt="1357d638624297b" border="0">
+                <p class="account">have an account?</p>
+                <button class="button" id="signin">login</button>
+              </div> -->
+              <div class="rightbox">
+                <h2 class="title"><span><br>GUMMI</span></h2>
+                <img class="podo" src="images/loginpodo.png"/>
+                <p class="account">계정이없습니까?</p>
+                <button class="button" id="signup">가입하기</button>
+              </div>
             </div>
+           </div>
+          
+          </div>
         </div>
     </div>
     <!-- 푸터 -->
