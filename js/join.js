@@ -1,9 +1,7 @@
 window.addEventListener("load", function() {
+  AOS.init();
   new Swiper('.joinswiper', {    
     autoHeight: true,
-    autoplay: {
-      delay: 4000,
-    },
     slidesPerView: 1,
 
     pagination: {
