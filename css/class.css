@@ -161,8 +161,6 @@ padding-left: 3%;
 }
 .myclass3-1{
     width: 30%;   
-    overflow: hidden; 
-    border-radius: 20px;
    
 }
 .myclass3-1 img{
@@ -173,8 +171,6 @@ padding-left: 3%;
 .myclass3-1 img:hover{
     width: 100%;
     filter: brightness(1.2);
-    transform: scale(1.01);
-    border-radius: 15px;
    
     
 }
