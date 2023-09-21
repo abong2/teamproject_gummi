@@ -1,11 +1,11 @@
-$('#signup').click(function() {
-    $('.pinkbox').css('transform', 'translateX(80%)');
-    $('.signin').addClass('nodisplay');
-    $('.signup').removeClass('nodisplay');
-  });
-  
-  $('#signin').click(function() {
-    $('.pinkbox').css('transform', 'translateX(0%)');
-    $('.signup').addClass('nodisplay');
-    $('.signin').removeClass('nodisplay');
-  });
+const signUpButton = document.getElementById('signUp');
+const signInButton = document.getElementById('signIn');
+const container = document.getElementById('login_container');
+
+signUpButton.addEventListener('click', () => {
+	container.classList.add("right-panel-active");
+});
+
+signInButton.addEventListener('click', () => {
+	container.classList.remove("right-panel-active");
+});

@@ -37,6 +37,7 @@
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/e2b37e629b.js" crossorigin="anonymous"></script>
+    
     <!-- aos -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -49,10 +50,6 @@
     <!-- bx slide -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"/>    
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-    <!-- slick slider -->
-    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> 
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     <!-- XEIcon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <!-- css -->
@@ -71,6 +68,7 @@
     <script src="js/banner02.js"></script>
     <script src="js/popualclass.js"></script>
     <script src="js/class.js"></script>
+    <script src="js/join.js"></script>
     <script src="js/footer.js"></script>
 </head>
 <body>
@@ -135,7 +133,7 @@
                     <ul class="login">
                         <li><a href="login.html">로그인</a></li>
                         <li>&ensp;|&ensp;</li>
-                        <li><a href="notice.html">게시판</a></li>
+                        <li><a href="login.html">회원가입</a></li>
                     </ul>
                 </nav>
                 <nav class="mb_nav">
@@ -234,40 +232,64 @@
                 </nav>
             </div>
         </header>
+        <div class="mb_searchbar">
+            <div class="inner">
+                <ul class="mb_search">
+                    <li>
+                        <ul class="mb_searchbar_search">
+                            <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                            <li><input type="text" name="searchtext" id="searchtext" placeholder="Search"></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-solid fa-xmark"></i></a>
+                    </li>
+                </ul>
+                <ul class="mb_recommend">
+                    <li>인기검색어</li>
+                    <li>
+                        <ul class="mb_recommend_text">
+                            <li><a href="#">키오스크</a></li>
+                            <li><a href="#">디저트</a></li>
+                            <li><a href="#">식물</a></li>
+                            <li><a href="#">케이크</a></li>
+                            <li><a href="#">그래픽</a></li>
+                            <li><a href="#">코딩</a></li>
+                            <li><a href="#">언리얼</a></li>
+                            <li><a href="#">캐릭터</a></li>
+                            <li><a href="#">일러스트</a></li>
+                            <li><a href="#">클래스</a></li>
+                            <li><a href="#">포도알</a></li>
+                            <li><a href="#">C4D</a></li>
+                            <li><a href="#">번역</a></li>
+                            <li><a href="#">DIY</a></li>
+                            <li><a href="#">재테크</a></li>
+                            <li><a href="#">청소</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
         <!-- 메인 -->
         <div class="main">
             <!-- 비주얼부분 -->
             <section class="visual">
                 <div class="inner">
-                    <div class="autoplay">
-                        <div>1</div>
-                        <div>2</div>
-                        <div>3</div>
-                        <div>1</div>
-                        <div>2</div>
-                        <div>3</div>
-                        <div>1</div>
-                        <div>2</div>
-                        <div>3</div>
-                    </div>
-                </div>
-            </section>
-            <!-- 배너01 -->
-            <section class="banner01">
-                <div class="inner">
-                    <div class="banner_left">
-                        <img src="images/banner_people.png" alt="bannerpeople">
-                    </div>
-                    <div class="banner_right">
-                        <img src="images/banner01_text.png" alt="bannertext">
-                            <div class="banner_right_txt">
-                                <p>#당신의 재능으로 취약 계층을 도와주세요</p>
-                                <button type="button" id="banner_btn">
-                                    <a href="success.html">
-                                        재능 기부 성공사례 보러가기
-                                    </a>
-                                </button>
+                    <div class="swiper visualswiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="images/visual_slider01.svg" alt="이미지 슬라이더">
                             </div>
+                            <div class="swiper-slide">
+                                <img src="images/visual_slider02.svg" alt="이미지 슬라이더">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/visual_slider03.svg" alt="이미지 슬라이더">
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
             </section>
@@ -320,50 +342,69 @@
                             </div>
                         </div>
                     </div>
-                </section>           
-                <!-- 이달의선생님 -->
-                <section class="teacher">
-                    <div class="inner">
-                        <h1>이달의 선생님</h1>
-                        <div class="teacher_wrap">
-                            <div class="teacher_list">
-                                <img src="images/teacher01.png" alt="선생님1" />
-                                <div class="teacher_info">
-                                    <h3>김한빈</h3>
-                                    <span>#DIY #마리모 #어항 #꾸미기</span>
-                                    <p>10월의 <b>" DIY "</b>부분 선생님</p>
-                                </div>
-                                <div class="teacher_btn">
-                                    <button type="button">
-                                        선생님 보러가기
-                                    </button>
-                                </div>
+                    </div>
+            </section>
+            <!-- 배너01 -->
+            <section class="banner01">
+                <div class="inner">
+                    <div class="banner_left">
+                        <img src="images/banner_people.png" alt="bannerpeople">
+                    </div>
+                    <div class="banner_right">
+                        <img src="images/banner01_text.png" alt="bannertext">
+                            <div class="banner_right_txt">
+                                <p>#당신의 재능으로 취약 계층을 도와주세요</p>
+                                <button type="button" id="banner_btn">
+                                    <a href="success.html">
+                                        <span class="b_span">재능 기부</span>성공사례 보러가기
+                                    </a>
+                                </button>
+                         </div>
+                    </div>
+                </div>
+            </section>                      
+            <!-- 이달의선생님 -->
+            <section class="teacher">
+                <div class="inner">
+                    <h1>이달의 선생님</h1>
+                    <div class="teacher_wrap">
+                        <div class="teacher_list">
+                            <img src="images/teacher01.png" alt="선생님1" />
+                            <div class="teacher_info">
+                                <h3>김한빈</h3>
+                                <span>#DIY #마리모 #어항 #꾸미기</span>
+                                <p>10월의 <b>" DIY "</b>부분 선생님</p>
                             </div>
-                            <div class="teacher_list">
-                                <img src="images/teacher02.png" alt="선생님2" />
-                                <div class="teacher_info">
-                                    <h3>김연우</h3>
-                                    <span>#IT #교육 #프로그래밍 #개발</span>
-                                    <p>10월의 <b>" IT "</b>부분 선생님</p>
-                                </div>
-                                <div class="teacher_btn">
-                                    <button type="button">
-                                        선생님 보러가기
-                                    </button>
-                                </div>
+                            <div class="teacher_btn">
+                                <button type="button">
+                                    <span>선생님</span> 보러가기
+                                </button>
                             </div>
-                            <div class="teacher_list">
-                                <img src="images/teacher03.png" alt="선생님3" />
-                                <div class="teacher_info">
-                                    <h3>장세희</h3>
-                                    <span>#쿠킹 #베이킹 #요리 #음식</span>
-                                    <p>10월의 <b>" DIY "</b>부분 선생님</p>
-                                </div>
-                                <div class="teacher_btn">
-                                    <button type="button">
-                                        선생님 보러가기
-                                    </button>
-                                </div>
+                        </div>
+                        <div class="teacher_list">
+                            <img src="images/teacher02.png" alt="선생님2" />
+                            <div class="teacher_info">
+                                <h3>김연우</h3>
+                                <span>#IT #교육 #프로그래밍 #개발</span>
+                                <p>10월의 <b>" IT "</b>부분 선생님</p>
+                            </div>
+                            <div class="teacher_btn">
+                                <button type="button">
+                                    <span>선생님</span> 보러가기
+                                </button>
+                            </div>
+                        </div>
+                        <div class="teacher_list">
+                            <img src="images/teacher03.png" alt="선생님3" />
+                            <div class="teacher_info">
+                                <h3>장세희</h3>
+                                <span>#쿠킹 #베이킹 #요리 #음식</span>
+                                <p>10월의 <b>" DIY "</b>부분 선생님</p>
+                            </div>
+                            <div class="teacher_btn">
+                                <button type="button">
+                                    <span>선생님</span> 보러가기
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -542,284 +583,519 @@
                                             />
                                             <div class="diy2-h3">
                                                 <div class="diy2-star">
-                                                    <i class="fa-solid fa-star" style="color: #ffd400"></i>
-                            <i class="fa-solid fa-star" style="color: #ffd400"></i>
-                            <i class="fa-solid fa-star" style="color: #ffd400"></i>
-                            <i class="fa-solid fa-star" style="color: #ffd400"></i>
-                            <i class="fa-solid fa-star" style="color: #ffd400"></i>
-                                                </div> 
-                                                <h3>
-                                                    <span>DIY</span
-                                                    ><br />마리모에 대해 궁금한
-                                                    것이 많으신가요~? <br />
-                                                    귀엽고 흥미로운 애완식물
-                                                    마리모 함께 만들어봐요!
-                                                </h3>
+                                            <i class="fa-solid fa-star" style="color: #ffd400"></i>
+                    <i class="fa-solid fa-star" style="color: #ffd400"></i>
+                    <i class="fa-solid fa-star" style="color: #ffd400"></i>
+                    <i class="fa-solid fa-star" style="color: #ffd400"></i>
+                    <i class="fa-solid fa-star" style="color: #ffd400"></i>
+                                        </div>   
+                                        <h3> 
+                                                <span >향수</span
+                                                ><br/>나에게 어울리는
+                                                향수를 찾는 여정 <br />
+                                                나만의 향수를 찾는 그
+                                                날까지, 함께 하겠습니다.
+                                            </h3>
                                             <p>
-                                                #DIY #마리모 #어항 #키트 #꾸미기
-                                            </p>
-                                        </div>
-                                            
-                                        </div>
-                                        <a href="subscription.html">
-                                            <button id="bt1">신청하기</button>
-                                        </a>
-                                        <div class="tooltip">
-                                            <span class="tooltiptext"
-                                                >김한빈 전문가</span
-                                            >
-                                        </div>
+                                            #DIY #향수 #조향 #키트 #수제
+                                        </p>
                                     </div>
-                                </div>
-                                <div class="swiper-slide slide5">
-                                    <div class="popualclass-contents contents5">
-                                        <div class="diy2">
-                                            <img
-                                                src="images/popularclassteacher5.png"
-                                                alt=""
-                                                id="diy2img1"
-                                            />
-                                            <div class="diy2-h3">
-                                                <div class="diy2-star">
-                                                    <i class="fa-solid fa-star" style="color: #ffd400"></i>
-                            <i class="fa-solid fa-star" style="color: #ffd400"></i>
-                            <i class="fa-solid fa-star" style="color: #ffd400"></i>
-                            <i class="fa-solid fa-star" style="color: #ffd400"></i>
-                            <i class="fa-solid fa-star" style="color: #dadad9"></i>
-                                                </div> 
-                                                <h3>
-                                                    <span class="diy-h22">키오스크</span
-                                                    ><br />친절하게
-                                                    설명해드리겠습니다. <br />
-                                                    하나하나 차근차근 배워봐요!
-                                                </h3>
-                                              <p>
-                                                #키오스크 #무인 #주문 #편의
-                                                #안내
-                                            </p>
-                                        </div>
-                                          
-                                        </div>
-                                        <a href="subscription.html">
-                                            <button id="bt1">신청하기</button>
-                                        </a>
-                                        <div class="tooltip">
-                                            <span class="tooltiptext"
-                                                >김이박 전문가</span
-                                            >
-                                        </div>
+                                        
+                                    </div>
+                                    <a href="subscription.html">
+                                        <button id="bt1">신청하기</button>
+                                    </a>
+                                    <div class="tooltip">
+                                        <span class="tooltiptext"
+                                            >향유정 전문가</span
+                                        >
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <!-- If we need navigation buttons -->
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-                    </div>
-                </section>
-                <!-- 내가 들은 클래스 -->
-                <section class="class">
-                    <div class="inner">
-                        <div class="myclass">
-                            <div class="myclass2">
-                                <h2>내가 들었던 클래스</h2>
-                                <h3 class="myclass2podo">
-                                    안녕하세요,<span class="podo22">김혜승</span
-                                    >님!<br />
-                                    <span class="podo33"
-                                        >수업을 통해서 영양소 가득한 나만의
-                                        포도를 키워봐요!</span
-                                    >
-                                </h3>
-                                <!-- <img src="images/sche.png" alt=""> -->
-                                <div class="myclass2-1">
-                                    <!-- <img src="images/banner_people.png" alt=""> -->
-                                    <div class="myclass2-2">
-                                        <h2>2023-10-13(금)</h2>
+
+                            <div class="swiper-slide slide2">
+                                <div class="popualclass-contents contents2">
+                                    <div class="diy2">
+                                        <img
+                                            src="images/popularclassteacher2.png"
+                                            alt=""
+                                            id="diy2img1"
+                                        />
+                                        <div class="diy2-h3">
+                                            <div class="diy2-star">
+                                                <i class="fa-solid fa-star" style="color: #ffd400"></i>
+                        <i class="fa-solid fa-star" style="color: #ffd400"></i>
+                        <i class="fa-solid fa-star" style="color: #ffd400"></i>
+                        <i class="fa-solid fa-star" style="color: #ffd400"></i>
+                        <i class="fa-solid fa-star" style="color: #ffd400"></i>
+                                            </div> 
+                                            <h3>
+                                                <span>IT</span><br />서툴고
+                                                모르시는 것이 당연해요.
+                                                <br />친절하게
+                                                안내해드릴게요!
+                                            </h3> 
+                                            <p>
+                                            #IT #교육 #프로그래밍
+                                            #데이터분석 #자격증
+                                        </p>
+                                        </div>
+                                        
                                     </div>
-                                    <div class="myclass2-3">
-                                        <table>
-                                            <tr>
-                                                <th scope="col" class="th1">
-                                                    시간
-                                                </th>
-                                                <th scope="col" class="th1">
-                                                    수업
-                                                </th>
-                                                <th
-                                                    scope="col"
-                                                    colspan="1"
-                                                    class="th1"
-                                                >
-                                                    장소
-                                                </th>
-                                                <!-- <th scope="col">조회수</th> : 밀려난 셀 제거-->
-                                            </tr>
-                                            <tr>
-                                                <td rowspan="1" class="th2">
-                                                    오전 10시 ~ 11시
-                                                </td>
-                                                <td>
-                                                    김연우 전문가 / IT 클래스
-                                                </td>
-                                                <td>대여</td>
-                                                <td class="td2">수강완료</td>
-                                            </tr>
-                                            <tr>
-                                                <td rowspan="1" class="th2">
-                                                    오후 2시 ~ 3시
-                                                </td>
-                                                <td>
-                                                    장세희 전문가 / 쿠킹 클래스
-                                                </td>
-                                                <td>대여</td>
-                                                <td class="td3">수강확인</td>
-                                            </tr>
-                                            <tr>
-                                                <td rowspan="1" class="th2">
-                                                    오후 4시 ~ 6시
-                                                </td>
-                                                <td>
-                                                    김한빈 전문가/ 마리모 클래스
-                                                </td>
-                                                <td>우리집</td>
-                                                <td class="td3">수강확인</td>
-                                            </tr>
-                                        </table>
+                                    <a href="subscription.html">
+                                        <button id="bt1">신청하기</button>
+                                    </a>
+                                    <div class="tooltip">
+                                        <span class="tooltiptext"
+                                            >김연우 전문가</span
+                                        >
                                     </div>
                                 </div>
                             </div>
-                            <div class="myclass3">
-                                <h2 id="myclass322">회원님을 위한 클래스</h2>
-                                <div class="myclass33">
-                                <div class="myclass3-inner">
-                                    <div class="myclass3-1">
+                            <div class="swiper-slide slide3">
+                                <div class="popualclass-contents contents3">
+                                    <div class="diy2">
                                         <img
-                                            src="images/subscription_img_main 1.png"
+                                            src="images/popularclassteacher4.png"
                                             alt=""
+                                            id="diy2img1"
                                         />
-                                        <div class="myclass3-2">
+                                        <div class="diy2-h3">
+                                            <div class="diy2-star">
+                                                <i class="fa-solid fa-star" style="color: #ffd400"></i>
+                        <i class="fa-solid fa-star" style="color: #ffd400"></i>
+                        <i class="fa-solid fa-star" style="color: #ffd400"></i>
+                        <i class="fa-solid fa-star" style="color: #ffd400"></i>
+                        <i class="fa-solid fa-star" style="color: #dadad9"></i>
+                                            </div> 
                                             <h3>
-                                                향수 마스터되는법,
-                                                김향기의 독학비법서
+                                                <span>쿠킹</span
+                                                ><br />아마추어도 잘 할 수
+                                                있습니다. <br />
+                                                기술과 노하우로 여러분의
+                                                실력을 빛나게 해드릴게요!
                                             </h3>
-                                            <h4>향수 | 김향기</h4>
-                                        </div>
+                                        <p>#쿠킹 #요리 #음식 #키트 #빵</p>
                                     </div>
-                                    <div class="myclass3-1">
-                                        <img
-                                            src="images/marimo.png"
-                                            alt=""
-                                        />
-                                        <div class="myclass3-2">
-                                            <h3>
-                                                동글동글 귀여운 마리모, 
-                                                나만의 반려식물 
-                                            </h3>
-                                            <h4>마리모 | 이박사</h4>
-                                        </div>
+                                        
                                     </div>
-                                    <div class="myclass3-1">
-                                        <img
-                                            src="images/itit.png"
-                                            alt=""
-                                        />
-                                        <div class="myclass3-2">
-                                            <h3>
-                                                'IT·프로그래밍 20년' 전문가의 IT 교육
-                                            </h3>
-                                            <h4>IT | 박공주</h4>
-                                        </div>
+                                    <a href="subscription.html">
+                                        <button id="bt1">신청하기</button>
+                                    </a>
+                                    <div class="tooltip">
+                                        <span class="tooltiptext"
+                                            >장세희 전문가</span
+                                        >
+                                        
                                     </div>
                                 </div>
-                                <div class="myclass3-inner">
-                                    <div class="myclass3-1">
+                            </div>
+                            <div class="swiper-slide slide4">
+                                <div class="popualclass-contents contents4">
+                                    <div class="diy2">
                                         <img
-                                            src="images/yori.png"
+                                            src="images/popularclassteacher3.png"
                                             alt=""
+                                            id="diy2img1"
                                         />
-                                        <div class="myclass3-2">
+                                        <div class="diy2-h3">
+                                            <div class="diy2-star">
+                                                <i class="fa-solid fa-star" style="color: #ffd400"></i>
+                        <i class="fa-solid fa-star" style="color: #ffd400"></i>
+                        <i class="fa-solid fa-star" style="color: #ffd400"></i>
+                        <i class="fa-solid fa-star" style="color: #ffd400"></i>
+                        <i class="fa-solid fa-star" style="color: #ffd400"></i>
+                                            </div> 
                                             <h3>
-                                                모던 한식의 새로운 발견
-                                                초보자도 쉽게!
+                                                <span>DIY</span
+                                                ><br />마리모에 대해 궁금한
+                                                것이 많으신가요~? <br />
+                                                귀엽고 흥미로운 애완식물
+                                                마리모 함께 만들어봐요!
                                             </h3>
-                                            <h4>요리 | 김요리</h4>
-                                        </div>
+                                        <p>
+                                            #DIY #마리모 #어항 #키트 #꾸미기
+                                        </p>
                                     </div>
-                                    <div class="myclass3-1">
-                                        <img
-                                            src="images/kiho.png"
-                                            alt=""
-                                        />
-                                        <div class="myclass3-2">
-                                            <h3>
-                                                쉽고 재밌는 키오스크,
-                                                키오스크의 새로운 발견
-                                            </h3>
-                                            <h4>키오스크 | 박키오</h4>
-                                        </div>
+                                        
                                     </div>
-                                    <div class="myclass3-1">
-                                        <img
-                                            src="images/living2.png"
-                                            alt=""
-                                        />
-                                        <div class="myclass3-2">
-                                            <h3>
-                                                삶의 질 2배 상승!
-                                                전문가의 시크릿 노하우
-                                            </h3>
-                                            <h4>리빙 | 권전문</h4>
-                                        </div>
+                                    <a href="subscription.html">
+                                        <button id="bt1">신청하기</button>
+                                    </a>
+                                    <div class="tooltip">
+                                        <span class="tooltiptext"
+                                            >김한빈 전문가</span
+                                        >
                                     </div>
                                 </div>
-                                <div class="myclass3-inner">
-                                    <div class="myclass3-1">
+                            </div>
+                            <div class="swiper-slide slide5">
+                                <div class="popualclass-contents contents5">
+                                    <div class="diy2">
                                         <img
-                                            src="images/yoyori.png"
+                                            src="images/popularclassteacher5.png"
                                             alt=""
+                                            id="diy2img1"
                                         />
-                                        <div class="myclass3-2">
+                                        <div class="diy2-h3">
+                                            <div class="diy2-star">
+                                                <i class="fa-solid fa-star" style="color: #ffd400"></i>
+                        <i class="fa-solid fa-star" style="color: #ffd400"></i>
+                        <i class="fa-solid fa-star" style="color: #ffd400"></i>
+                        <i class="fa-solid fa-star" style="color: #ffd400"></i>
+                        <i class="fa-solid fa-star" style="color: #dadad9"></i>
+                                            </div> 
                                             <h3>
-                                                왕초보에서 전문가로!
-                                               내가 만든 쿠키
+                                                <span class="diy-h22">키오스크</span
+                                                ><br />친절하게
+                                                설명해드리겠습니다. <br />
+                                                하나하나 차근차근 배워봐요!
                                             </h3>
-                                            <h4>쿠킹 | 김왕자</h4>
-                                        </div>
+                                            <p>
+                                            #키오스크 #무인 #주문 #편의
+                                            #안내
+                                        </p>
                                     </div>
-                                    <div class="myclass3-1">
-                                        <img
-                                            src="images/candle.png"
-                                            alt=""
-                                        />
-                                        <div class="myclass3-2">
-                                            <h3>
-                                                잊을 수 없는 매혹적인 수업!
-                                                특별한 노하우
-                                    
-                                            </h3>
-                                            <h4>캔들 | 이캔들</h4>
-                                        </div>
+                                        
                                     </div>
-                                    <div class="myclass3-1">
-                                        <img
-                                            src="images/bis.png"
-                                            alt=""
-                                        />
-                                        <div class="myclass3-2">
-                                            <h3>
-                                                'DIY 경력 10년'
-                                                전문가의 공예 교육
-                                            </h3>
-                                            <h4>공예 | 김교육</h4>
-                                        </div>
+                                    <a href="subscription.html">
+                                        <button id="bt1">신청하기</button>
+                                    </a>
+                                    <div class="tooltip">
+                                        <span class="tooltiptext"
+                                            >김이박 전문가</span
+                                        >
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </section>
-            </div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </section>
+            <!-- 내가 들은 클래스 -->
+            <section class="class">
+                <div class="inner">
+                    <div class="myclass">
+                        <div class="myclass2">
+                            <h2>내가 들었던 클래스</h2>
+                            <h3 class="myclass2podo">
+                                안녕하세요,<span class="podo22">김혜승</span
+                                >님!<br />
+                                <span class="podo33"
+                                    >수업을 통해서 영양소 가득한 나만의
+                                    포도를 키워봐요!</span
+                                >
+                            </h3>
+                            <!-- <img src="images/sche.png" alt=""> -->
+                            <div class="myclass2-1">
+                                <!-- <img src="images/banner_people.png" alt=""> -->
+                                <div class="myclass2-2">
+                                    <h2>2023-10-13(금)</h2>
+                                </div>
+                                <div class="myclass2-3">
+                                    <table>
+                                        <tr>
+                                            <th scope="col" class="th1">
+                                                시간
+                                            </th>
+                                            <th scope="col" class="th1">
+                                                수업
+                                            </th>
+                                            <th
+                                                scope="col"
+                                                colspan="1"
+                                                class="th1"
+                                            >
+                                                장소
+                                            </th>
+                                            <!-- <th scope="col">조회수</th> : 밀려난 셀 제거-->
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="1" class="th2">
+                                                10:00 ~ 11:00
+                                            </td>
+                                            <td>
+                                                김연우 전문가 / IT 클래스
+                                            </td>
+                                            <td>대여</td>
+                                            <td class="td2">수강완료</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="1" class="th2">
+                                                14:00 ~ 15:00
+                                            </td>
+                                            <td>
+                                                장세희 전문가 / 쿠킹 클래스
+                                            </td>
+                                            <td>대여</td>
+                                            <td class="td3">수강확인</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="1" class="th2">
+                                                16:00 ~ 17:00
+                                            </td>
+                                            <td>
+                                                김한빈 전문가 / 마리모 클래스
+                                            </td>
+                                            <td>집</td>
+                                            <td class="td3">수강확인</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <section class="section"></section> -->
+                        <div class="myclass3">
+                            <h2 id="myclass322">회원님을 위한 클래스</h2>
+                            <div class="myclass33">
+                            <div class="myclass3-inner">
+                                <div class="myclass3-1">
+                                    <img
+                                        src="images/subscription_img_main 1.png"
+                                        alt=""
+                                    />
+                                    <div class="myclass3-2">
+                                        <h3>
+                                            향수 마스터되는법,
+                                            김향기의 독학비법서
+                                        </h3>
+                                        <h4>향수 | 김향기</h4>
+                                    </div>
+                                </div>
+                                <div class="myclass3-1">
+                                    <img
+                                        src="images/marimo.png"
+                                        alt=""
+                                    />
+                                    <div class="myclass3-2">
+                                        <h3>
+                                            동글동글 귀여운 마리모, 
+                                            나만의 반려식물 
+                                        </h3>
+                                        <h4>마리모 | 이박사</h4>
+                                    </div>
+                                </div>
+                                <div class="myclass3-1">
+                                    <img
+                                        src="images/itit.png"
+                                        alt=""
+                                    />
+                                    <div class="myclass3-2">
+                                        <h3>
+                                            'IT·프로그래밍 20년' 전문가의 IT 교육
+                                        </h3>
+                                        <h4>IT | 박공주</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="myclass3-inner">
+                                <div class="myclass3-1">
+                                    <img
+                                        src="images/yori.png"
+                                        alt=""
+                                    />
+                                    <div class="myclass3-2">
+                                        <h3>
+                                            모던 한식의 새로운 발견
+                                            초보자도 쉽게!
+                                        </h3>
+                                        <h4>요리 | 김요리</h4>
+                                    </div>
+                                </div>
+                                <div class="myclass3-1">
+                                    <img
+                                        src="images/kiho.png"
+                                        alt=""
+                                    />
+                                    <div class="myclass3-2">
+                                        <h3>
+                                            쉽고 재밌는 키오스크,
+                                            키오스크의 새로운 발견
+                                        </h3>
+                                        <h4>키오스크 | 박키오</h4>
+                                    </div>
+                                </div>
+                                <div class="myclass3-1">
+                                    <img
+                                        src="images/living2.png"
+                                        alt=""
+                                    />
+                                    <div class="myclass3-2">
+                                        <h3>
+                                            삶의 질 2배 상승!
+                                            전문가의 시크릿 노하우
+                                        </h3>
+                                        <h4>리빙 | 권전문</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="myclass3-inner">
+                                <div class="myclass3-1">
+                                    <img
+                                        src="images/yoyori.png"
+                                        alt=""
+                                    />
+                                    <div class="myclass3-2">
+                                        <h3>
+                                            왕초보에서 전문가로!
+                                            내가 만든 쿠키
+                                        </h3>
+                                        <h4>쿠킹 | 김왕자</h4>
+                                    </div>
+                                </div>
+                                <div class="myclass3-1">
+                                    <img
+                                        src="images/candle.png"
+                                        alt=""
+                                    />
+                                    <div class="myclass3-2">
+                                        <h3>
+                                            잊을 수 없는 매혹적인 수업!
+                                            특별한 노하우
+                                
+                                        </h3>
+                                        <h4>캔들 | 이캔들</h4>
+                                    </div>
+                                </div>
+                                <div class="myclass3-1">
+                                    <img
+                                        src="images/bis.png"
+                                        alt=""
+                                    />
+                                    <div class="myclass3-2">
+                                        <h3>
+                                            'DIY 경력 10년'
+                                            전문가의 공예 교육
+                                        </h3>
+                                        <h4>공예 | 김교육</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 자주 묻는 질문 및 게시판 -->
+            <section class="class2">
+                <div class="inner">
+                    <div class="myclass-notice">
+                        <div class="myclass4">
+                            <h2>자주 묻는 질문</h2>
+                            <div class="custom_page_123"></div>
+                            <div class="col col2" id="col2">
+                                <div id="boxholder_1" class="box cpbox text">
+                                    <div class="box_content">
+                                    </div>
+                                    <div class="clear"><!--space--></div>
+                                </div>
+                            
+                                <div id="boxholder_2" class="box cpbox text">
+                                    <h2>방문 상담이 가능한가요?</h2>
+                                    <div class="box_content">
+                                        <p>방문 상담은 불가합니다. 추후 개선될 수 있도록 노력하겠습니다.</p>
+                                    </div>
+                                    <div class="clear"><!--space--></div>
+                                </div>
+                                
+                                <div id="boxholder_2" class="box cpbox text">
+                                    <h2>포도알을 어떻게 모으나요?</h2>
+                                    <div class="box_content">
+                                        <p>수업을 들으시면 포도알이 적립됩니다.</p>
+                                    </div>
+                                    <div class="clear"><!--space--></div>
+                                </div>
+                                
+                                <div id="boxholder_2" class="box cpbox text">
+                                    <h2>포도알은 어떤 혜택이 있나요?</h2>
+                                    <div class="box_content">
+                                        <p>포도알을 10개 모으시면 포인트로 전환하여 기프티콘 및 다양한 물품을 구매할 수 있습니다.</p>
+                                    </div>
+                                    <div class="clear"><!--space--></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <section class="section"></section> -->
+                        <div class="myclass5">
+                            <h2 id="myclass322">게시판</h2>
+                            <div class="col col2" id="col2">
+                            <div class="accordion">
+                                <div class="accordion-item">
+                                  <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">장소대여: 2023.10.17 ~ 11.02
+                                </span><span class="icon" aria-hidden="true"></span></button>
+                                  <div class="accordion-content">
+                                    <p>대구광역시 중구 침산동(그린아파트)
+                                        <br>인원: 20명 가능합니다.
+                                    </p>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">장소대여: 2023.06.20 ~ 07.10
+                                </span><span class="icon" aria-hidden="true"></span></button>
+                                  <div class="accordion-content">
+                                    <p>대구광역시 북구 구암동(그린카페)
+                                        <br>인원: 10명 가능합니다.
+                                    </p>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">함께하기: IT수업 같이 들을 사람 모집합니다.
+                                </span><span class="icon" aria-hidden="true"></span></button>
+                                  <div class="accordion-content">
+                                    <p>2023.05.12 ~ 06.20<br>선착순 6명 모집합니다!</p>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">함께하기: 쿠킹수업 같이 들을 사람 모집합니다.
+                                </span><span class="icon" aria-hidden="true"></span></button>
+                                  <div class="accordion-content">
+                                    <p>2023.03.02 ~ 04.10 <br>선착순 5명 모집합니다.</p>
+                                  </div>
+                                </div>
+                              
+                              </div>
+                              </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 선생님 가입 -->
+            <section class="join">
+                <div class="inner">
+                    <div class="joinbox">
+                        <div class="joinleft">
+                            <h4 class="jointitle">
+                                전문가로 활동하시나요?<br>
+                                Gummi에서 새로운 학생을 만나보세요
+                            </h4>
+                            <button class="joinbtn">선생님 가입</button>
+                        </div>
+                        <div class="joinright">
+                            <div class="swiper joinswiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="images/join01.png" alt="선생님 가입 안내">
+                                        <span class="jointext">학생의 수강신청을 받으세요</span>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="images/join02.png" alt="선생님 가입 안내">
+                                        <span class="jointext">학생에게 수강 승낙 확인을 보내세요</span>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="images/join03.png" alt="선생님 가입 안내">
+                                        <span class="jointext">채팅, 전화로 빠르게 상담하고 수강 확인 하세요</span>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
         <!-- footer -->
         <footer class="footer">
             <div class="inner">
@@ -832,12 +1108,12 @@
                     </ul>
                     <div class="footertext">
                         <p>
-                            (주)구미 | 대구광역시 중구 중앙대로 394 제일빌딩 5F | 대표 : 김연우 | 개인정보관리책임자 : 김연우 | 사업자등록번호 : 012-34-56789<br>
+                            (주)Gummi | 대구광역시 중구 중앙대로 394 제일빌딩 5F | 대표 : 김연우 | 개인정보관리책임자 : 김연우 | 사업자등록번호 : 012-34-56789<br>
                             통신판매업신고 : 2023-대구-01234 | 유로직업소개사업등록번호 : 제2023-01234567-89-0-12345호 | 고객센터 : 1234-5678 | help@gummi.com
                         </p>
                         <p>
-                            (주)구미는 통신판매중개자이며, 통신판매의 당사자가 아닙니다. 상품, 상품정보, 거래에 관한 의무와 책임은 판매회원에게 있습니다.<br>
-                            (주)구미 사이트의 상품/판매회원/중개 서비스/거래 정보, 콘텐츠, UI 등에 대한 무단복제, 전송, 배포, 스크래핑 등의 행위는 저작권법, 콘텐츠산업 진흥법 등 관련법령에 의하여 엄격히 금지됩니다.
+                            (주)Gummi는 통신판매중개자이며, 통신판매의 당사자가 아닙니다. 상품, 상품정보, 거래에 관한 의무와 책임은 판매회원에게 있습니다.<br>
+                            (주)Gummi 사이트의 상품/판매회원/중개 서비스/거래 정보, 콘텐츠, UI 등에 대한 무단복제, 전송, 배포, 스크래핑 등의 행위는 저작권법, 콘텐츠산업 진흥법 등 관련법령에 의하여 엄격히 금지됩니다.
                         </p>
                         <p>
                             Copyright ⓒ 2023 gummi Inc.All rights reserved

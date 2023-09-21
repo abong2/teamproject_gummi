@@ -11,6 +11,10 @@ $(document).ready(function() {
     spaceBetween: 1,
     slidesPerView: 1,
     centeredSlides: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
     roundLengths: true,
     loop: true,
     loopAdditionalSlides: 30,
@@ -37,4 +41,5 @@ $(document).ready(function() {
   });
   
 });
+
 

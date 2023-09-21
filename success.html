@@ -126,7 +126,7 @@
                     <ul class="login">
                         <li><a href="login.html">로그인</a></li>
                         <li>&ensp;|&ensp;</li>
-                        <li><a href="notice.html">게시판</a></li>
+                        <li><a href="login.html">회원가입</a></li>
                     </ul>
                 </nav>
                 <nav class="mb_nav">
@@ -225,6 +225,44 @@
                 </nav>
             </div>
         </header>
+        <div class="mb_searchbar">
+            <div class="inner">
+                <ul class="mb_search">
+                    <li>
+                        <ul class="mb_searchbar_search">
+                            <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                            <li><input type="text" name="searchtext" id="searchtext" placeholder="Search"></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-solid fa-xmark"></i></a>
+                    </li>
+                </ul>
+                <ul class="mb_recommend">
+                    <li>인기검색어</li>
+                    <li>
+                        <ul class="mb_recommend_text">
+                            <li><a href="#">키오스크</a></li>
+                            <li><a href="#">디저트</a></li>
+                            <li><a href="#">식물</a></li>
+                            <li><a href="#">케이크</a></li>
+                            <li><a href="#">그래픽</a></li>
+                            <li><a href="#">코딩</a></li>
+                            <li><a href="#">언리얼</a></li>
+                            <li><a href="#">캐릭터</a></li>
+                            <li><a href="#">일러스트</a></li>
+                            <li><a href="#">클래스</a></li>
+                            <li><a href="#">포도알</a></li>
+                            <li><a href="#">C4D</a></li>
+                            <li><a href="#">번역</a></li>
+                            <li><a href="#">DIY</a></li>
+                            <li><a href="#">재테크</a></li>
+                            <li><a href="#">청소</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
         <!-- 개인작업 공간 -->
         <div class="sub_success">
             <div class="inner">
@@ -321,19 +359,6 @@
                         <div class="swiper-pagination"></div>
                     </div>
                 </div>
-                <!-- 이미지 -->
-                <div class="img_section">
-                    <div class="big_img_section">
-                        <img src="images/sub_success_img03.png" alt="">
-                    </div>
-                    <div class="small_img_section">
-                        <ul class="small_img_list">
-                            <li><img src="images/sub_success_img04.png" alt="기업"></li>
-                            <li><img src="images/sub_success_img05.png" alt="선생님"></li>
-                            <li><img src="images/sub_success_img06.png" alt="학생"></li>
-                        </ul>
-                    </div>
-                </div>
                 <!-- 혜택 -->
                 <div class="benefits">
                     <h2>구미 혜택</h2>
@@ -343,20 +368,20 @@
                             <li>
                                 <ul class="benefit_text">
                                     <li><img src="images/sub_crown.png" alt="인증마크"></li>
-                                    <li>사회적 기업 인증 마크</li>
-                                    <li>저희 구미 기업 인증 마크는 사회적 목적과 영향력을 추구하는 기업의 표시로, 재능 기부 플랫폼과 같이 사회적 가치 창출을 목표로 하는 기업들에게 부여됩니다.</li>
+                                    <li>구미 인증 마크</li>
+                                    <li>구미 인증 마크는 사회적 목적과 영향력을 추구하는 표시로, 사회적 가치 창출을 목표로 하는 기업들에게 부여됩니다.</li>
                                 </ul>
                             </li>
                             <li>
                                 <ul class="benefit_text">
-                                    <li><img src="images/sub_crown.png" alt="인증마크"></li>
+                                    <li><img src="images/sub_student.png" alt="학생"></li>
                                     <li>청소년에게 꿈과 희망을 주는 기회</li>
                                     <li>자라나는 청소년에게 꿈과 희망을 줄 수 있는 기회가 생깁니다.</li>
                                 </ul>
                             </li>
                             <li>
                                 <ul class="benefit_text">
-                                    <li><img src="images/sub_crown.png" alt="인증마크"></li>
+                                    <li><img src="images/sub_chance.png" alt="기회"></li>
                                     <li>새로운 일자리 창출의 기회</li>
                                     <li>많은 사람들이 클래스들을 계기로 새로운 일자리 창출의 기회를 얻을 수 있습니다.</li>
                                 </ul>
@@ -368,7 +393,7 @@
                                 <ul class="benefit_text">
                                     <li><img src="images/sub_interview.png" alt="인터뷰"></li>
                                     <li>인터뷰 기회</li>
-                                    <li>각 분야 별 1등 선생님에게 인터뷰 기회를 드리며 인터뷰는 사이트 메인 페이지에 박제됩니다.</li>
+                                    <li>각 분야 별 1등 선생님에게 인터뷰 기회를 드리며 이 인터뷰 영상은 사이트 메인 페이지에 노출됩니다.</li>
                                 </ul>
                             </li>
                             <li>
@@ -392,19 +417,19 @@
                                 <ul class="benefit_text">
                                     <li><img src="images/sub_grape.png" alt="포도"></li>
                                     <li>포도알 적립</li>
-                                    <li>클래스 하나 수강 시 포도알 하나가 적립이 되며 포인트로 환산할 수 있고 기프티콘 구매가 가능합니다.(밥, 생필품 구매 가능)</li>
+                                    <li>클래스 하나 수강 시 포도알 하나가 적립이 되며 포인트로 환산하여 기프티콘 구매가 가능합니다. (밥, 생필품 구매 가능)</li>
                                 </ul>
                             </li>
                             <li>
                                 <ul class="benefit_text">
-                                    <li><img src="images/sub_grape.png" alt="포도"></li>
+                                    <li><img src="images/sub_chance.png" alt="기회"></li>
                                     <li>새로운 기회</li>
                                     <li>도전하기 위한 새로운 기회의 창이 될 수 있습니다.</li>
                                 </ul>
                             </li>
                             <li>
                                 <ul class="benefit_text">
-                                    <li><img src="images/sub_grape.png" alt="포도"></li>
+                                    <li><img src="images/sub_study.png" alt="무료 수업"></li>
                                     <li>무료 수업</li>
                                     <li>다양한 수업을 무료로 들을 수 있습니다.</li>
                                 </ul>
