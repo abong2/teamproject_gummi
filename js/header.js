@@ -31,4 +31,15 @@ window.addEventListener("load", function() {
   xmark.addEventListener("click", function() {
     mbGnb.classList.remove("active");
   });
+
+  const search = document.querySelector(".mb_h_nav .fa-magnifying-glass");
+  const searchXmark = document.querySelector(".mb_search .fa-xmark");
+  let searchbar = document.querySelector(".mb_searchbar");
+
+  search.addEventListener("click", function() {
+    searchbar.style.display = "block";
+  });
+  searchXmark.addEventListener("click", function() {
+    searchbar.style.display = "none";
+  });
 });

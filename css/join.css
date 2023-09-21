@@ -99,7 +99,9 @@
   }
 }
 @media all and (max-width: 480px){
-  
+  .jointitle {
+    font-size: 20px;
+  }
 }
 @media all and (max-width: 320px){
   
