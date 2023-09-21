@@ -1,11 +1,34 @@
 @charset "utf-8";
 /* 페이지 공간 */
-.sub_notice .inner {
-    margin: 0 auto;
-    width: 100%;
-    height: 100%;
-    padding: 0 250px;
+.notice .inner {
+    max-width: 1200px;
 }
+/* 탑 버튼 */
+.top-button{
+    position: fixed;
+    right: 30px;
+    bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 9999;
+    width: auto;
+}
+.top-btn{
+    display: block;
+    background-color: #ae85c9;
+    border-radius: 50%;
+    width: 55px;
+    line-height: 55px;
+    text-align: center;
+}
+.top-btn img{
+    transform: rotate(180deg);
+}
+.top-btn img.up{
+    transform: rotate(180deg);
+}
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
@@ -30,22 +53,23 @@ table {
 
 #board-search{
     padding: 15px 0;
-
 }
 #board-search .search-wrap {
     position: relative;
     margin: 0 auto;
-    width: 80%;
+    width: 100%;
     max-width: 564px;
     display: flex;
-    gap: 20px;
+    gap: 10px;
+    height: 40px;
 }
 .search-input-wrap{
     position: relative;
-    width: 80%;
+    height: 100%;
+    width: calc(100% - 75px);
 }
 #board-search .search-wrap input {
-    height: 40px;
+    height: 100%;
     width: 100%;
     font-size: 14px;
     padding: 7px 14px;
@@ -61,9 +85,9 @@ table {
     right: 0;
     top: 0;
     bottom: 0;
-    width: 108px;
-    padding: 0;
+    padding:  0 5%;
     font-size: 16px;
+    height: 100%;
 }
 .search-select{
     padding: 0 10px;
@@ -71,6 +95,7 @@ table {
     border: 1px solid #dde1e5;
     cursor: pointer;
     position: relative;
+    min-width: 75px;
 }
 .search-select .select-title{
     line-height: 40px;
@@ -118,12 +143,19 @@ table {
     display: none;
 }
 .board-table {
-    font-size: 13px;
+    font-size: 16px;
+    letter-spacing: 1px;
     width: 100%;
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
 }
-
+.board-table tr{
+    padding: 10px 0;
+}
+.board-table tr:hover{
+    background-color: #eeeded;
+    cursor: pointer;
+}
 .board-table a {
     color: #333;
     display: inline-block;
@@ -137,13 +169,6 @@ table {
 .board-table th {
     text-align: center;
 }
-.board-table tbody th:hover {
-    padding-left: 28px;
-    padding-right: 14px;
-    border-top: 1px solid #e7e7e7;
-    text-align: left;
-    background-color: #f1f0f0;
-}
 .board-table .th-num {
     width: 100px;
     text-align: center;
@@ -155,6 +180,7 @@ table {
 .board-table th,
 .board-table td {
     padding: 14px 0;
+    font-weight: normal;
 }
 .board-table tbody td {
     border-top: 1px solid #e7e7e7;
@@ -162,7 +188,6 @@ table {
 }
 .board-table tbody th {
     padding-left: 28px;
-    padding-right: 14px;
     border-top: 1px solid #e7e7e7;
     text-align: left;
 }
@@ -220,7 +245,7 @@ table {
 }
 
 .page-img {
-    padding-bottom: 100px;
+    padding-bottom: 50px;
     width: 100%;
 }
 .page-img img {
@@ -293,10 +318,11 @@ table {
     text-align: left !important; 
     width: 100%; 
     box-sizing: border-box; 
-    padding-top: 0 !important;
+    padding-top: 0;
   }
   .board-table tbody td {
     border-top: none;
+    padding-top: 10px;
   }
   .board-table th,
   .board-table td {
@@ -307,6 +333,12 @@ table {
   .page-box a.btn {
     padding: 5px 5px; 
     font-size: 8px; 
+        }
+   #board-search .search-wrap .btn {
+    font-size: 13px;
+        }
+   #board-search .search-wrap input {
+            font-size: 11px;
         }
 }
 @media screen and (max-width: 320px) {
@@ -333,6 +365,13 @@ table {
     width: 49px;
     padding: 0;
     font-size: 16px;
+}
+#board-search .search-wrap .btn {
+    font-size: 13px;
+}
+
+#board-search .search-wrap input {
+    font-size: 11px;
 }
   }
   
