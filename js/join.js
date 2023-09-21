@@ -1,4 +1,5 @@
 window.addEventListener("load", function() {
+  AOS.init();
   new Swiper('.joinswiper', {    
     autoHeight: true,
     autoplay: {
