@@ -154,7 +154,7 @@ padding-left: 3%;
     border-radius: 12px 12px 12px 12px;
 }
 .myclass33::-webkit-scrollbar-thumb:hover {
-	background-color:#a0a0a5;
+   background-color:#a0a0a5;
 }
 .myclass33::-webkit-scrollbar-track {
     background:#f7f7f7;  
@@ -194,7 +194,11 @@ padding-left: 3%;
 .bottom-btn {
     position: relative;
     display: block;
-    height: 400px;
+    /* height: 370px; */
+    height: 40vw;
+    min-height: 200px;
+    max-height: 400px;
+    /* padding: 3.5% 0%; */
   }
 
   .bottom-btn .inner {
@@ -212,6 +216,7 @@ padding-left: 3%;
     font-size: 32px;
     font-family: "Pretendard-Regular", "Noto Sans KR", sans-serif;
     font-weight: 800;
+    margin-bottom: 5%;
   }
   .signup2{
     display: flex;
@@ -222,9 +227,10 @@ padding-left: 3%;
   /* 왼 */
   .left-btn {
     position: relative;
-    width: 23%;
+    width: 30%;
     height:100%;
-    margin-top: 50px;
+    padding: 1.7% 0.5%;
+    /* margin-top: 50px; */
     border-radius: 13px;
     background-color: #ae85c9;
     right: 1%
@@ -267,9 +273,10 @@ padding-left: 3%;
   .right-btn {
     position: relative;
     display: block;
-    width: 23%;
+    width: 30%;
     height:100%;
-    margin-top: 50px;
+    /* margin-top: 50px; */
+    padding: 1.7% 0.5%;
     border-radius: 13px;
     background-color:#31302b;
     left: 1%;
@@ -366,12 +373,21 @@ padding-left: 3%;
     }
     .signup p {
         font-size: 30px;
+        margin-bottom: 5.5%;
     }
     .right-txt p{
      font-size:20px;
       }
       .left-txt p{
       font-size: 20px;
+      }
+      .left-btn {
+        width: 42%;
+        /* padding: 2.5% 2%; */
+      }
+      .right-btn {
+        width: 42%;
+        /* padding: 2.5% 2%; */
       }
   
 }
@@ -455,6 +471,7 @@ padding-left: 3%;
     }
     .signup p {
         font-size:25px;
+        margin-bottom: 7%;
     }
     .right-txt p{
         font-size:20px;
@@ -466,7 +483,7 @@ padding-left: 3%;
             position: relative;
             width: 42%;
             height: 120%;
-            margin-top: 28px;
+            /* margin-top: 28px; */
             border-radius: 13px;
             right: 1%;
         }
@@ -474,14 +491,14 @@ padding-left: 3%;
             position: relative;
             width: 42%;
             height: 120%;
-            margin-top: 28px;
+            /* margin-top: 28px; */
             border-radius: 13px;
             left: 1%;
         }
         .bottom-btn {
             position: relative;
             display: block;
-            height: 300px;
+            /* height: 300px; */
         }
 }
 @media all and (max-width: 700px) {
@@ -570,22 +587,22 @@ padding-left: 3%;
             position: relative;
             width: 42%;
             height: 120%;
-            margin-top: 28px;
-            border-radius: 13px;
+            /* margin-top: 28px; */
+            border-radius: 5px;
             right: 1%;
         }
         .right-btn{
             position: relative;
             width: 42%;
             height: 120%;
-            margin-top: 28px;
-            border-radius: 13px;
+            /* margin-top: 28px; */
+            border-radius: 5px;
             left: 1%;
         }
         .bottom-btn {
             position: relative;
             display: block;
-            height: 300px;
+            /* height: 300px; */
         }
 }
 
@@ -603,22 +620,23 @@ padding-left: 3%;
             position: relative;
             width: 42%;
             height: 120%;
-            margin-top: 28px;
-            border-radius: 13px;
+            /* margin-top: 28px; */
+            border-radius: 5px;
+            padding: 2.5% 3%;
             right: 1%;
         }
         .right-btn{
             position: relative;
             width: 42%;
             height: 120%;
-            margin-top: 28px;
-            border-radius: 13px;
+            /* margin-top: 28px; */
+            border-radius: 5px;
+            padding: 2.5% 3%;
             left: 1%;
         }
         .bottom-btn {
             position: relative;
             display: block;
-            height: 300px;
         }
 }
 @media all and (max-width: 320px) {
@@ -709,22 +727,23 @@ padding-left: 3%;
             position: relative;
             width: 42%;
             height: 96%;
-            margin-top: 28px;
-            border-radius: 13px;
+            /* margin-top: 28px; */
+            padding: 3% 3%;
+            border-radius: 5px;
             right: 1%;
         }
         .right-btn{
             position: relative;
             width: 42%;
             height: 96%;
-            margin-top: 28px;
-            border-radius: 13px;
+            /* margin-top: 28px; */
+            padding: 3% 3%;
+            border-radius: 5px;
             left: 1%;
         }
         .bottom-btn {
             position: relative;
             display: block;
-            height: 200px;
         }
 }
 /* 자주 묻는 질문 */
