@@ -8,7 +8,7 @@
     height: 100%;
 }
 .joinbox {
-  padding: 100px 0;
+  /* padding: 100px 0; */
   position: relative;
   display: block;
   width: 100%;
@@ -23,7 +23,7 @@
   font-size: 23px;
   letter-spacing: 1.2;
   line-height: 1.6;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 .joinbtn {
   padding: 15px 35px;
