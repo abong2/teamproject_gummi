@@ -68,7 +68,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <!-- css -->
-    <link rel="stylesheet" href="css/sub_login.css">
+    <link rel="stylesheet" href="css/signup.css">
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/common.css">
@@ -96,13 +96,20 @@
       <!-- 헤더 -->
       <header class="header">
         <div class="inner">
-            <h1 class="h_logo">
-                <a href="index.html"><img src="images/logo3.svg" alt="로고"></a>
-            </h1>
-            <nav class="h_nav">
-                <ul class="searchbar">
-                    <li><input type="text" name="searchtext" id="searchtext" placeholder="Search"></li>
-                    <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+          <h1 class="h_logo"><a href="index.html">Gummi</a></h1>
+          <nav class="h_nav">
+            <ul class="searchbar">
+              <li>
+                <input
+                  type="text"
+                  name="searchtext"
+                  id="searchtext"
+                  placeholder="Search"
+                />
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+              </li>
             </ul>
             <ul class="gnb">
               <li>
@@ -323,139 +330,10 @@
         </div>
       </div>
       <!-- 개인작업 공간 -->
-    <div class="login">
+    <div class="signup">
         <div class="inner">
-            <div class="login_wrap">
-            <div class="login_head">
-            <h1>로그인 후 다양한 서비스를 이용해 보세요.</h1>
-            <h3>아직 Gummi 회원이 아니시라면, 회원가입을 해주세요!</h3>
-            </div>
-            <div class="tab">
-                <ul class="tab_list">
-                    <li class="active">
-                    <p>학생 로그인</p>
-                    </li>
-                    <li>
-                    <p>선생님 로그인</p>
-                    </li>
-                </ul>
-            <div class="tab_cont account1">
-                <form id="login_form">
-                <!-- <fieldset class="login-field"> -->
-                <div class="login-field__action">
-                    <div class="login_text">
-                        <input
-                        type="text"
-                        id="userid"
-                        name="userid"
-                        value=""
-                        title="아이디"
-                        placeholder="아이디"
-                        style="ime-mode: disabled"
-                        tabindex="1"
-                        />
-                        <input
-                        type="password"
-                        id="passwd"
-                        name="passwd"
-                        title="비밀번호"
-                        placeholder="비밀번호"
-                        tabindex="2"
-                        />
-                    </div>
-                    <button type="submit" id="btnLogin" tabindex="3"><a href="index.html">로그인</a></button>
-                </div>
-                <div class="login_save">
-                    <input type="checkbox" id="idsave" name="idsave" /><label
-                    for="idsave"
-                    >아이디 저장</label
-                    >
-                </div>
-                <div class="login_link">
-                    <a href="signup.html"><strong>회원가입</strong></a>
-                    <a href="#"><strong>아이디 찾기</strong></a>
-                    <a href="#"><strong>비밀번호 찾기</strong></a>
-                </div>
-                <div class="login_sns">
-                    <div class="naver">
-                        <a href="#">
-                            <img src="images/naver.png" alt="네이버">
-                        <span>네이버</span>
-                        </a>                        
-                    </div>
-                    <div class="google">
-                        <a href="#"><img src="images/google.png" alt="구글">
-                        <span>구글</span>
-                        </a>                        
-                    </div>
-                    <div class="facebook">
-                        <a href="#"><img src="images/facebook.png" alt="페이스북">
-                        <span>페이스북</span>
-                        </a>                        
-                    </div>
-                    <div class="apple">
-                        <a href="#"><img src="images/apple.png" alt="애플">
-                        <span>apple</span>
-                        </a>                        
-                    </div>
-                </div>
-                <!-- </fieldset> -->
-                </form>
-                <div class="student_text_content">
-                <dl class="content_list_student">
-                    <dt>학생 회원 혜택</dt>
-                    <dd class="login_content1">
-                    <span class="login_content1_icon">
-                        <img src="images/sub_grape.png" alt="로그인포도">
-                    </span>
-                    <strong>포도알 혜택</strong><br>
-                    수업수강 완료시 포도알 적립!
-                    </dd>
-                    <dd class="login_content2">
-                    <span class="login_content2_icon">
-                        <img src="images/sub_study.png" alt="로그인학생">
-                    </span>
-                    <strong>수강료 무료</strong><br>
-                    무료로 여러가지 수업 수강가능!
-                    </dd>
-                    <dd class="login_content3">
-                    <span class="login_content3_icon">
-                        <img src="images/sub_chance.png" alt="로그인찬스">
-                    </span>
-                    <strong>새로운 기회</strong><br>
-                    더큰 꿈을위해 다양한 수업수강해보기!
-                    </dd>
-                </dl>
-                </div>
-                <div class="teacher_text_content">
-                <dl class="content_list_teacher">
-                    <dt>선생님 회원 혜택</dt>
-                    <dd class="login_content4">
-                    <span class="login_content4_icon">
-                        <img src="images/sub_interview.png" alt="인터뷰">
-                    </span>
-                    <strong>인터뷰 혜택</strong><br>
-                    각 분야 별 1등 선생님 인터뷰 기회!<br> 인터뷰 영상은 메인페이지에
-                    노출!
-                    </dd>
-                    <dd class="login_content5">
-                    <span class="login_content5_icon">
-                        <img src="images/sub_coin.png" alt="자기개발">
-                    </span>
-                    <strong>자기개발 비용 지원</strong><br>
-                    최소시간 이상 수업 했을 시 자기개발 비용 지원!
-                    </dd>
-                    <dd class="login_content6">
-                    <span class="login_content6_icon">
-                        <img src="images/sub_crown.png" alt="인증">
-                    </span>
-                    <strong>인증 배찌</strong><br>
-                    각분야 1등선생님 기업인증 배찌 증정!
-                    </dd>
-                    </dl>
-                    </div>
-                    </div>
-                </div>
+            <div class="signup_wrap">
+                <form action=""></form>
             </div>
         </div>
     </div>

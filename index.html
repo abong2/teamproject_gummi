@@ -57,7 +57,7 @@
     <!-- XEIcon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <!-- css -->
-    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/base.css">
@@ -84,7 +84,9 @@
         <!-- header부분 -->
         <header class="header">
             <div class="inner">
-                <h1 class="h_logo"><a href="index.html">Gummi</a></h1>
+                <h1 class="h_logo">
+                    <a href="index.html"><img src="images/logo3.svg" alt="로고"></a>
+                </h1>
                 <nav class="h_nav">
                     <ul class="searchbar">
                         <li><input type="text" name="searchtext" id="searchtext" placeholder="Search"></li>
@@ -303,7 +305,7 @@
                     <div class="cate_wrap">
                         <div id="cate_list1">
                             <div class="cate_iist">
-                                <img src="images/business.png" alt="business">
+                                <img src="images/busi.png" alt="business">
                                 <span>비즈니스</span>
                             </div>
                             <div class="cate_iist">
@@ -311,11 +313,11 @@
                                 <span>취미생활</span>
                             </div>
                             <div class="cate_iist">
-                                <img src="images/living.png" alt="living">
+                                <img src="images/house.png" alt="living">
                                 <span>리빙</span>
                             </div>
                             <div class="cate_iist">
-                                <img src="images/study.png" alt="study">
+                                <img src="images/Frame (2).png" alt="study">
                                 <span>교육</span>
                             </div>
                             <div class="cate_iist">
@@ -333,7 +335,7 @@
                                 <span>자동차</span>
                             </div>
                             <div class="cate_iist">
-                                <img src="images/cleaning.png" alt="cleaning">
+                                <img src="images/clean.png" alt="cleaning">
                                 <span>청소</span>
                             </div>
                             <div class="cate_iist">
@@ -373,42 +375,55 @@
                     <h1>이달의 선생님</h1>
                     <div class="teacher_wrap">
                         <div class="teacher_list">
+                            <div class="teacher_img">
                             <img src="images/teacher01.png" alt="선생님1" />
-                            <div class="teacher_info">
-                                <h3>김한빈</h3>
-                                <span>#DIY #마리모 #어항 #꾸미기</span>
-                                <p>10월의 <b>" DIY "</b>부분 선생님</p>
                             </div>
-                            <div class="teacher_btn">
-                                <button type="button">
-                                    <span>선생님</span> 보러가기
-                                </button>
+                            <div class="teacher_info">
+                                <h3>김한빈</h3>                               
+                                <p>10월의 <b>" DIY "</b>부분 선생님</p>                                
+                                <span> - 마리모 어항꾸미기 선생님 <br>
+                                    - 2023년 상반기 DIY 부분 최대 수상<br>                                    
+                                </span>
+                                <div class="teacher_btn">
+                                    <button type="button">
+                                        <span>선생님</span> 보러가기
+                                    </button>
+                                </div>
                             </div>
                         </div>
                         <div class="teacher_list">
-                            <img src="images/teacher02.png" alt="선생님2" />
-                            <div class="teacher_info">
-                                <h3>김연우</h3>
-                                <span>#IT #교육 #프로그래밍 #개발</span>
-                                <p>10월의 <b>" IT "</b>부분 선생님</p>
+                            <div class="teacher_img">
+                            <img src="images/teacher02.png" alt="선생님1" />
                             </div>
-                            <div class="teacher_btn">
-                                <button type="button">
-                                    <span>선생님</span> 보러가기
-                                </button>
+                            <div class="teacher_info">
+                                <h3>김연우</h3>                                                                
+                                <p>10월의 <b>" IT "</b>부분 선생님</p>                                
+                                <span>
+                                    - 프로그래밍 / 개발 선생님 <br>
+                                    - 2023년 상반기 IT 부분 최대 수상<br>   
+                                </span>
+                                <div class="teacher_btn">
+                                    <button type="button">
+                                        <span>선생님</span> 보러가기
+                                    </button>
+                                </div>
                             </div>
                         </div>
                         <div class="teacher_list">
-                            <img src="images/teacher03.png" alt="선생님3" />
-                            <div class="teacher_info">
-                                <h3>장세희</h3>
-                                <span>#쿠킹 #베이킹 #요리 #음식</span>
-                                <p>10월의 <b>" DIY "</b>부분 선생님</p>
+                            <div class="teacher_img">
+                            <img src="images/teacher03.png" alt="선생님1" />
                             </div>
-                            <div class="teacher_btn">
-                                <button type="button">
-                                    <span>선생님</span> 보러가기
-                                </button>
+                            <div class="teacher_info">
+                                <h3>장세희</h3>                                                                
+                                <p>10월의 <b>" 요리 "</b>부분 선생님</p>                
+                                <span> - 쿠킹 / 베이킹 선생님 <br>
+                                    - 2022년 하반기 DIY 부분 최대 수상<br>   
+                                </span>
+                                <div class="teacher_btn">
+                                    <button type="button">
+                                        <span>선생님</span> 보러가기
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -505,7 +520,7 @@
                                         </a>
                                         <div class="tooltip">
                                             <span class="tooltiptext"
-                                                >향유정 전문가</span
+                                                >향유정 선생님</span
                                             >
                                         </div>
                                     </div>
@@ -545,7 +560,7 @@
                                         </a>
                                         <div class="tooltip">
                                             <span class="tooltiptext"
-                                                >김연우 전문가</span
+                                                >김연우 선생님</span
                                             >
                                         </div>
                                     </div>
@@ -582,7 +597,7 @@
                                         </a>
                                         <div class="tooltip">
                                             <span class="tooltiptext"
-                                                >장세희 전문가</span
+                                                >장세희 선생님</span
                                             >
                                             
                                         </div>
@@ -622,7 +637,7 @@
                                     </a>
                                     <div class="tooltip">
                                         <span class="tooltiptext"
-                                            >향유정 전문가</span
+                                            >향유정 선생님</span
                                         >
                                     </div>
                                 </div>
@@ -662,7 +677,7 @@
                                     </a>
                                     <div class="tooltip">
                                         <span class="tooltiptext"
-                                            >김연우 전문가</span
+                                            >김연우 선생님</span
                                         >
                                     </div>
                                 </div>
@@ -699,7 +714,7 @@
                                     </a>
                                     <div class="tooltip">
                                         <span class="tooltiptext"
-                                            >장세희 전문가</span
+                                            >장세희 선생님</span
                                         >
                                         
                                     </div>
@@ -739,7 +754,7 @@
                                     </a>
                                     <div class="tooltip">
                                         <span class="tooltiptext"
-                                            >김한빈 전문가</span
+                                            >김한빈 선생님</span
                                         >
                                     </div>
                                 </div>
@@ -778,7 +793,7 @@
                                     </a>
                                     <div class="tooltip">
                                         <span class="tooltiptext"
-                                            >김이박 전문가</span
+                                            >김이박 선생님</span
                                         >
                                     </div>
                                 </div>
@@ -811,7 +826,7 @@
                                     <h2>2023-10-13(금)</h2>
                                 </div>
                                 <div class="myclass2-3">
-                                    <table>
+                                    <table class="fade-in-table">
                                         <tr>
                                             <th scope="col" class="th1">
                                                 시간
@@ -833,7 +848,7 @@
                                                 10:00 ~ 11:00
                                             </td>
                                             <td>
-                                                김연우 전문가 / IT 클래스
+                                                김연우 선생님 / IT 클래스
                                             </td>
                                             <td>대여</td>
                                             <td class="td2">수강완료</td>
@@ -843,7 +858,7 @@
                                                 14:00 ~ 15:00
                                             </td>
                                             <td>
-                                                장세희 전문가 / 쿠킹 클래스
+                                                장세희 선생님 / 쿠킹 클래스
                                             </td>
                                             <td>대여</td>
                                             <td class="td3">수강확인</td>
@@ -853,7 +868,7 @@
                                                 16:00 ~ 17:00
                                             </td>
                                             <td>
-                                                김한빈 전문가 / 마리모 클래스
+                                                김한빈 선생님 / 마리모 클래스
                                             </td>
                                             <td>집</td>
                                             <td class="td3">수강확인</td>
@@ -862,11 +877,13 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- <section class="section"></section> -->
+
                         <div class="myclass3">
                             <h2 id="myclass322">회원님을 위한 클래스</h2>
-                            <div class="myclass33">
+                             <div class="scrollable-content">   
+                                <div class="myclass33"> <div class="content">
                             <div class="myclass3-inner">
+                                
                                 <div class="myclass3-1">
                                     <img
                                         src="images/subscription_img_main 1.png"
@@ -900,7 +917,7 @@
                                     />
                                     <div class="myclass3-2">
                                         <h3>
-                                            'IT·프로그래밍 20년' 전문가의 IT 교육
+                                            'IT·프로그래밍 20년' 선생님의 IT 교육
                                         </h3>
                                         <h4>IT | 박공주</h4>
                                     </div>
@@ -941,9 +958,9 @@
                                     <div class="myclass3-2">
                                         <h3>
                                             삶의 질 2배 상승!
-                                            전문가의 시크릿 노하우
+                                            선생님의 시크릿 노하우
                                         </h3>
-                                        <h4>리빙 | 권전문</h4>
+                                        <h4>리빙 | 권선생</h4>
                                     </div>
                                 </div>
                             </div>
@@ -955,7 +972,7 @@
                                     />
                                     <div class="myclass3-2">
                                         <h3>
-                                            왕초보에서 전문가로!
+                                            왕초보에서 선생님으로!
                                             내가 만든 쿠키
                                         </h3>
                                         <h4>쿠킹 | 김왕자</h4>
@@ -983,7 +1000,7 @@
                                     <div class="myclass3-2">
                                         <h3>
                                             'DIY 경력 10년'
-                                            전문가의 공예 교육
+                                            선생님의 공예 교육
                                         </h3>
                                         <h4>공예 | 김교육</h4>
                                     </div>
@@ -992,6 +1009,8 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
             </section>
             <!-- 자주 묻는 질문 및 게시판 -->
             <section class="class2">
@@ -1075,40 +1094,30 @@
                     </div>
                 </div>
             </section>
-            <!-- 선생님 가입 -->
-            <section class="join">
-                <div class="inner">
-                    <div class="joinbox">
-                        <div class="joinleft">
-                            <h4 class="jointitle">
-                                전문가로 활동하시나요?<br>
-                                Gummi에서 새로운 학생을 만나보세요
-                            </h4>
-                            <button class="joinbtn">선생님 가입</button>
-                        </div>
-                        <div class="joinright">
-                            <div class="swiper joinswiper">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <img src="images/join01.png" alt="선생님 가입 안내">
-                                        <span class="jointext">학생의 수강신청을 받으세요</span>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="images/join02.png" alt="선생님 가입 안내">
-                                        <span class="jointext">학생에게 수강 승낙 확인을 보내세요</span>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="images/join03.png" alt="선생님 가입 안내">
-                                        <span class="jointext">채팅, 전화로 빠르게 상담하고 수강 확인 하세요</span>
-                                    </div>
-                                </div>
-                                <div class="swiper-button-prev"></div>
-                                <div class="swiper-button-next"></div>
-                                <div class="swiper-pagination"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <!-- 신청하기 -->
+            <section class="bottom-btn">
+        <div class="inner">
+            <div class="sign">
+            <div class="signup">
+                <p>Gummi 지금 바로 시작해보세요.</p>
+            </div>
+           <div class="signup2">
+          <div class="left-btn">
+            <a href="subscription.html">
+              <div class="left-txt">
+                <p>신청하기</p>
+            </div>
+          </div> </a>
+          <div class="right-btn">
+            <a href="#">
+              <div class="right-txt">
+                <p>문의하기</p>
+              </div>
+            </a>
+          </div>      
+        </div>
+    </div>
+        </div>
             </section>
         </div>
         <!-- footer -->
@@ -1137,6 +1146,29 @@
                 </div>
             </div>
         </footer>
+    </div>
+    <!-- 고정메뉴 -->
+    <div class="fixedmenu">
+        <ul>
+            <li>
+                <a href="#">
+                    <img src="images/fixedmenu_grape.png" alt="포도 보유 현황">
+                    <span>포도 보유 현황</span>
+                </a>
+            </li>
+            <li>
+                <a href="subscription.html">
+                    <img src="images/fixedmenu_check.png" alt="신청하기">
+                    <span>신청하기</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- 탑 버튼 -->
+    <div class="top-button">
+        <a href="#" class="top-btn" id="top-btn">
+            <img src="images/top-btn.png" alt="top-btn" id="top-btn-img"/>
+        </a>
     </div>
 </body>
 </html>
