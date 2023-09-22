@@ -1,432 +1,421 @@
 .recruit .inner{
-    margin: 0 auto;
-    width: 100%;
-    height: 100%;
+margin: 0 auto;
+width: 100%;
+height: 100%;
 }
-/* 전체 */
 .recruit_wrap {
-    display: flex;
-    /* background-color: yellow; */
+display: flex;
 }
-/* 인원모집 및 장소대여 타이틀 */
 .recruit_title {
-    padding: 0 0 40px 0;
+padding: 0 0 40px 0;
 }
-
-/* 인원 모집 */
 .recruit_with {
-    width: 100%;
-    display: flex;
-    /* background-color: yellowgreen; */
+position: relative;
+width: 700px;
+height: 394px;
+background: url("../images/recruit_with.jpg") no-repeat;
+background-size: cover;
+margin-right: 2%;
+border-radius: 10px;
+/* overflow: hidden; */
 }
-.recruit_with_img {
-    width: 50%;
-    overflow: hidden;
-    border-radius: 10px;
+.recruit_with_opacity {
+position: absolute;
+top: 0;
+left: 0;
+width: 40%;
+height: 100%;
+min-width: 200px;
+background-color: #55555557;
+border-radius: 10px 0 0 10px;
 }
-.recruit_with_img img {
-    transition: transform 0.2s;
+.recruit_with_txt {
+position: absolute;
+top: 72%;
+left: 5%;
 }
-.recruit_with_img img:hover{
-    transform: scale(1.06);
+.recruit_with_txt h1 {
+color: white;
+padding-bottom: 20px;
 }
-.recruit_with_text {
-    font-size: 15px;
-    padding-left: 50px;
-    line-height: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.recruit_with_title {
-    font-size: 20px;
-    font-weight: bold;
-    padding-bottom: 20px;
-}
-.recruit_with_p_mobile {
-    display: none;
+/* .recruit_with_txt h1:hover {
+color: #6b6b6b; 
+transition: 0.3s;
+} */
+.recruit_with_txt p {
+color: white;
+font-size: 16px;
+line-height: 20px;
 }
 /* 장소 대여 */
 .recruit_place {
-    width: 100%;
-    display: flex;
+position: relative;
+width: 700px;
+height: 394px;
+background: url("../images/recruit_place.jpg") no-repeat;
+background-size: cover;
+border-radius: 10px;
 }
-.recruit_place_img {
-    width: 50%;
-    overflow: hidden;
-    border-radius: 10px;
+.recruit_place_opacity {
+position: absolute;
+top: 0;
+left: 0;
+width:40%;
+height: 100%;
+min-width: 200px;
+background-color: #55555557;
+border-radius: 10px 0 0 10px;
 }
-.recruit_place_img img {
-    transition: transform 0.3s;
+.recruit_place_txt {
+color: white;
+position: absolute;
+top: 72%;
+left: 5%;
 }
-.recruit_place_img img:hover{
-    transform: scale(1.06);
+.recruit_place_txt h1 {
+color: white;
+padding-bottom: 20px;
 }
-.recruit_place_text {
-    font-size: 15px;
-    padding-left: 50px;
-    line-height: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.recruit_place_title {
-    font-size: 20px;
-    font-weight: bold;
-    padding-bottom: 20px;
-}
-/* 장소 대여 반응형 */
-#recruit_place_mobile {
-    display: none;
-    text-align: right;
-    padding-right: 50px;
-}
-#recruit_place_mobile_title {
-    font-size: 20px;
-    font-weight: bold;
-    padding-bottom: 20px;
-}
-#recruit_place_mobile_btn {
-    background-color: #ae85c9;
-    color: #ffff;
-    margin-top: 20px;
-    font-weight: bold;
-    padding: 15px 32px;
-    border-radius: 50px;
-    border: none;
-    cursor: pointer;
-}
-#recruit_place_mobile_btn:hover{
-    background-color: #a07bb9;
-}
-/* 버튼 */ 
-.recruit_btn {
-    background-color: #ae85c9;
-    color: #ffff;
-    margin-top: 20px;
-    font-weight: bold;
-    padding: 15px 32px;
-    border-radius: 50px;
-    border: none;
-    cursor: pointer;
-}
-.recruit_btn:hover{
-    background-color: #a07bb9;
+.recruit_place_txt p {
+color: white;
+font-size: 16px;
+line-height: 20px;
 }
 
 /* 반응형 */
-/* @media all and (max-width: 1114px){
-    .recruit_with {
-        width: 101%;
-        padding-right: 1%;
-    }
+
+@media all and (max-width: 990px){
+.recruit_with_opacity {
+width: 40%;
 }
-@media all and (max-width: 1104px){
-    .recruit_with {
-        width: 102%;
-        padding-right: 2%;
-    }
+.recruit_place_opacity {
+width:40%;
 }
-@media all and (max-width: 1094px){
-    .recruit_with {
-        width: 103%;
-        padding-right: 3%;
-    }
+.recruit_with_txt h1 {
+font-size: 20px;
+padding-bottom: 19px;
 }
-@media all and (max-width: 1084px){
-    .recruit_with {
-        width: 104%;
-        padding-right: 4%;
-    }
+.recruit_with_txt p {
+font-size: 15px;
+line-height: 19px;
 }
-@media all and (max-width: 1074px){
-    .recruit_with {
-        width: 105%;
-        padding-right: 5%;
-    }
+.recruit_place_txt h1 {
+font-size: 20px;
+padding-bottom: 19px;
 }
-@media all and (max-width: 1064px){
-    .recruit_with {
-        width: 106%;
-        padding-right: 6%;
-    }
+.recruit_place_txt p {
+font-size: 15px;
+line-height: 19px;
 }
-@media all and (max-width: 1054px){
-    .recruit_with {
-        width: 107%;
-        padding-right: 7%;
-    }
 }
-@media all and (max-width: 1044px){
-    .recruit_with {
-        width: 108%;
-        padding-right: 8%;
-    }
+@media all and (max-width: 940px){
+.recruit_with_txt {
+position: absolute;
+top: 72%;
+left: 4.5%;
 }
-@media all and (max-width: 1034px){
-    .recruit_with {
-        width: 109%;
-        padding-right: 9%;
-    }
-} */
-/* 태블릿 */
-@media all and (max-width: 1024px){
-    .recruit_wrap {
-        display: flex;
-        flex-direction: column;
-    }
-    /* 장소 대여 */
-    .recruit_place {
-        display: flex;
-        flex-direction: row-reverse;
-    }
-    .recruit_place_text {
-        display: none;
-    }
-    #recruit_place_mobile {
-        display: inline-block;
-        padding-right: 50px;
-        font-size: 15px;
-        line-height: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .recruit_with_title {
-        font-size: 19px;
-        padding-bottom: 19px;
-    }
-    #recruit_place_mobile_title {
-        font-size: 19px;
-        padding-bottom: 19px;
-    }
+.recruit_place_txt {
+color: white;
+position: absolute;
+top: 72%;
+left: 4.5%;
 }
-@media all and (max-width: 759px){
-    .recruit_with_title {
-        font-size: 19px;
-    }
-    #recruit_place_mobile_title {
-        font-size: 19px;
-    }
-    .recruit_with_text {
-        font-size: 14px;
-    }
-    #recruit_place_mobile {
-        font-size: 14px;
-    }
-    .recruit_btn {
-    font-size: 12px;
-    }
-    #recruit_place_mobile_btn {
-        font-size: 12px;
-    }
+}
+
+/* 하단으로 내리기 */
+@media all and (max-width: 890px){
+.recruit_wrap {
+flex-direction: column;
+}
+.recruit_with {
+width: 90%;
+height: 390px;
+margin: 0 auto;
+margin-bottom: 2%;
+}
+.recruit_place {
+margin: 0 auto;
+width: 90%;
+height: 390px;
+}
+.recruit_with_opacity {
+width: 100%;
+background-color: #464646c2;
+opacity: 50%;
+border-radius: 10px;
+}
+.recruit_place_opacity {
+width:100%;
+background-color: #464646c2;
+opacity: 50%;
+border-radius: 10px;
+}
+}
+@media all and (max-width: 750px){
+.recruit_with {
+height: 385px;
+}
+.recruit_place {
+height: 385px;
+}
 }
 @media all and (max-width: 730px){
-    .recruit_with_title {
-        font-size: 18px;
-    }
-    #recruit_place_mobile_title {
-        font-size: 18px;
-    }
-    .recruit_with_text {
-        font-size: 13px;
-    }
-    #recruit_place_mobile {
-        font-size: 13px;
-        padding-bottom: 13px;
-    }
-    .recruit_btn {
-    font-size: 12px;
-    padding-bottom: 13px;
-    }
-    .recruit_btn {
-    margin-top: 18px;
-        }
-    #recruit_place_mobile_btn {
-    margin-top: 18px;
-        }
+.recruit_with {
+height: 380px;
+}
+.recruit_place {
+height: 380px;
+}
+}
+@media all and (max-width: 710px){
+.recruit_with {
+height: 375px;
+}
+.recruit_place {
+height: 375px;
+}
+} 
+@media all and (max-width: 690px){
+.recruit_with {
+height: 370px;
+}
+.recruit_place {
+height: 370px;
+}
 }
 @media all and (max-width: 670px){
-    .recruit_with_title {
-        font-size: 17px;
-    }
-    .recruit_with_text {
-        font-size: 12px;
-        padding-left: 45px;
-    }
-    #recruit_place_mobile {
-        font-size: 12px;
-        padding: 0 45px 0 0; 
-    }
-    #recruit_place_mobile_title {
-        font-size: 17px;
-    }
+.recruit_with {
+height: 365px;
 }
-@media all and (max-width: 655px){
-    .recruit_with_title {
-        padding-bottom: 17px;
+.recruit_place {
+height: 365px;
+}
+}       
+
+@media all and (max-width: 650px){
+.recruit_with {
+height: 360px;
+}
+.recruit_place {
+height: 360px;
+}
+}       
+
+@media all and (max-width: 630px){
+.recruit_with {
+height: 355px;
+}
+.recruit_place {
+height: 355px;
+}
+}       
+
+@media all and (max-width: 610px){
+.recruit_with {
+height: 350px;
+}
+.recruit_place {
+height: 350px;
+}
+}       
+
+@media all and (max-width: 590px){
+.recruit_with {
+height: 345px;
+}
+.recruit_place {
+height: 345px;
+}
+
+}       
+@media all and (max-width: 570px){
+.recruit_with {
+height: 340px;
+}
+.recruit_place {
+height: 340px;
+}
+}       
+@media all and (max-width: 560px){
+.recruit_with_txt h1 {
+font-size: 19px;
+padding-bottom: 19px;
+}
+.recruit_with_txt p {
+font-size: 14px;
+line-height: 19px;
+}
+.recruit_place_txt h1 {
+font-size: 19px;
+padding-bottom: 19px;
+}
+.recruit_place_txt p {
+font-size: 14px;
+line-height: 19px;
+}
+.recruit_with_txt {
+    top: 63%;
+    left: 5%;
     }
-    #recruit_place_mobile_title {
-        padding-bottom: 17px;
+    .recruit_place_txt {
+    top: 63%;
+    left: 5%;
     }
-    .recruit_btn {
-        margin-top: 17px;
-            }
-        #recruit_place_mobile_btn {
-        margin-top: 17px;
-            }
+}   
+@media all and (max-width: 550px){
+.recruit_with {
+height: 335px;
 }
-@media all and (max-width: 600px){
-    .recruit_with_text {
-        padding-left: 40px;
-    }
-    #recruit_place_mobile {
-        padding: 0 40px 0 0; 
-    }  
-    .recruit_btn {
-        margin-top: 16px;
-        padding: 13px 30px;
-            }
-        #recruit_place_mobile_btn {
-        margin-top: 16px;
-        padding: 13px 30px;
-            }
+.recruit_place {
+height: 335px;
 }
-@media all and (max-width: 540px){
-    .recruit_with_title {
-font-size: 16px;
-padding-bottom: 12px;
-    }
-    #recruit_place_mobile_title {
-font-size: 16px;
-padding-bottom: 12px;
+}       
+
+@media all and (max-width: 530px){
+.recruit_with {
+height: 330px;
 }
-.recruit_with_p {
-    font-size: 13px;
+.recruit_place {
+height: 330px;
 }
-.recruit_place_mobile_p{
-    font-size: 13px;
-}
-.recruit_btn {
-    margin-top: 14px;
-        }
-    #recruit_place_mobile_btn {
-    margin-top: 14px;
-        }
-}
-@media all and (max-width: 520px){
-.recruit_btn {
-    padding: 11px 28px;
-    margin-top: 11px;
-    }
-    #recruit_place_mobile_btn {
-    padding: 11px 28px;
-    margin-top: 11px;    
-}
-}
-@media all and (max-width: 480px){
-    .recruit_with_title {
-        font-size: 14px;
-        padding-bottom: 11px;
-            }
-    #recruit_place_mobile_title {
-        font-size: 14px;
-        padding-bottom: 11px;
-        }
-    .recruit_with_p {
-            font-size: 11px;
-            line-height: 15px;
-        }
-    .recruit_place_mobile_p{
-            font-size: 11px;
-            line-height: 15px;
-        }
-    .recruit_btn {
-            padding: 8px 20px;
-            margin-top: 11px;
-            font-size: 11px;
-            }
-    #recruit_place_mobile_btn {
-            padding: 8px 20px;
-            margin-top: 11px;  
-            font-size: 11px;
-    }
-}
-@media all and (max-width: 430px){
-.recruit_with_title {
-    font-size: 13px;
-    padding-bottom: 7px;
-    }
-#recruit_place_mobile_title {
-    font-size: 13px;
-    padding-bottom: 7px;
-    }
-.recruit_btn {
-    padding: 7px 18px;
-    margin-top: 8px;
-    }
-#recruit_place_mobile_btn {
-    padding: 7px 18px;
-    margin-top: 8px;  
-}
-.recruit_with_text {
-    padding-left: 30px;
-}
-#recruit_place_mobile {
-    padding: 0 30px 0 0; 
 } 
+@media all and (max-width: 510px){
+.recruit_with {
+height: 325px;
+}
+.recruit_place {
+height: 325px;
+}
+}
+@media all and (max-width: 490px){
+.recruit_with {
+height: 320px;
+}
+.recruit_place {
+height: 320px;
+}
+} 
+@media all and (max-width: 470px){
+.recruit_with {
+height: 310px;
+}
+.recruit_place {
+height: 310px;
+}
+.recruit_with_txt {
+top: 62%;
+left: 5%;
+}
+.recruit_place_txt {
+top: 62%;
+left: 5%;
+}
+} 
+@media all and (max-width: 450px){
+.recruit_with {
+height: 290px;
+}
+.recruit_place {
+height: 290px;
+}
+} 
+@media all and (max-width: 430px){
+.recruit_with {
+height: 300px;
+}
+.recruit_place {
+height: 300px;
+}
+} 
+@media all and (max-width: 420px){
+.recruit_with {
+height: 290px;
+}
+.recruit_place {
+height: 290px;
+}
+} 
+@media all and (max-width: 410px){
+.recruit_with {
+height: 280px;
+}
+.recruit_place {
+height: 280px;
+}
+} 
+@media all and (max-width: 400px){
+.recruit_with {
+height: 270px;
+}
+.recruit_place {
+height: 270px;
+}
+} 
+@media all and (max-width: 390px){
+.recruit_with {
+width: 91%;
+height: 280px;
+}
+.recruit_place {
+width: 91%;
+height: 280px;
+}
+.recruit_with_txt h1 {
+font-size: 18px;
+padding-bottom: 17px;
+}
+.recruit_place_txt h1 {
+font-size: 18px;
+padding-bottom: 17px;
+}
+.recruit_with_txt p {
+font-size: 13px;
+line-height: 18px;
+}
+.recruit_place_txt p {
+font-size: 13px;
+line-height: 18px;
+}
 }
 @media all and (max-width: 370px){
-.recruit_with_title {
-padding-bottom: 6px;
+.recruit_with {
+width: 92%;
+height: 270px;
 }
-#recruit_place_mobile_title {
-padding-bottom: 6px;
-}
-.recruit_btn {
-    padding: 6px 17px;
-    }
-#recruit_place_mobile_btn {
-    padding: 6px 17px;
+.recruit_place {
+width: 92%;
+height: 270px;
 }
 }
-@media all and (max-width: 370px){
-    .recruit_with_title {
-    padding-bottom: 5px;
-    }
-    #recruit_place_mobile_title {
-    padding-bottom: 5px;
-    }
-    .recruit_btn {
-        padding: 5px 16px;
-        margin-top: 5px;
-        }
-    #recruit_place_mobile_btn {
-        padding: 5px 16px;
-        margin-top: 5px;
-    }
-    .recruit_with_p {
-        font-size: 10px;
-        line-height: 14px;
-    }
-    .recruit_place_mobile_p{
-        font-size: 10px;
-        line-height: 14px;
-    }
-    }
-@media all and (max-width: 330px){
-    .recruit_btn {
-        font-size: 10px;
-        }
-#recruit_place_mobile_btn {
-        font-size: 10px;
+@media all and (max-width: 355px){
+.recruit_with {
+height: 260px;
 }
-.recruit_with_p {
-    display: none;
+.recruit_place {
+height: 260px;
 }
-.recruit_with_p_mobile {
-    display: inline-block;
-    font-size: 10px;
-    line-height: 14px;
+}
+@media all and (max-width: 350px){
+.recruit_with {
+height: 250px;
+}
+.recruit_place {
+height: 250px;
+}
+}
+@media all and (max-width: 335px){
+.recruit_with {
+height: 240px;
+}
+.recruit_place {
+height: 240px;
+}
+.recruit_with_txt {
+top: 63%;
+left: 5%;
+}
+.recruit_place_txt {
+top: 63%;
+left: 5%;
 }
 }
