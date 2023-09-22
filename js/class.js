@@ -1,10 +1,6 @@
 window.addEventListener("load", function() {
   $j = jQuery;
 
-/*
-  --- Copy from here
-*/
-
 if ($j('.custom_page_123').length>0){
   $j('<div class="qna"></div>').appendTo("#col2");
   $j('.box.text:not(:first-of-type)').each(function(){
@@ -24,6 +20,20 @@ if ($j('.custom_page_123').length>0){
     }
   });
 }
+const btn = document.querySelector(".left-btn");
+btn.addEventListener("click", function() {
+  window.location.href = "subscription.html";
+});
+    // 스크롤할 내용의 DOM 요소
+    const content = document.querySelector(".content");
+
+    // 스크롤 애니메이션을 초기화할 함수
+    function resetScroll() {
+      content.style.animation = "none";
+      void content.offsetWidth; // 리플로우 강제 실행
+      content.style.animation = "scrollAnimation 10s linear infinite";
+    }
+
 })
 $(function() {
   $('.btn-fold').on('click', function(){
@@ -52,4 +62,16 @@ function toggleAccordion() {
 }
 
 items.forEach(item => item.addEventListener('click', toggleAccordion));
+});
+
+window.addEventListener("load", resetScroll);
+window.addEventListener("resize", resetScroll);
+window.addEventListener('scroll', () => {
+  const tablePosition = table.getBoundingClientRect().top;
+  const windowHeight = window.innerHeight;
+
+  if (tablePosition < windowHeight) {
+      table.style.opacity = '1';
+      table.style.transform = 'translateY(0)';
+  }
 });

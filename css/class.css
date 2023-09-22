@@ -12,7 +12,7 @@
     justify-content: space-between;
     align-items: flex-start;
 }
-.class h2{
+.class h2 {
     font-size: 20px;
     padding: 20px 0px;
     color: #393939;
@@ -122,12 +122,12 @@ td {
     font-size: 15px;
     color: #9a9ba7;
 }
-.myclass3{
+.myclass3 {
     width: 50%;
     height: 500px;
-padding-left: 3%;
+    padding-left: 3%;
 }
-.myclass33{
+.myclass33 {
     padding-right: 15px;
     width: 100%;
     margin: 0 auto;
@@ -141,11 +141,10 @@ padding-left: 3%;
     background-size: cover;
     display: flex;
     justify-content: space-between;
-
 }
 .myclass33::-webkit-scrollbar {
-    width: 4px;  
-    height: 20px; 
+    width: 4px;
+    height: 20px;
 }
 .myclass33::-webkit-scrollbar-thumb {
     /* background: #ae85c9; */
@@ -154,92 +153,110 @@ padding-left: 3%;
     border-radius: 12px 12px 12px 12px;
 }
 .myclass33::-webkit-scrollbar-thumb:hover {
-   background-color:#a0a0a5;
+    background-color: #a0a0a5;
 }
 .myclass33::-webkit-scrollbar-track {
-    background:#f7f7f7;  
+    background: #f7f7f7;
 }
-.myclass3-1{
-    width: 30%;   
-   
+.myclass3-1 {
+    width: 30%;
 }
-.myclass3-1 img{
-    width: 100%;  
+
+.myclass3-1 img {
+    width: 100%;
     cursor: pointer;
-    
 }
-.myclass3-1 img:hover{
+.myclass3-1 img:hover {
     width: 100%;
     filter: brightness(1.2);
-   
-    
 }
 .myclass3-2 {
     width: 100%;
     padding: 5px 0px;
     max-width: 125px;
 }
-.myclass3-1 h3{
+.myclass3-1 h3 {
     font-size: 0.875rem;
     line-height: 20px;
 }
-.myclass3-2 h4{
+.myclass3-2 h4 {
     color: #ababab;
     font-size: 0.6875rem;
     line-height: 0.875rem;
     font-weight: 400;
-
 }
-/* 신청하기 버튼 */
+.scrollable-content {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+.content {
+    width: 100%;
+    height: 450px;
+    animation: scrollAnimation 15s linear infinite;
+}
+
+@keyframes scrollAnimation {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-400px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
 .bottom-btn {
     position: relative;
     display: block;
-    /* height: 370px; */
     height: 40vw;
     min-height: 200px;
     max-height: 400px;
-    /* padding: 3.5% 0%; */
-  }
+}
 
-  .bottom-btn .inner {
+.bottom-btn .inner {
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-  .signup{
+.signup {
     display: flex;
     width: 100%;
     justify-content: space-around;
-  }
-  .signup p{
+}
+.signup p {
     font-size: 32px;
     font-family: "Pretendard-Regular", "Noto Sans KR", sans-serif;
     font-weight: 800;
     margin-bottom: 5%;
-  }
-  .signup2{
+}
+.signup2 {
     display: flex;
     width: 100%;
     justify-content: center;
-    
-  }
-  /* 왼 */
-  .left-btn {
+}
+
+/* 왼 */
+.left-btn {
     position: relative;
     width: 30%;
-    height:100%;
+    height: 100%;
     padding: 1.7% 0.5%;
-    /* margin-top: 50px; */
     border-radius: 13px;
     background-color: #ae85c9;
-    right: 1%
+    right: 1%;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
 
-  }
-  .left-btn:hover {
-    background-color:  #a07bb9;
-    }
-  
+.left-btn:hover {
+    background-color: #a07bb9;
+    transform: scale(1.02);
+}
   .left-btn a {
     position: relative;
     display: flex;
@@ -247,45 +264,52 @@ padding-left: 3%;
     height: 100%;
     justify-content: center;
     align-items: center;
-  }
-  .left-txt {
+    color: #fff;
+}
+
+.left-txt {
     position: relative;
     display: block;
     font-weight: 800;
     width: 50%;
     height: auto;
     text-align: center;
-  }
-  .left-txt p {
-    font-size:25px;
+}
+
+.left-txt p {
+    font-size: 25px;
     color: #fff;
-  }
-  .left-img {
+    letter-spacing: 0.1em;
+}
+.left-img {
     position: relative;
     display: block;
     width: 50%;
     /* background-color: yellowgreen; */
     margin-left: 5%;
-  }
-  .left-img img {
+}
+.left-img img {
     width: 40%;
-  }
-  /* 오 */
-  .right-btn {
+}
+/* 오 */
+.right-btn {
     position: relative;
     display: block;
     width: 30%;
-    height:100%;
+    height: 100%;
     /* margin-top: 50px; */
     padding: 1.7% 0.5%;
     border-radius: 13px;
-    background-color:#31302b;
+    background-color: #31302b;
     left: 1%;
-  }
-  .right-btn:hover {
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.right-btn:hover {
     background-color: #393836;
-    }
-  .right-btn a {
+    transform: scale(1.03);
+}
+.right-btn a {
     position: relative;
     display: flex;
     width: 100%;
@@ -293,34 +317,35 @@ padding-left: 3%;
     justify-content: center;
     align-items: center;
     color: #fff;
-  }
-  .right-txt {
+}
+.right-txt {
     position: relative;
     display: block;
     font-weight: 800;
     width: 50%;
     height: auto;
     text-align: center;
-  }
-  .right-txt p{
+}
+.right-txt p {
     color: #fff;
-    font-size:25px;
-  }
-  .right-img {
+    font-size: 25px;
+    letter-spacing: 0.1em;
+}
+.right-img {
     position: relative;
     display: block;
     width: 30%;
-  }
-  .right-img img {
+}
+.right-img img {
     width: 45%;
-  }
+}
 /* 포도 혜택 */
 .classbenefits {
     padding: 70px 0;
     background-color: #d1c3ff52;
 }
 /* 반응형 디자인 */
-@media all and (max-width: 1420px){
+@media all and (max-width: 1420px) {
     .myclass33 {
         width: 100%;
         margin: 0 auto;
@@ -328,19 +353,18 @@ padding-left: 3%;
         overflow: auto;
         padding-top: 20px;
     }
-    .myclass3-2{
+    .myclass3-2 {
         width: 80%;
         padding: 5px 0px;
     }
-    .myclass3-1 h3{
+    .myclass3-1 h3 {
         font-size: 0.875rem;
         line-height: 20px;
         display: block;
-       overflow: hidden;
-     text-overflow: ellipsis;
-     white-space: nowrap; 
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
-
 }
 
 @media all and (max-width: 1024px) {
@@ -360,40 +384,38 @@ padding-left: 3%;
         overflow: auto;
         padding-top: 20px;
     }
-    .myclass3-2{
+    .myclass3-2 {
         width: 80%;
         padding: 5px 0px;
     }
-    .myclass3-1 h3{
+    .myclass3-1 h3 {
         font-size: 0.875rem;
         line-height: 20px;
         display: block;
-       overflow: hidden;
-     text-overflow: ellipsis;
-     white-space: nowrap; 
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
     .signup p {
         font-size: 30px;
         margin-bottom: 5.5%;
     }
-    .right-txt p{
-     font-size:20px;
-      }
-      .left-txt p{
-      font-size: 20px;
-      }
-      .left-btn {
+    .right-txt p {
+        font-size: 20px;
+    }
+    .left-txt p {
+        font-size: 20px;
+    }
+    .left-btn {
         width: 42%;
         /* padding: 2.5% 2%; */
-      }
-      .right-btn {
+    }
+    .right-btn {
         width: 42%;
         /* padding: 2.5% 2%; */
-      }
-  
+    }
 }
 @media all and (max-width: 760px) {
-
     .myclass33 {
         width: 100%;
         margin: 0 auto;
@@ -418,10 +440,10 @@ padding-left: 3%;
         background-color: #ffffff;
         border-radius: 10px;
     }
-    .myclass3-1 h3{
+    .myclass3-1 h3 {
         font-size: 11px;
     }
-    .myclass3-1 h4{
+    .myclass3-1 h4 {
         font-size: 6px;
     }
     .podo33 {
@@ -471,36 +493,36 @@ padding-left: 3%;
         cursor: pointer;
     }
     .signup p {
-        font-size:25px;
+        font-size: 25px;
         margin-bottom: 7%;
     }
-    .right-txt p{
-        font-size:20px;
-         }
-         .left-txt p{
-         font-size: 18px;
-         }
-         .left-btn {
-            position: relative;
-            width: 42%;
-            height: 120%;
-            /* margin-top: 28px; */
-            border-radius: 13px;
-            right: 1%;
-        }
-        .right-btn{
-            position: relative;
-            width: 42%;
-            height: 120%;
-            /* margin-top: 28px; */
-            border-radius: 13px;
-            left: 1%;
-        }
-        .bottom-btn {
-            position: relative;
-            display: block;
-            /* height: 300px; */
-        }
+    .right-txt p {
+        font-size: 20px;
+    }
+    .left-txt p {
+        font-size: 18px;
+    }
+    .left-btn {
+        position: relative;
+        width: 42%;
+        height: 120%;
+        /* margin-top: 28px; */
+        border-radius: 13px;
+        right: 1%;
+    }
+    .right-btn {
+        position: relative;
+        width: 42%;
+        height: 120%;
+        /* margin-top: 28px; */
+        border-radius: 13px;
+        left: 1%;
+    }
+    .bottom-btn {
+        position: relative;
+        display: block;
+        /* height: 300px; */
+    }
 }
 @media all and (max-width: 700px) {
     .class {
@@ -525,7 +547,10 @@ padding-left: 3%;
     .myclass2-3 {
         padding: 0;
     }
-    .th1, .th2, .td2, .td3 {
+    .th1,
+    .th2,
+    .td2,
+    .td3 {
         font-size: 12px;
         font-weight: bold;
     }
@@ -537,7 +562,7 @@ padding-left: 3%;
     }
     .podo33 {
         display: none;
-    } 
+    }
     .myclass3 {
         width: 100%;
         border-right: none;
@@ -563,85 +588,85 @@ padding-left: 3%;
     .myclass3-2 h4 {
         font-size: 12px;
     }
-    .myclass3-2{
+    .myclass3-2 {
         width: 100%;
         padding: 5px 0px;
     }
-    .myclass3-1 h3{
+    .myclass3-1 h3 {
         font-size: 0.875rem;
         line-height: 20px;
         display: block;
-       overflow: hidden;
-     text-overflow: ellipsis;
-     white-space: nowrap; 
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
-    .myclass3{
+    .myclass3 {
         padding: 0;
-     }
-     .right-txt p{
-        font-size:15px;
-         }
-         .left-txt p{
-         font-size: 15px;
-         }
-         .left-btn {
-            position: relative;
-            width: 42%;
-            height: 120%;
-            /* margin-top: 28px; */
-            border-radius: 5px;
-            right: 1%;
-        }
-        .right-btn{
-            position: relative;
-            width: 42%;
-            height: 120%;
-            /* margin-top: 28px; */
-            border-radius: 5px;
-            left: 1%;
-        }
-        .bottom-btn {
-            position: relative;
-            display: block;
-            /* height: 300px; */
-        }
+    }
+    .right-txt p {
+        font-size: 15px;
+    }
+    .left-txt p {
+        font-size: 15px;
+    }
+    .left-btn {
+        position: relative;
+        width: 42%;
+        height: 120%;
+        /* margin-top: 28px; */
+        border-radius: 5px;
+        right: 1%;
+    }
+    .right-btn {
+        position: relative;
+        width: 42%;
+        height: 120%;
+        /* margin-top: 28px; */
+        border-radius: 5px;
+        left: 1%;
+    }
+    .bottom-btn {
+        position: relative;
+        display: block;
+        /* height: 300px; */
+    }
 }
 
-@media all and (max-width: 480px){
+@media all and (max-width: 480px) {
     .signup p {
-        font-size:18px;
+        font-size: 18px;
     }
-     .right-txt p{
-        font-size:13px;
-         }
-         .left-txt p{
-         font-size: 13px;
-         }
-         .left-btn {
-            position: relative;
-            width: 42%;
-            height: 120%;
-            /* margin-top: 28px; */
-            border-radius: 5px;
-            padding: 2.5% 3%;
-            right: 1%;
-        }
-        .right-btn{
-            position: relative;
-            width: 42%;
-            height: 120%;
-            /* margin-top: 28px; */
-            border-radius: 5px;
-            padding: 2.5% 3%;
-            left: 1%;
-        }
-        .bottom-btn {
-            position: relative;
-            display: block;
-        }
+    .right-txt p {
+        font-size: 13px;
+    }
+    .left-txt p {
+        font-size: 13px;
+    }
+    .left-btn {
+        position: relative;
+        width: 42%;
+        height: 120%;
+        /* margin-top: 28px; */
+        border-radius: 5px;
+        padding: 2.5% 3%;
+        right: 1%;
+    }
+    .right-btn {
+        position: relative;
+        width: 42%;
+        height: 120%;
+        /* margin-top: 28px; */
+        border-radius: 5px;
+        padding: 2.5% 3%;
+        left: 1%;
+    }
+    .bottom-btn {
+        position: relative;
+        display: block;
+    }
 }
 @media all and (max-width: 320px) {
-    .section{
+    .section {
         width: 100%;
         height: 5px;
         background-color: #eeeeeec4;
@@ -651,7 +676,6 @@ padding-left: 3%;
         padding-bottom: 10px;
         letter-spacing: 0.5px;
         padding-top: 10px;
-        
     }
     .myclass2-3 {
         padding: 0;
@@ -660,25 +684,28 @@ padding-left: 3%;
         display: none;
     }
     .class {
-        padding: 30px 0; 
+        padding: 30px 0;
     }
     .myclass {
-        flex-direction: column; 
-        align-items: center; 
+        flex-direction: column;
+        align-items: center;
     }
     .myclass2 {
-        width: 100%; 
-        padding-right: 0; 
-        border-right: none; 
+        width: 100%;
+        padding-right: 0;
+        border-right: none;
     }
     .myclass2-1 {
-        margin-bottom: 20px; 
+        margin-bottom: 20px;
     }
     .myclass2-2 h2 {
-        font-size: 16px; 
+        font-size: 16px;
         padding-left: 20px;
     }
-    .th1, .th2, .td2, .td3 {
+    .th1,
+    .th2,
+    .td2,
+    .td3 {
         font-size: 12px;
         font-weight: bold;
     }
@@ -693,73 +720,71 @@ padding-left: 3%;
         overflow: auto;
     }
     .myclass3-1 {
-        margin-bottom: 20px; 
+        margin-bottom: 20px;
         overflow: hidden;
     }
     .myclass3-1 img {
-        width: 100%; 
+        width: 100%;
     }
-    .myclass3-2{
+    .myclass3-2 {
         width: 60%;
         padding: 5px 0px;
     }
-    .myclass3-2{
+    .myclass3-2 {
         width: 100%;
         padding: 5px 0px;
     }
-    .myclass3-1 h3{
+    .myclass3-1 h3 {
         font-size: 0.875rem;
         line-height: 20px;
-        
     }
-    .myclass3{
-       padding: 0;
+    .myclass3 {
+        padding: 0;
     }
     .signup p {
-        font-size:15px;
+        font-size: 15px;
     }
-    .right-txt p{
-        font-size:10px;
-         }
-         .left-txt p{
-         font-size: 10px;
-         }
-         .left-btn {
-            position: relative;
-            width: 42%;
-            height: 96%;
-            /* margin-top: 28px; */
-            padding: 3% 3%;
-            border-radius: 5px;
-            right: 1%;
-        }
-        .right-btn{
-            position: relative;
-            width: 42%;
-            height: 96%;
-            /* margin-top: 28px; */
-            padding: 3% 3%;
-            border-radius: 5px;
-            left: 1%;
-        }
-        .bottom-btn {
-            position: relative;
-            display: block;
-        }
+    .right-txt p {
+        font-size: 10px;
+    }
+    .left-txt p {
+        font-size: 10px;
+    }
+    .left-btn {
+        position: relative;
+        width: 42%;
+        height: 96%;
+        /* margin-top: 28px; */
+        padding: 3% 3%;
+        border-radius: 5px;
+        right: 1%;
+    }
+    .right-btn {
+        position: relative;
+        width: 42%;
+        height: 96%;
+        /* margin-top: 28px; */
+        padding: 3% 3%;
+        border-radius: 5px;
+        left: 1%;
+    }
+    .bottom-btn {
+        position: relative;
+        display: block;
+    }
 }
 /* 자주 묻는 질문 */
 
-.class2{
- background-color: #f7f7f7;
- padding: 70px 0;
-padding-bottom: 41px;
-  
+.class2 {
+    background-color: #f7f7f7;
+    padding: 70px 0;
+    padding-bottom: 41px;
 }
 .col2 {
     width: 100%;
     max-width: 1000px;
     margin: 20px auto;
-  }
+}
 
 .myclass-notice {
     width: 100%;
@@ -775,8 +800,14 @@ padding-bottom: 41px;
     width: 50%;
     padding-right: 3%;
 }
+.myclass4 h2{
+    font-size: 20px;
+}
+#myclass33{
+    font-size: 20px;
+}
 /* myclass5 */
-.myclass5{
+.myclass5 {
     width: 50%;
     padding-left: 3%;
 }
@@ -784,8 +815,8 @@ padding-bottom: 41px;
     transform: rotate(0deg);
     transition: 0.25s;
 }
-.qna{
-    margin:40px 0px 20px;
+.qna {
+    margin: 40px 0px 20px;
 }
 .qna .box.text {
     padding: 20px 50px;
@@ -794,13 +825,14 @@ padding-bottom: 41px;
     margin-bottom: 20px;
     cursor: pointer;
 }
-  
-  .qna .box.text > h2 {
+
+.qna .box.text > h2 {
     text-align: left;
     position: relative;
+    font-size: 20px;
 }
-  
-  .qna .box.text > h2:after {
+
+.qna .box.text > h2:after {
     content: "\f054";
     font-family: "Font Awesome 5 free";
     position: absolute;
@@ -808,37 +840,40 @@ padding-bottom: 41px;
     top: 0;
     transform: rotate(0deg);
     transition: 0.25s;
-  }
-  
-  .qna .box.text.qna_show > h2:after {
+}
+
+.qna .box.text.qna_show > h2:after {
     transform: rotate(90deg);
-  }
-  
-  .qna .box.text > h2:before {
+}
+
+.qna .box.text > h2:before {
     content: "Q. ";
-  }
-  
-  .qna .box.text > .box_content {
+}
+
+.qna .box.text > .box_content {
     overflow: hidden;
     font-size: 16px;
     margin-top: 15px;
 }
-  
-  .qna .box.text > .box_content p:first-of-type:before {
+
+.qna .box.text > .box_content p:first-of-type:before {
     content: "A. ";
     font-weight: bold;
-  }
+}
 
- .accordion-title{
+.accordion-title {
     font-family: "Pretendard-Regular", "Noto Sans KR", sans-serif;
+}
+.accordion button .accordion-title {
+    font-size: 16px;
 }
 .accordion .accordion-item {
     border-bottom: 1px solid #e5e5e5;
-  }
-  .accordion .accordion-item button[aria-expanded=true] {
+}
+.accordion .accordion-item button[aria-expanded="true"] {
     border-bottom: 1px solid #ae85c9;
-  }
-  .accordion button {
+}
+.accordion button {
     position: relative;
     display: block;
     text-align: left;
@@ -850,20 +885,22 @@ padding-bottom: 41px;
     border: none;
     background: none;
     outline: none;
-  }
-  .accordion button:hover, .accordion button:focus {
+}
+.accordion button:hover,
+.accordion button:focus {
     cursor: pointer;
     color: #ae85c9;
-  }
-  .accordion button:hover::after, .accordion button:focus::after {
+}
+.accordion button:hover::after,
+.accordion button:focus::after {
     cursor: pointer;
-    color:#ae85c9;
+    color: #ae85c9;
     border: 1px solid #ae85c9;
-  }
-  .accordion button .accordion-title {
+}
+.accordion button .accordion-title {
     padding: 1em 1.5em 1em 0;
-  }
-  .accordion button .icon {
+}
+.accordion button .icon {
     display: inline-block;
     position: absolute;
     top: 18px;
@@ -872,9 +909,9 @@ padding-bottom: 41px;
     height: 22px;
     border: 1px solid;
     border-radius: 22px;
-  }
+}
 
-  .accordion button .icon::before {
+.accordion button .icon::before {
     display: block;
     position: absolute;
     content: "";
@@ -884,8 +921,8 @@ padding-bottom: 41px;
     height: 2px;
     background: currentColor;
     transition: 1s;
-  }
-  .accordion button .icon::after {
+}
+.accordion button .icon::after {
     display: block;
     position: absolute;
     content: "";
@@ -895,53 +932,49 @@ padding-bottom: 41px;
     height: 10px;
     background: currentColor;
     transition: 1s;
-  }
-  .accordion button[aria-expanded=true] {
+}
+.accordion button[aria-expanded="true"] {
     color: #ae85c9;
-  }
-  .accordion button[aria-expanded=true] .icon::after {
+}
+.accordion button[aria-expanded="true"] .icon::after {
     width: 0;
-  }
-  .accordion button[aria-expanded=true] + .accordion-content {
+}
+.accordion button[aria-expanded="true"] + .accordion-content {
     opacity: 1;
     max-height: 9em;
     transition: all 200ms linear;
     will-change: opacity, max-height;
-  }
-  .accordion .accordion-content {
+}
+.accordion .accordion-content {
     opacity: 0;
     max-height: 0;
     overflow: hidden;
     transition: opacity 200ms linear, max-height 200ms linear;
     will-change: opacity, max-height;
-  }
-  .accordion .accordion-content p {
+}
+.accordion .accordion-content p {
     font-size: 1rem;
     font-weight: 300;
     margin: 2em 0;
     line-height: 1.3;
 }
 
-
-  @media screen and (max-width:879px){
-
-  .qna .box.text > .pobi {
-    transform: rotate(0deg);
-    transition: 0.25s;
+@media screen and (max-width: 879px) {
+    .qna .box.text > .pobi {
+        transform: rotate(0deg);
+        transition: 0.25s;
+    }
+    .qna-item .question {
+        font-size: 14px;
+    }
 }
-.qna-item .question {
-    font-size: 14px;
-}
 
-  }
-
-
-@media screen and (max-width:720px){
-.myclass4{
-    width: 100%;
-    padding-left: 3%;
-    padding-bottom: 20px;
-}
+@media screen and (max-width: 720px) {
+    .myclass4 {
+        width: 100%;
+        padding-left: 3%;
+        padding-bottom: 20px;
+    }
     .myclass5 {
         width: 100%;
         padding-left: 3%;
@@ -975,11 +1008,11 @@ padding-bottom: 41px;
     .qna-item .answer-article {
         font-size: 14px;
     }
-    .box_content > p{
+    .box_content > p {
         font-size: 12px;
     }
     #answer-cnt {
-      font-size: 12px;
+        font-size: 12px;
     }
     .accordion .accordion-content p {
         font-size: 12px;
@@ -988,18 +1021,18 @@ padding-bottom: 41px;
         font-size: 14px;
     }
 }
-@media screen and (max-width:320px){
+@media screen and (max-width: 320px) {
     .qna-item .question {
         font-size: 12px;
     }
-    .box_content > p{
+    .box_content > p {
         font-size: 12px;
     }
     .qna-item .answer-article {
         font-size: 13px;
     }
     #answer-cnt {
-      font-size: 12px;
+        font-size: 12px;
     }
     .accordion .accordion-content p {
         font-size: 12px;
