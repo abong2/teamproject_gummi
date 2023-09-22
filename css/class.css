@@ -367,6 +367,12 @@ td {
         text-overflow: ellipsis;
         white-space: nowrap;
     }
+
+    .content {
+        width: 100%;
+        height: 450px;
+        animation: none;
+    }
 }
 
 @media all and (max-width: 1024px) {
@@ -415,6 +421,11 @@ td {
     .right-btn {
         width: 42%;
         /* padding: 2.5% 2%; */
+    }
+    .content {
+        width: 100%;
+        height: 450px;
+        animation: none;
     }
 }
 @media all and (max-width: 760px) {
@@ -525,6 +536,11 @@ td {
         display: block;
         /* height: 300px; */
     }
+.content {
+    width: 100%;
+    height: 450px;
+    animation: none;
+}
 }
 @media all and (max-width: 700px) {
     .class {
@@ -632,6 +648,11 @@ td {
         display: block;
         /* height: 300px; */
     }
+    .content {
+        width: 100%;
+        height: 450px;
+        animation: none;
+    }
 }
 
 @media all and (max-width: 480px) {
@@ -665,6 +686,11 @@ td {
     .bottom-btn {
         position: relative;
         display: block;
+    }
+    .content {
+        width: 100%;
+        height: 450px;
+        animation: none;
     }
 }
 @media all and (max-width: 320px) {
@@ -773,6 +799,11 @@ td {
     .bottom-btn {
         position: relative;
         display: block;
+    }
+    .content {
+        width: 100%;
+        height: 450px;
+        animation: none;
     }
 }
 /* 자주 묻는 질문 */
@@ -969,6 +1000,14 @@ td {
     .qna-item .question {
         font-size: 14px;
     }
+    .qna .box.text > h2 {
+        text-align: left;
+        position: relative;
+        font-size: 16px;
+    }
+    .box_content p{
+        line-height: 1.2;
+       }
 }
 
 @media screen and (max-width: 720px) {
@@ -1017,10 +1056,18 @@ td {
         font-size: 12px;
     }
     .accordion .accordion-content p {
-        font-size: 12px;
+        font-size: 13px;
     }
     .accordion button .accordion-title {
         font-size: 14px;
+    }
+    .qna .box.text > h2 {
+        text-align: left;
+        position: relative;
+        font-size: 16px;
+    }
+    .box_content p{
+     line-height: 1.2;
     }
 }
 @media screen and (max-width: 320px) {
@@ -1030,16 +1077,25 @@ td {
     .box_content > p {
         font-size: 12px;
     }
+    
     .qna-item .answer-article {
         font-size: 13px;
+    }
+    .qna .box.text > h2 {
+        text-align: left;
+        position: relative;
+        font-size: 14px;
     }
     #answer-cnt {
         font-size: 12px;
     }
     .accordion .accordion-content p {
-        font-size: 12px;
+        font-size: 13px;
     }
     .accordion button .accordion-title {
         font-size: 14px;
     }
+    .box_content p{
+        line-height: 1.2;
+       }
 }
