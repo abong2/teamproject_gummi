@@ -1,5 +1,5 @@
 .category{
-  padding: 0 70px;
+  padding: 70px 0;
 }
 .category .inner {
   margin: 0 auto;
@@ -48,12 +48,9 @@
   /* padding-bottom: 70%; */
 }
 @media screen and (max-width: 1280px) {
-  .category .inner {
-    /* padding: 70px 100px; */
-  }
-  #cate_list1 {
-    /* margin-bottom: 5%; */
-  }
+  /* .category{
+    padding: 0 70px;
+  } */
 }
 @media screen and (max-width: 760px) {
   .category .inner {
