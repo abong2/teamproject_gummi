@@ -41,9 +41,9 @@
 .visual .swiper-button-next:after {
     font-size: 1.65rem !important;
     font-weight: 600 !important;
-    color: #333;
+    color: #f0f0f0;
 }
 .visual .swiper-pagination-bullet,
 .visual .swiper-pagination-bullet-active {
-    background-color: #ffffff;
+    background-color: #f0f0f0;
 }
