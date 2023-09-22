@@ -1,8 +1,46 @@
-.banner02{
-    padding: 0 70px;
-}
 .banner02 .inner{
-    margin: 0 auto;
-    width: 100%;
-    height: 100%;
+margin: 0 auto;
+width: 100%;
+height: 100%;
+}
+/* 배너 전체 */
+.banner02_wrap {
+width: 100%;
+height: 500px;
+background-color: yellowgreen;
+}
+/* 배너 타이틀 */
+.banner02_title {
+padding: 70px 0;
+}
+.banner02_inner {
+width: 100%;
+}
+/* 이미지 */
+.banner02_inner img {
+width: 40%;
+}
+/* 내용 */
+.banner02_inner {
+display: flex;
+}
+.banner02_section1 {
+    width: 30%;
+/* display: flex;
+flex-direction: column; */
+}
+.banner02_section2 {
+    width: 30%;
+/* display: flex;
+flex-direction: column; */
+}
+.banner02_section3 {
+    width: 30%;
+/* display: flex;
+flex-direction: column; */
+}
+
+/* 버튼 */
+.banner02_btn button {
+margin: 0 auto;
 }
