@@ -257,7 +257,7 @@ td {
     background-color: #a07bb9;
     transform: scale(1.02);
 }
-.left-btn a {
+  .left-btn a {
     position: relative;
     display: flex;
     width: 100%;
