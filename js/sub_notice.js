@@ -2,7 +2,7 @@ window.addEventListener("load", function() {
   $('.check.all').on('change', function(){
     $('.check').prop('checked', $(this).prop('checked'));
   });
-$(document).ready(function(){
+  $(document).ready(function(){
   // $('.check.all').on('change', function(){
   //   $('.check').prop('checked', $(this).prop('checked'));
   // });
@@ -15,3 +15,4 @@ $(document).ready(function(){
     $(".select-option").toggle("active")
   })
 })
+});
