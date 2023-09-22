@@ -61,6 +61,12 @@
     <!-- End Google Tag Manager (noscript) -->
     </head>
     <body>
+          <!-- 스크롤 버튼 -->
+    <div class="top-button">
+        <a href="#" class="top-btn" id="top-btn">
+          <img src="images/top-btn.png" alt="top-btn" id="top-btn-img"/>
+        </a>
+      </div>
         <div class="wrap">
             <!-- header부분 -->
             <header class="header">
@@ -217,9 +223,47 @@
                     </nav>
                 </div>
             </header>
+            <div class="mb_searchbar">
+                <div class="inner">
+                    <ul class="mb_search">
+                        <li>
+                            <ul class="mb_searchbar_search">
+                                <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                                <li><input type="text" name="searchtext" id="searchtext" placeholder="Search"></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-xmark"></i></a>
+                        </li>
+                    </ul>
+                    <ul class="mb_recommend">
+                        <li>인기검색어</li>
+                        <li>
+                            <ul class="mb_recommend_text">
+                                <li><a href="#">키오스크</a></li>
+                                <li><a href="#">디저트</a></li>
+                                <li><a href="#">식물</a></li>
+                                <li><a href="#">케이크</a></li>
+                                <li><a href="#">그래픽</a></li>
+                                <li><a href="#">코딩</a></li>
+                                <li><a href="#">언리얼</a></li>
+                                <li><a href="#">캐릭터</a></li>
+                                <li><a href="#">일러스트</a></li>
+                                <li><a href="#">클래스</a></li>
+                                <li><a href="#">포도알</a></li>
+                                <li><a href="#">C4D</a></li>
+                                <li><a href="#">번역</a></li>
+                                <li><a href="#">DIY</a></li>
+                                <li><a href="#">재테크</a></li>
+                                <li><a href="#">청소</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
             <section class="notice">
                 <div class="page-img">
-                    <img src="images/visual_slider01.svg" alt="">
+                    <img src="images/bannerlist.svg" alt="">
                 </div>
                 <div class="inner">
                     <div class="page-title">
@@ -243,11 +287,11 @@
                                 </div>
                                 <div class="search-select">
                                     <div class="select-title">
-                                        <p>Gummi ▼</p> 
+                                        <p>전체 <i class="fa-solid fa-chevron-down"></i></p> 
                                     </div>
                                     <ul class="select-option">
                                         <li><a href="#">장소 대여</a></li>
-                                        <li><a href="#">길드원 모집</a></li>
+                                        <li><a href="#">함께 하기</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -268,8 +312,7 @@
                                     <td class="table-number">11</td>
                                     <th>
                                         <a href="#!"
-                                            >[2023.10.17 ~ 11.02] 장소
-                                            대여합니다.</a
+                                            >[장소 대여] "그린카페" 오후 2시부터 6시까지 가능합니다~</a
                                         >
                                         <p>테스트</p>
                                     </th>
@@ -279,8 +322,7 @@
                                     <td class="table-number">10</td>
                                     <th>
                                         <a href="#!"
-                                            >[2023.06.10 ~ 09.02] IT수업 같이
-                                            들을 사람 모집합니다.</a
+                                            >[함께 하기] 향수 수업 같이 들으실분 찾습니다~ </a
                                         >
                                         <p>테스트</p>
                                     </th>
@@ -290,8 +332,7 @@
                                     <td class="table-number">9</td>
                                     <th>
                                         <a href="#!"
-                                            >[2023.04.17 ~ 06.02] 장소
-                                            대여합니다.</a
+                                            >[장소 대여] 대규모 회의실 공간 대여 가능합니다!</a
                                         >
                                         <p>테스트</p>
                                     </th>
@@ -301,8 +342,7 @@
                                     <td class="table-number">8</td>
                                     <th>
                                         <a href="#!"
-                                            >[2023.03.17 ~ 04.02] 장소
-                                            대여합니다.</a
+                                            >[장소 대여] 프라이빗한 공간 대여 가능합니다.</a
                                         >
                                         <p>테스트</p>
                                     </th>
@@ -312,8 +352,7 @@
                                     <td class="table-number">7</td>
                                     <th>
                                         <a href="#!"
-                                            >[2023.02.18 ~ 04.02] 마리모 수업
-                                            같이 들을 사람 모집합니다.</a
+                                            >[함께 하기] 야자 마치고 IT 수업 같이 들으실 분 있음?</a
                                         >
                                         <p>테스트</p>
                                     </th>
@@ -323,8 +362,7 @@
                                     <td class="table-number">6</td>
                                     <th>
                                         <a href="#!"
-                                            >[2022.09.29 ~ 02.02] 장소
-                                            대여합니다.</a
+                                            >[장소 대여] 햄버거 매장이지만 공부하실 분 오세용!</a
                                         >
                                         <p>테스트</p>
                                     </th>
@@ -334,8 +372,7 @@
                                     <td class="table-number">5</td>
                                     <th>
                                         <a href="#!"
-                                            >[2022.07.13 ~ 09.02] 장소
-                                            대여합니다.</a
+                                            >[장소 대여] 저희 스터디 카페 편하게 오셔서 공부하세요~</a
                                         >
                                         <p>테스트</p>
                                     </th>
@@ -345,8 +382,7 @@
                                     <td class="table-number">4</td>
                                     <th>
                                         <a href="#!"
-                                            >[2022.04.17 ~ 07.02] 장소
-                                            대여합니다.</a
+                                            >[장소 대여] 저희 카페 오후 3시부터 5시까지 비는데 쓰실분 있나요?</a
                                         >
                                         <p>테스트</p>
                                     </th>
@@ -356,8 +392,8 @@
                                     <td class="table-number">3</td>
                                     <th>
                                         <a href="#!"
-                                            >[2022.03.12 ~ 04.02] 마리모 수업
-                                            같이 들을 사람 모집합니다.</a
+                                            >[함께 하기] 마리모 수업
+                                            같이 들으실 분 있나요?</a
                                         >
                                         <p>테스트</p>
                                     </th>
@@ -368,8 +404,7 @@
                                     <td class="table-number">2</td>
                                     <th>
                                         <a href="#!"
-                                            >[2022.02.24 ~ 03.02] IT수업 같이
-                                            들을 사람 모집합니다.</a
+                                            >[함께 하기] IT 수업 같이 들으실 분 있으시면 연락주세용!</a
                                         >
                                     </th>
                                     <td>2022.02.24</td>
@@ -379,7 +414,7 @@
                                     <td class="table-number">1</td>
                                     <th>
                                         <a href="#!"
-                                            >[2022.01.13 ~ 02.13] 쿠킹수업 같이
+                                            >[함께 하기] 쿠킹수업 같이
                                             들을 사람 모집합니다.</a
                                         >
                                     </th>
@@ -419,12 +454,12 @@
                         </ul>
                         <div class="footertext">
                             <p>
-                                (주)구미 | 대구광역시 중구 중앙대로 394 제일빌딩 5F | 대표 : 김연우 | 개인정보관리책임자 : 김연우 | 사업자등록번호 : 012-34-56789<br>
+                                (주)Gummi | 대구광역시 중구 중앙대로 394 제일빌딩 5F | 대표 : 김연우 | 개인정보관리책임자 : 김연우 | 사업자등록번호 : 012-34-56789<br>
                                 통신판매업신고 : 2023-대구-01234 | 유로직업소개사업등록번호 : 제2023-01234567-89-0-12345호 | 고객센터 : 1234-5678 | help@gummi.com
                             </p>
                             <p>
-                                (주)구미는 통신판매중개자이며, 통신판매의 당사자가 아닙니다. 상품, 상품정보, 거래에 관한 의무와 책임은 판매회원에게 있습니다.<br>
-                                (주)구미 사이트의 상품/판매회원/중개 서비스/거래 정보, 콘텐츠, UI 등에 대한 무단복제, 전송, 배포, 스크래핑 등의 행위는 저작권법, 콘텐츠산업 진흥법 등 관련법령에 의하여 엄격히 금지됩니다.
+                                (주)Gummi는 통신판매중개자이며, 통신판매의 당사자가 아닙니다. 상품, 상품정보, 거래에 관한 의무와 책임은 판매회원에게 있습니다.<br>
+                                (주)Gummi 사이트의 상품/판매회원/중개 서비스/거래 정보, 콘텐츠, UI 등에 대한 무단복제, 전송, 배포, 스크래핑 등의 행위는 저작권법, 콘텐츠산업 진흥법 등 관련법령에 의하여 엄격히 금지됩니다.
                             </p>
                             <p>
                                 Copyright ⓒ 2023 gummi Inc.All rights reserved

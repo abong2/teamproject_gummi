@@ -161,7 +161,7 @@ padding-left: 3%;
 }
 .myclass3-1{
     width: 30%;   
-    overflow: hidden;
+   
 }
 .myclass3-1 img{
     width: 100%;  
@@ -169,7 +169,9 @@ padding-left: 3%;
     
 }
 .myclass3-1 img:hover{
+    width: 100%;
     filter: brightness(1.2);
+   
     
 }
 .myclass3-2 {
@@ -354,9 +356,8 @@ padding-left: 3%;
         padding-bottom: 11px;
         letter-spacing: 0.5px;
         padding-top: 10px;
-        padding-right: 278px;
-        text-align: center;
-        width: 500px;
+    
+      
     }
     .podo33 {
         display: none;
@@ -414,8 +415,7 @@ padding-left: 3%;
         padding-bottom: 10px;
         letter-spacing: 0.5px;
         padding-top: 10px;
-        padding-right: 279px;
-        text-align: center;
+        
     }
     .myclass2-3 {
         padding: 0;
@@ -508,6 +508,7 @@ padding-bottom: 41px;
     width: 50%;
     padding-right: 3%;
 }
+/* myclass5 */
 .myclass5{
     width: 50%;
     padding-left: 3%;
@@ -519,12 +520,13 @@ padding-bottom: 41px;
 .qna{
     margin:40px 0px 20px;
 }
-  .qna .box.text {
+.qna .box.text {
     padding: 20px 50px;
     border: 1px solid #ccc;
     border-radius: 10px;
     margin-bottom: 20px;
-  }
+    cursor: pointer;
+}
   
   .qna .box.text > h2 {
     text-align: left;
@@ -552,7 +554,7 @@ padding-bottom: 41px;
   .qna .box.text > .box_content {
     overflow: hidden;
     font-size: 16px;
-    margin-top: 10px;
+    margin-top: 15px;
 }
   
   .qna .box.text > .box_content p:first-of-type:before {
@@ -560,55 +562,103 @@ padding-bottom: 41px;
     font-weight: bold;
   }
 
-
-  #faq {
-    margin: 20px auto;
+ .accordion-title{
+    font-family: "Pretendard-Regular", "Noto Sans KR", sans-serif;
+}
+.accordion .accordion-item {
+    border-bottom: 1px solid #e5e5e5;
   }
-  /* .qna-list {
-    border-top: 2px solid #000;
-  } */
-  .qna-item {
-    border-bottom: 1px solid #f0f0f0;
+  .accordion .accordion-item button[aria-expanded=true] {
+    border-bottom: 1px solid #ae85c9;
   }
-  .qna-item.on{
-    background-color: #fcfcfc;
+  .accordion button {
+    position: relative;
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 1em 0;
+    color: #7288a2;
+    font-size: 1.15rem;
+    font-weight: 400;
+    border: none;
+    background: none;
+    outline: none;
   }
-  .qna-item:hover {
-    background: #fcfcfc;
+  .accordion button:hover, .accordion button:focus {
+    cursor: pointer;
+    color: #ae85c9;
   }
-  .qna-item .question-article {border-bottom:0;}
-  .qna-item:first-child .question-article {border-top:0;}
-  .qna-item.on .question-article {border-bottom:0;}
-  .qna-item.on + .qna-item .question-article {border-top:0;}
-  
-  .qna-item .question {display:block; position:relative;padding:15px; background:url(https://dev2.newswire.co.kr/assets/img/sub/qna-down.png) no-repeat 100% 50%; color:#000; font-size:16px; line-height:24px;
-    -webkit-transition:all 0.3s ease;
-    -moz-transition:all 0.3s ease;
-    -o-transition:all 0.3s ease;
-    -ms-transition:all 0.3s ease;
-    transition:all 0.3s ease;
-  ;}
-  
-  .qna-item .question span.q {
-    margin-right: 10px;
+  .accordion button:hover::after, .accordion button:focus::after {
+    cursor: pointer;
+    color:#ae85c9;
+    border: 1px solid #ae85c9;
+  }
+  .accordion button .accordion-title {
+    padding: 1em 1.5em 1em 0;
+  }
+  .accordion button .icon {
     display: inline-block;
-    color: #648294;
+    position: absolute;
+    top: 18px;
+    right: 0;
+    width: 22px;
+    height: 22px;
+    border: 1px solid;
+    border-radius: 22px;
   }
-  .qna-item .answer-article a:hover {
-    text-decoration: underline;
-  }
-  .qna-item .answer-article {display:none; padding:15px; border:0; color:#666; font-size:16px; line-height:24px;}
-  .qna-item .answer-article strong {font-weight:normal;}
-  
 
+  .accordion button .icon::before {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 9px;
+    left: 5px;
+    width: 10px;
+    height: 2px;
+    background: currentColor;
+    transition: 1s;
+  }
+  .accordion button .icon::after {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 5px;
+    left: 9px;
+    width: 2px;
+    height: 10px;
+    background: currentColor;
+    transition: 1s;
+  }
+  .accordion button[aria-expanded=true] {
+    color: #ae85c9;
+  }
+  .accordion button[aria-expanded=true] .icon::after {
+    width: 0;
+  }
+  .accordion button[aria-expanded=true] + .accordion-content {
+    opacity: 1;
+    max-height: 9em;
+    transition: all 200ms linear;
+    will-change: opacity, max-height;
+  }
+  .accordion .accordion-content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 200ms linear, max-height 200ms linear;
+    will-change: opacity, max-height;
+  }
+  .accordion .accordion-content p {
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 2em 0;
+    line-height: 1.3;
+}
 
 
   @media screen and (max-width:879px){
 
   .qna .box.text > .pobi {
-    /* position: absolute;
-    right: -24px;
-    top: 0; */
     transform: rotate(0deg);
     transition: 0.25s;
 }
@@ -655,9 +705,39 @@ padding-bottom: 41px;
     .qna-item .question {
         font-size: 14px;
     }
+    .qna-item .answer-article {
+        font-size: 14px;
+    }
+    .box_content > p{
+        font-size: 12px;
+    }
+    #answer-cnt {
+      font-size: 12px;
+    }
+    .accordion .accordion-content p {
+        font-size: 12px;
+    }
+    .accordion button .accordion-title {
+        font-size: 14px;
+    }
 }
 @media screen and (max-width:320px){
     .qna-item .question {
         font-size: 12px;
+    }
+    .box_content > p{
+        font-size: 12px;
+    }
+    .qna-item .answer-article {
+        font-size: 13px;
+    }
+    #answer-cnt {
+      font-size: 12px;
+    }
+    .accordion .accordion-content p {
+        font-size: 12px;
+    }
+    .accordion button .accordion-title {
+        font-size: 14px;
     }
 }

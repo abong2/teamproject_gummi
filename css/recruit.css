@@ -3,3 +3,430 @@
     width: 100%;
     height: 100%;
 }
+/* 전체 */
+.recruit_wrap {
+    display: flex;
+    /* background-color: yellow; */
+}
+/* 인원모집 및 장소대여 타이틀 */
+.recruit_title {
+    padding: 0 0 40px 0;
+}
+
+/* 인원 모집 */
+.recruit_with {
+    width: 100%;
+    display: flex;
+    /* background-color: yellowgreen; */
+}
+.recruit_with_img {
+    width: 50%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.recruit_with_img img {
+    transition: transform 0.2s;
+}
+.recruit_with_img img:hover{
+    transform: scale(1.06);
+}
+.recruit_with_text {
+    font-size: 15px;
+    padding-left: 50px;
+    line-height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.recruit_with_title {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+.recruit_with_p_mobile {
+    display: none;
+}
+/* 장소 대여 */
+.recruit_place {
+    width: 100%;
+    display: flex;
+}
+.recruit_place_img {
+    width: 50%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.recruit_place_img img {
+    transition: transform 0.3s;
+}
+.recruit_place_img img:hover{
+    transform: scale(1.06);
+}
+.recruit_place_text {
+    font-size: 15px;
+    padding-left: 50px;
+    line-height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.recruit_place_title {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+/* 장소 대여 반응형 */
+#recruit_place_mobile {
+    display: none;
+    text-align: right;
+    padding-right: 50px;
+}
+#recruit_place_mobile_title {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+#recruit_place_mobile_btn {
+    background-color: #ae85c9;
+    color: #ffff;
+    margin-top: 20px;
+    font-weight: bold;
+    padding: 15px 32px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+}
+#recruit_place_mobile_btn:hover{
+    background-color: #a07bb9;
+}
+/* 버튼 */ 
+.recruit_btn {
+    background-color: #ae85c9;
+    color: #ffff;
+    margin-top: 20px;
+    font-weight: bold;
+    padding: 15px 32px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+}
+.recruit_btn:hover{
+    background-color: #a07bb9;
+}
+
+/* 반응형 */
+/* @media all and (max-width: 1114px){
+    .recruit_with {
+        width: 101%;
+        padding-right: 1%;
+    }
+}
+@media all and (max-width: 1104px){
+    .recruit_with {
+        width: 102%;
+        padding-right: 2%;
+    }
+}
+@media all and (max-width: 1094px){
+    .recruit_with {
+        width: 103%;
+        padding-right: 3%;
+    }
+}
+@media all and (max-width: 1084px){
+    .recruit_with {
+        width: 104%;
+        padding-right: 4%;
+    }
+}
+@media all and (max-width: 1074px){
+    .recruit_with {
+        width: 105%;
+        padding-right: 5%;
+    }
+}
+@media all and (max-width: 1064px){
+    .recruit_with {
+        width: 106%;
+        padding-right: 6%;
+    }
+}
+@media all and (max-width: 1054px){
+    .recruit_with {
+        width: 107%;
+        padding-right: 7%;
+    }
+}
+@media all and (max-width: 1044px){
+    .recruit_with {
+        width: 108%;
+        padding-right: 8%;
+    }
+}
+@media all and (max-width: 1034px){
+    .recruit_with {
+        width: 109%;
+        padding-right: 9%;
+    }
+} */
+/* 태블릿 */
+@media all and (max-width: 1024px){
+    .recruit_wrap {
+        display: flex;
+        flex-direction: column;
+    }
+    /* 장소 대여 */
+    .recruit_place {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .recruit_place_text {
+        display: none;
+    }
+    #recruit_place_mobile {
+        display: inline-block;
+        padding-right: 50px;
+        font-size: 15px;
+        line-height: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .recruit_with_title {
+        font-size: 19px;
+        padding-bottom: 19px;
+    }
+    #recruit_place_mobile_title {
+        font-size: 19px;
+        padding-bottom: 19px;
+    }
+}
+@media all and (max-width: 759px){
+    .recruit_with_title {
+        font-size: 19px;
+    }
+    #recruit_place_mobile_title {
+        font-size: 19px;
+    }
+    .recruit_with_text {
+        font-size: 14px;
+    }
+    #recruit_place_mobile {
+        font-size: 14px;
+    }
+    .recruit_btn {
+    font-size: 12px;
+    }
+    #recruit_place_mobile_btn {
+        font-size: 12px;
+    }
+}
+@media all and (max-width: 730px){
+    .recruit_with_title {
+        font-size: 18px;
+    }
+    #recruit_place_mobile_title {
+        font-size: 18px;
+    }
+    .recruit_with_text {
+        font-size: 13px;
+    }
+    #recruit_place_mobile {
+        font-size: 13px;
+        padding-bottom: 13px;
+    }
+    .recruit_btn {
+    font-size: 12px;
+    padding-bottom: 13px;
+    }
+    .recruit_btn {
+    margin-top: 18px;
+        }
+    #recruit_place_mobile_btn {
+    margin-top: 18px;
+        }
+}
+@media all and (max-width: 670px){
+    .recruit_with_title {
+        font-size: 17px;
+    }
+    .recruit_with_text {
+        font-size: 12px;
+        padding-left: 45px;
+    }
+    #recruit_place_mobile {
+        font-size: 12px;
+        padding: 0 45px 0 0; 
+    }
+    #recruit_place_mobile_title {
+        font-size: 17px;
+    }
+}
+@media all and (max-width: 655px){
+    .recruit_with_title {
+        padding-bottom: 17px;
+    }
+    #recruit_place_mobile_title {
+        padding-bottom: 17px;
+    }
+    .recruit_btn {
+        margin-top: 17px;
+            }
+        #recruit_place_mobile_btn {
+        margin-top: 17px;
+            }
+}
+@media all and (max-width: 600px){
+    .recruit_with_text {
+        padding-left: 40px;
+    }
+    #recruit_place_mobile {
+        padding: 0 40px 0 0; 
+    }  
+    .recruit_btn {
+        margin-top: 16px;
+        padding: 13px 30px;
+            }
+        #recruit_place_mobile_btn {
+        margin-top: 16px;
+        padding: 13px 30px;
+            }
+}
+@media all and (max-width: 540px){
+    .recruit_with_title {
+font-size: 16px;
+padding-bottom: 12px;
+    }
+    #recruit_place_mobile_title {
+font-size: 16px;
+padding-bottom: 12px;
+}
+.recruit_with_p {
+    font-size: 13px;
+}
+.recruit_place_mobile_p{
+    font-size: 13px;
+}
+.recruit_btn {
+    margin-top: 14px;
+        }
+    #recruit_place_mobile_btn {
+    margin-top: 14px;
+        }
+}
+@media all and (max-width: 520px){
+.recruit_btn {
+    padding: 11px 28px;
+    margin-top: 11px;
+    }
+    #recruit_place_mobile_btn {
+    padding: 11px 28px;
+    margin-top: 11px;    
+}
+}
+@media all and (max-width: 480px){
+    .recruit_with_title {
+        font-size: 14px;
+        padding-bottom: 11px;
+            }
+    #recruit_place_mobile_title {
+        font-size: 14px;
+        padding-bottom: 11px;
+        }
+    .recruit_with_p {
+            font-size: 11px;
+            line-height: 15px;
+        }
+    .recruit_place_mobile_p{
+            font-size: 11px;
+            line-height: 15px;
+        }
+    .recruit_btn {
+            padding: 8px 20px;
+            margin-top: 11px;
+            font-size: 11px;
+            }
+    #recruit_place_mobile_btn {
+            padding: 8px 20px;
+            margin-top: 11px;  
+            font-size: 11px;
+    }
+}
+@media all and (max-width: 430px){
+.recruit_with_title {
+    font-size: 13px;
+    padding-bottom: 7px;
+    }
+#recruit_place_mobile_title {
+    font-size: 13px;
+    padding-bottom: 7px;
+    }
+.recruit_btn {
+    padding: 7px 18px;
+    margin-top: 8px;
+    }
+#recruit_place_mobile_btn {
+    padding: 7px 18px;
+    margin-top: 8px;  
+}
+.recruit_with_text {
+    padding-left: 30px;
+}
+#recruit_place_mobile {
+    padding: 0 30px 0 0; 
+} 
+}
+@media all and (max-width: 370px){
+.recruit_with_title {
+padding-bottom: 6px;
+}
+#recruit_place_mobile_title {
+padding-bottom: 6px;
+}
+.recruit_btn {
+    padding: 6px 17px;
+    }
+#recruit_place_mobile_btn {
+    padding: 6px 17px;
+}
+}
+@media all and (max-width: 370px){
+    .recruit_with_title {
+    padding-bottom: 5px;
+    }
+    #recruit_place_mobile_title {
+    padding-bottom: 5px;
+    }
+    .recruit_btn {
+        padding: 5px 16px;
+        margin-top: 5px;
+        }
+    #recruit_place_mobile_btn {
+        padding: 5px 16px;
+        margin-top: 5px;
+    }
+    .recruit_with_p {
+        font-size: 10px;
+        line-height: 14px;
+    }
+    .recruit_place_mobile_p{
+        font-size: 10px;
+        line-height: 14px;
+    }
+    }
+@media all and (max-width: 330px){
+    .recruit_btn {
+        font-size: 10px;
+        }
+#recruit_place_mobile_btn {
+        font-size: 10px;
+}
+.recruit_with_p {
+    display: none;
+}
+.recruit_with_p_mobile {
+    display: inline-block;
+    font-size: 10px;
+    line-height: 14px;
+}
+}
