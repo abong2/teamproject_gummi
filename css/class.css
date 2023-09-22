@@ -190,6 +190,128 @@ padding-left: 3%;
     font-weight: 400;
 
 }
+/* 신청하기 버튼 */
+.bottom-btn {
+    position: relative;
+    display: block;
+    background-color: #f7f7f7;
+    height: 400px;
+  }
+
+  .bottom-btn .inner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+  .signup{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .signup p{
+    font-size: 32px;
+    font-family: "Pretendard-Regular", "Noto Sans KR", sans-serif;
+    font-weight: 800;
+  }
+  .signup2{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    
+  }
+  /* 왼 */
+  .left-btn {
+    position: relative;
+    width: 23%;
+    height:100%;
+    margin-top: 50px;
+    border-radius: 13px;
+    background-color: #ae85c9;
+    right: 1%
+  }
+  .left-btn:hover {
+    background-color:  #a07bb9;
+    }
+  
+  .left-btn a {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .left-txt {
+    position: relative;
+    display: block;
+    font-weight: 800;
+    width: 50%;
+    height: auto;
+    text-align: center;
+  }
+  .left-txt p {
+    font-size:25px;
+    color: #fff;
+  }
+  .left-img {
+    position: relative;
+    display: block;
+    width: 50%;
+    /* background-color: yellowgreen; */
+    margin-left: 5%;
+  }
+  .left-img img {
+    width: 40%;
+  }
+  /* 오 */
+  .right-btn {
+    position: relative;
+    display: block;
+    width: 23%;
+    height:100%;
+    margin-top: 50px;
+    border-radius: 13px;
+    background-color:#31302b;
+    left: 1%;
+  }
+  .right-btn:hover {
+    background-color: #393836;
+    }
+  .right-btn a {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+  .right-txt {
+    position: relative;
+    display: block;
+    font-weight: 800;
+    width: 50%;
+    height: auto;
+    text-align: center;
+  }
+  .right-txt p{
+    color: #fff;
+    font-size:25px;
+  }
+  .right-img {
+    position: relative;
+    display: block;
+    width: 30%;
+  }
+  .right-img img {
+    width: 45%;
+  }
+/* 포도 혜택 */
+.classbenefits {
+    padding: 70px 0;
+    background-color: #d1c3ff52;
+}
 /* 반응형 디자인 */
 @media all and (max-width: 1420px){
     .myclass33 {
@@ -243,6 +365,15 @@ padding-left: 3%;
      text-overflow: ellipsis;
      white-space: nowrap; 
     }
+    .signup p {
+        font-size: 30px;
+    }
+    .right-txt p{
+     font-size:20px;
+      }
+      .left-txt p{
+      font-size: 20px;
+      }
   
 }
 @media all and (max-width: 760px) {
@@ -323,6 +454,37 @@ padding-left: 3%;
         font-weight: 700;
         cursor: pointer;
     }
+    .signup p {
+        font-size:25px;
+    }
+    .right-txt p{
+        font-size:20px;
+         }
+         .left-txt p{
+         font-size: 18px;
+         }
+         .left-btn {
+            position: relative;
+            width: 42%;
+            height: 120%;
+            margin-top: 28px;
+            border-radius: 13px;
+            right: 1%;
+        }
+        .right-btn{
+            position: relative;
+            width: 42%;
+            height: 120%;
+            margin-top: 28px;
+            border-radius: 13px;
+            left: 1%;
+        }
+        .bottom-btn {
+            position: relative;
+            display: block;
+            background-color: #f7f7f7;
+            height: 300px;
+        }
 }
 @media all and (max-width: 700px) {
     .class {
@@ -356,8 +518,6 @@ padding-left: 3%;
         padding-bottom: 11px;
         letter-spacing: 0.5px;
         padding-top: 10px;
-    
-      
     }
     .podo33 {
         display: none;
@@ -402,8 +562,69 @@ padding-left: 3%;
     .myclass3{
         padding: 0;
      }
+     .right-txt p{
+        font-size:15px;
+         }
+         .left-txt p{
+         font-size: 15px;
+         }
+         .left-btn {
+            position: relative;
+            width: 42%;
+            height: 120%;
+            margin-top: 28px;
+            border-radius: 13px;
+            right: 1%;
+        }
+        .right-btn{
+            position: relative;
+            width: 42%;
+            height: 120%;
+            margin-top: 28px;
+            border-radius: 13px;
+            left: 1%;
+        }
+        .bottom-btn {
+            position: relative;
+            display: block;
+            background-color: #f7f7f7;
+            height: 300px;
+        }
 }
 
+@media all and (max-width: 480px){
+    .signup p {
+        font-size:18px;
+    }
+     .right-txt p{
+        font-size:13px;
+         }
+         .left-txt p{
+         font-size: 13px;
+         }
+         .left-btn {
+            position: relative;
+            width: 42%;
+            height: 120%;
+            margin-top: 28px;
+            border-radius: 13px;
+            right: 1%;
+        }
+        .right-btn{
+            position: relative;
+            width: 42%;
+            height: 120%;
+            margin-top: 28px;
+            border-radius: 13px;
+            left: 1%;
+        }
+        .bottom-btn {
+            position: relative;
+            display: block;
+            background-color: #f7f7f7;
+            height: 300px;
+        }
+}
 @media all and (max-width: 320px) {
     .section{
         width: 100%;
@@ -479,6 +700,37 @@ padding-left: 3%;
     .myclass3{
        padding: 0;
     }
+    .signup p {
+        font-size:15px;
+    }
+    .right-txt p{
+        font-size:10px;
+         }
+         .left-txt p{
+         font-size: 10px;
+         }
+         .left-btn {
+            position: relative;
+            width: 42%;
+            height: 96%;
+            margin-top: 28px;
+            border-radius: 13px;
+            right: 1%;
+        }
+        .right-btn{
+            position: relative;
+            width: 42%;
+            height: 96%;
+            margin-top: 28px;
+            border-radius: 13px;
+            left: 1%;
+        }
+        .bottom-btn {
+            position: relative;
+            display: block;
+            background-color: #f7f7f7;
+            height: 200px;
+        }
 }
 /* 자주 묻는 질문 */
 
