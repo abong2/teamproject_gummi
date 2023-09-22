@@ -53,6 +53,9 @@
 /* 반응형 */
 /* 화면 폭이 1680px 이하일 때 */
 @media all and (max-width: 1680px) {
+    .banner01{
+        padding: 10% 0;
+    }
     .banner_left, .banner_right {
         width: 50%; /* 배너의 가로 너비 수정 예시 */
     }
@@ -60,6 +63,9 @@
 
 /* 화면 폭이 1280px 이하일 때 */
 @media all and (max-width: 1280px) {
+    .banner01{
+        padding: 8% 0;
+    }
     .banner_left, .banner_right {
         width: 100%; /* 배너의 가로 너비 수정 예시 */
     }
@@ -83,6 +89,9 @@
 
 /* 화면 폭이 1024px 이하일 때 */
 @media all and (max-width: 1024px) {
+    .banner01{
+        padding: 7% 0;
+    }
     .banner_right_txt {
         justify-content: center;
         text-align: center;
@@ -114,6 +123,9 @@
     }
 }
 @media all and (max-width: 860px) {
+    .banner01{
+        padding: 6% 0;
+    }
     .banner_right_txt {
         justify-content: center;
         text-align: center;
@@ -128,6 +140,9 @@
 
 /* 화면 폭이 760px 이하일 때 */
 @media all and (max-width: 760px) {
+    .banner01{
+        padding: 5% 0;
+    }
     .banner_right > img {
         padding-top: 10px; /* 이미지 패딩 수정 예시 */
     }
@@ -185,6 +200,9 @@
 }
 /* 화면 폭이 480px 이하일 때 */
 @media all and (max-width: 480px) {
+    .banner01{
+        padding: 4% 0;
+    }
     .banner_right_txt > p {
         font-size: 16px; /* 텍스트 크기 수정 예시 */
     }
@@ -192,6 +210,9 @@
 
 /* 화면 폭이 320px 이하일 때 */
 @media all and (max-width: 320px) {
+    .banner01{
+        padding: 3% 0;
+    }
     #banner_btn {
         font-size: 14px; /* 버튼 텍스트 크기 수정 예시 */
     }
