@@ -1,37 +1,11 @@
 @charset "utf-8";
-.notice{
+.notice {
     width: 100%;
 }
 /* 페이지 공간 */
 .notice .inner {
     max-width: 1200px;
 }
-/* 탑 버튼 */
-.top-button{
-    position: fixed;
-    right: 30px;
-    bottom: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    z-index: 9999;
-    width: auto;
-}
-.top-btn{
-    display: block;
-    background-color: #ae85c9;
-    border-radius: 50%;
-    width: 55px;
-    line-height: 55px;
-    text-align: center;
-}
-.top-btn img{
-    transform: rotate(180deg);
-}
-.top-btn img.up{
-    transform: rotate(0deg);
-}
-
 table {
     border-collapse: collapse;
     border-spacing: 0;
@@ -54,7 +28,7 @@ table {
     text-align: center;
 }
 
-#board-search{
+#board-search {
     padding-bottom: 40px;
 }
 #board-search .search-wrap {
@@ -66,7 +40,7 @@ table {
     gap: 10px;
     height: 40px;
 }
-.search-input-wrap{
+.search-input-wrap {
     position: relative;
     height: 100%;
     width: calc(100% - 75px);
@@ -88,11 +62,11 @@ table {
     right: 0;
     top: 0;
     bottom: 0;
-    padding:  0 5%;
+    padding: 0 5%;
     font-size: 16px;
     height: 100%;
 }
-.search-select{
+.search-select {
     padding: 0 10px;
     font-size: 13px;
     border: 1px solid #dde1e5;
@@ -100,14 +74,12 @@ table {
     position: relative;
     min-width: 130px;
 }
-.search-select .select-title{
+.search-select .select-title {
     line-height: 40px;
     text-align: center;
-
 }
-.select-option{
+.select-option {
     text-align: center;
-    
 }
 .search-select .select-title p {
     letter-spacing: initial;
@@ -123,11 +95,10 @@ table {
     left: 0;
     background-color: #fff;
 }
-.search-select .select-option li:not(:last-child){
+.search-select .select-option li:not(:last-child) {
     margin-bottom: 10px;
 }
-.search-select .select-option.active{
-    
+.search-select .select-option.active {
     /* transition: all 0.5s; */
     display: block;
 }
@@ -140,18 +111,20 @@ table {
     border: 1px solid #dde1e5;
     cursor: pointer;
 }
-#btMore  .icon {
+#btMore .icon {
     width: 10px;
     height: 15px;
     margin-top: 6px;
 }
-#btMore.active,#btMore:hover {
+#btMore.active,
+#btMore:hover {
     color: #010101;
 }
-.spans.active, .icon {
+.spans.active,
+.icon {
     display: block;
 }
-.icon{
+.icon {
     display: none;
 }
 
@@ -162,10 +135,10 @@ table {
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
 }
-.board-table tr{
+.board-table tr {
     padding: 10px 0;
 }
-.board-table tr:hover{
+.board-table tr:hover {
     background-color: #eeeded;
     cursor: pointer;
 }
@@ -258,11 +231,17 @@ table {
 }
 
 .page-img {
-    padding-bottom: 80px;
+    margin-bottom: 80px;
     width: 100%;
+    height: 400px;
 }
 .page-img img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.page-img img:last-child {
+    display: none;
 }
 .page-title h3 {
     font-weight: 600;
@@ -291,100 +270,111 @@ table {
 @media all and (max-width: 1680px) {
 }
 @media all and (max-width: 1280px) {
-
 }
 @media all and (max-width: 1024px) {
-  }
-
-  @media all and (max-width: 760px){
-    .board-table thead{
-      display: none;
-    }
-    tr{
-      display: table-row;
-      width: 500px;
-    }
-  .board_list table tbody tr td.tb-date{
-    text-align: left;
 }
-  }
+
+@media all and (max-width: 760px) {
+    .board-table thead {
+        display: none;
+    }
+    tr {
+        display: table-row;
+        width: 500px;
+    }
+    .board_list table tbody tr td.tb-date {
+        text-align: left;
+    }
+    .page-img{
+        height: 300px;
+    }
+    .page-img img {
+        display: none;
+    }
+    .page-img img:last-child {
+        display: block;
+    }
+}
 
 @media all and (max-width: 480px) {
-  .board-table thead {
-    display: none;
-  }
-  .board-table tbody td.table-number{
-    display: none;
-  }
-  .board-table th {
-    display: block; 
-    text-align: left; 
-    width: 100%;
-    box-sizing: border-box;
-    padding-top: 20px !important;
-  }
-  .board-table tbody th{
-    padding: 0;
-  }
-  .board-table td {
-    display: block; 
-    text-align: left !important; 
-    width: 100%; 
-    box-sizing: border-box; 
-    padding-top: 0;
-  }
-  .board-table tbody td {
-    border-top: none;
-    padding-top: 10px;
-  }
-  .board-table th,
-  .board-table td {
-   
-    border-bottom: none;
-   
-  }
-  .page-box a.btn {
-    padding: 5px 5px; 
-    font-size: 8px; 
-        }
-   #board-search .search-wrap .btn {
-    font-size: 13px;
-        }
-   #board-search .search-wrap input {
-            font-size: 11px;
-        }
+    .board-table thead {
+        display: none;
+    }
+    .board-table tbody td.table-number {
+        display: none;
+    }
+    .board-table th {
+        display: block;
+        text-align: left;
+        width: 100%;
+        box-sizing: border-box;
+        padding-top: 20px !important;
+    }
+    .board-table tbody th {
+        padding: 0;
+    }
+    .board-table td {
+        display: block;
+        text-align: left !important;
+        width: 100%;
+        box-sizing: border-box;
+        padding-top: 0;
+    }
+    .board-table tbody td {
+        border-top: none;
+        padding-top: 10px;
+    }
+    .board-table th,
+    .board-table td {
+        border-bottom: none;
+    }
+    .page-box a.btn {
+        padding: 9px 8px;
+        font-size: 8px;
+    }
+    #board-search .search-wrap .btn {
+        font-size: 13px;
+    }
+    #board-search .search-wrap input {
+        font-size: 11px;
+    }
 }
 @media screen and (max-width: 320px) {
     .board-table thead {
-      display: none;
+        display: none;
     }
     .page-box a.btn {
-      padding: 5px 5px; 
-      font-size: 8px; 
-          }
-   #board-search .search-window .search-wrap input {
-            height: 24px;
-            width: 68%;
-            font-size: 14px;
-            padding: 7px 14px;
-            border: 1px solid #ccc;
-        }
-        
-#board-search .search-window .search-wrap .btn {
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    width: 49px;
-    padding: 0;
-    font-size: 16px;
-}
-#board-search .search-wrap .btn {
-    font-size: 13px;
-}
+        display: inline-block;
+        padding: 8px 8px;
+        font-size: 10px;
+        border: 1px solid #dbdbdb;
+        color: #333333;
+    }
+    #board-search .search-window .search-wrap input {
+        height: 24px;
+        width: 68%;
+        font-size: 14px;
+        padding: 7px 14px;
+        border: 1px solid #ccc;
+    }
 
-#board-search .search-wrap input {
-    font-size: 11px;
+    #board-search .search-window .search-wrap .btn {
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 49px;
+        padding: 0;
+        font-size: 16px;
+    }
+    #board-search .search-wrap .btn {
+        font-size: 13px;
+    }
+
+    #board-search .search-wrap input {
+        font-size: 11px;
+    }
+    .page-img{
+        height: 250px;
+    }
 }
-  }
-  

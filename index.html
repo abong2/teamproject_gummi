@@ -72,8 +72,8 @@
     <script src="js/banner02.js"></script>
     <script src="js/popualclass.js"></script>
     <script src="js/class.js"></script>
-    <script src="js/join.js"></script>
     <script src="js/footer.js"></script>
+    <script src="js/fixedmenu.js"></script>
 </head>
 <body>
     <!-- Google Tag Manager (noscript) -->
@@ -431,35 +431,24 @@
                     <div class="inner">
                         <h1 class="recruit_title">커뮤니티</h1>
                         <div class="recruit_wrap">
-                        <!-- 함께 듣기 -->
-                        <div class="recruit_with">
-                            <div class="recruit_with_img">
-                                <img src="images/recruit_with.jpg" alt="함께듣기">
+                            <!-- 인원 모집 -->
+                            <div class="recruit_with">
+                                <a href="notice.html"><div class="recruit_with_opacity">
+                                </div>
+                                    <div class="recruit_with_txt" data-aos="fade-right" data-aos-easing="ease-in-sine">
+                                    <h1>함께 듣기 <i class="fa-solid fa-chevron-right" style="color: #ffffff;"> </i></h1>
+                                    <p>혼자 수업 듣기가 외롭다면,<br> 함께 들을 친구를 찾아보세요!</p>
+                                </div></a>
                             </div>
-                            <div class="recruit_with_text" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                                <p class="recruit_with_title">함께 듣기</p>
-                                <p class="recruit_with_p">혼자 수업 듣기가 외롭다면,<br> 함께 들을 친구를 찾아보세요!</p>
-                                <p class="recruit_with_p_mobile">수업을 함께 들을 <br> 친구를 찾아보세요!</p>
-                                <a href="notice.html"><button class="recruit_btn">바로 가기</button></a>
+                            <!-- 장소 대여 -->
+                            <div class="recruit_place">
+                                <a href="notice.html"><div class="recruit_place_opacity">
+                                </div>
+                                <div class="recruit_place_txt" data-aos="fade-right" data-aos-easing="ease-in-sine">
+                                    <h1>장소 대여 <i class="fa-solid fa-chevron-right" style="color: #ffffff;"> </i></h1>
+                                    <p>수업할 장소를 찾고 있나요? <br> 편하게 사용하세요!</p>
+                                </div></a>
                             </div>
-                        </div>
-                        <!-- 장소 대여 -->
-                        <div class="recruit_place">
-                            <div class="recruit_place_img">
-                                <img src="images/recruit_place.jpg" alt="장소대여">
-                            </div>
-                            <div class="recruit_place_text"  data-aos="fade-right" data-aos-offset="280" data-aos-easing="ease-in-sine">
-                                <p class="recruit_place_title">장소 대여</p>
-                                <p>수업할 장소를 찾고 있나요? <br> 편하게 사용하세요!</p>
-                                <a href="notice.html"><button class="recruit_btn">바로 가기</button>
-                            </div>
-                            <!-- 장소대여 반응형 텍스트 -->
-                            <div id="recruit_place_mobile" data-aos="fade-left"data-aos-offset="270" data-aos-easing="ease-in-sine" >
-                                <p id="recruit_place_mobile_title">장소 대여</p>
-                                <p class="recruit_place_mobile_p">수업할 장소를 찾고 있나요? <br> 편하게 사용하세요!</p>
-                                <a href="notice.html"><button id="recruit_place_mobile_btn">바로 가기</button>
-                            </div>
-                        </div>
                         </div>
                     </div>
                 </section>
@@ -1077,42 +1066,35 @@
                     </div>
                 </div>
             </section>
-            <!-- 선생님 가입 -->
-            <section class="join">
-                <div class="inner">
-                    <div class="joinbox">
-                        <div class="joinleft">
-                            <h4 class="jointitle">
-                                전문가로 활동하시나요?<br>
-                                Gummi에서 새로운 학생을 만나보세요
-                            </h4>
-                            <button class="joinbtn">선생님 가입</button>
-                        </div>
-                        <div class="joinright">
-                            <div class="swiper joinswiper">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <img src="images/join01.png" alt="선생님 가입 안내">
-                                        <span class="jointext">학생의 수강신청을 받으세요</span>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="images/join02.png" alt="선생님 가입 안내">
-                                        <span class="jointext">학생에게 수강 승낙 확인을 보내세요</span>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="images/join03.png" alt="선생님 가입 안내">
-                                        <span class="jointext">채팅, 전화로 빠르게 상담하고 수강 확인 하세요</span>
-                                    </div>
-                                </div>
-                                <div class="swiper-button-prev"></div>
-                                <div class="swiper-button-next"></div>
-                                <div class="swiper-pagination"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <!-- 신청하기 -->
+            <section class="bottom-btn">
+        <div class="inner">
+            <div class="sign">
+
+      
+            <div class="signup">
+                <p>Gummi 지금 바로 시작해보세요.</p>
+            </div>
+           <div class="signup2">
+          <div class="left-btn">
+            <a href="subscription.html">
+              <div class="left-txt">
+                <p>신청 하기</p>
+            </div>
+            </a>
+          </div>
+          <div class="right-btn">
+            <a href="#">
+              <div class="right-txt">
+                <p>문의 하기</p>
+              </div>
+            </a>
+          </div>      
         </div>
+    </div>
+        </div>
+            </section>
+             </div>
         <!-- footer -->
         <footer class="footer">
             <div class="inner">
@@ -1139,6 +1121,29 @@
                 </div>
             </div>
         </footer>
+    </div>
+    <!-- 고정메뉴 -->
+    <div class="fixedmenu">
+        <ul>
+            <li>
+                <a href="#">
+                    <img src="images/fixedmenu_grape.png" alt="포도 보유 현황">
+                    <span>포도 보유 현황</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/fixedmenu_check.png" alt="신청하기">
+                    <span>신청하기</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- 탑 버튼 -->
+    <div class="top-button">
+        <a href="#" class="top-btn" id="top-btn">
+            <img src="images/top-btn.png" alt="top-btn" id="top-btn-img"/>
+        </a>
     </div>
 </body>
 </html>
