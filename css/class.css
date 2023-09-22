@@ -135,7 +135,9 @@ td {
     overflow: auto;
     padding-top: 20px;
 }
-
+#myclass322{
+    font-size: 20px;
+}
 .myclass3-inner {
     margin-bottom: 20px;
     background-size: cover;
