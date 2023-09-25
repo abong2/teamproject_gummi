@@ -47,6 +47,7 @@
   text-align: center;
   /* padding-bottom: 70%; */
 }
+
 @media screen and (max-width: 1280px) {
   .category{
     padding: 10% 0;

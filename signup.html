@@ -39,7 +39,7 @@
       })(window, document, "script", "dataLayer", "GTM-PWWFZ87G");
     </script>
     <!-- End Google Tag Manager -->
-    <title>로그인</title>
+    <title>회원가입</title>
     <!-- fontawesome -->
     <script
       src="https://kit.fontawesome.com/e2b37e629b.js"
@@ -96,7 +96,9 @@
       <!-- 헤더 -->
       <header class="header">
         <div class="inner">
-          <h1 class="h_logo"><a href="index.html">Gummi</a></h1>
+          <h1 class="h_logo">
+            <a href="index.html"><img src="images/logo3.svg" alt="로고"></a>
+          </h1>
           <nav class="h_nav">
             <ul class="searchbar">
               <li>
@@ -400,12 +402,21 @@
                                 <input type="text" id="phone2">
                                 <span>-</span>
                                 <input type="text" id="phone3">
+                                <button>인증받기</button>
                             </td>
+                        </tr>
+                        <tr>
+                          <td>복지확인</td>
+                          <td>
+                            <input type="text" id="user_sale">
+                                <button>인증받기</button>
+                          </td>
                         </tr>
                     </tbody>
                 </table>
-                <input type="checkbox" id="agreement">
-                <label for="agreement">이용약관을 확인하였으며 이에 동의합니다.</label>
+                <div><input type="checkbox" id="agreement">
+                <label for="agreement">이용약관을 확인하였으며 이에 동의합니다.</label></div>
+                
                 <br>
                 <button id="confirm"><a href="">가입완료</a></button>
             </div>

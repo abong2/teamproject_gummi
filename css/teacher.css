@@ -71,12 +71,14 @@
   background-color: #ae85c9;
   color: #fff;
 }
-
+.teacher_btn > button:hover span{
+  color: #fff;
+}
 
 
 /* 반응형 */
 
-@media (max-width: 1230px) {
+@media all and (max-width: 1230px) {
   .teacher_wrap{
     display: flex;
     justify-content: space-between;
@@ -97,7 +99,7 @@
       font-size: 15px;
   }
 }
-@media (max-width: 780px) {
+@media all and (max-width: 780px) {
   .teacher h2 {
       font-size: 18px; 
       margin-bottom: 20px; 
@@ -114,7 +116,7 @@
       margin-bottom: 2%;
   }
 }
-@media (max-width: 480px) {
+@media all and (max-width: 480px) {
   .teacher_list{
     /* width: 50%; */
     height: 50%;
