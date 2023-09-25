@@ -64,11 +64,11 @@ padding: 20px 30px;
 }
 .subscription_left_inner h3 {
 font-size: 17px;
-padding: 45px 0 8px 0;
-}
-.subscription_left_inner h3:first-child {
 padding: 25px 0 8px 0;
 }
+/* .subscription_left_inner h3:first-child {
+padding: 25px 0 8px 0;
+} */
 .subscription_left_inner p {
 font-size: 15px;
 line-height: 27px;
@@ -76,6 +76,9 @@ line-height: 27px;
 .subscription_left_inner p:last-child {
 padding: 0 0 20px 0;
 }
+.subscription_left_inner strong {
+    font-weight: bold;
+} 
 /* 이미지 */
 .subscription_img {
 border: 1px solid #dddd;
