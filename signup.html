@@ -77,7 +77,7 @@
     <link rel="stylesheet" href="css/footer.css">   
     <!--js  -->
     <script src="js/header.js"></script>
-    <script src="js/sub_login.js"></script>
+    <script src="js/signup.js"></script>
     <script src="js/footer.js"></script>
     <script src="js/fixedmenu.js"></script>
 </head>
@@ -332,8 +332,82 @@
       <!-- 개인작업 공간 -->
     <div class="signup">
         <div class="inner">
-            <div class="signup_wrap">
-                <form action=""></form>
+            <div id="signup_wrap">          
+                <h2>Gummi 회원가입</h2>
+                <table id="registeration">
+                    <tbody>
+                        <tr>
+                            <td>회원 ID</td>
+                            <td><input type="text" id="user_id"></td>
+                        </tr>
+                        <tr>
+                            <td>성명</td>
+                            <td><input type="text" id="user_name"></td>
+                        </tr>
+                        <tr>
+                            <td>성별</td>
+                            <td>
+                                <input type="radio" name="gen" class="gen" value="남자" id="male">
+                                <label for="male">남자</label>
+                                <input type="radio" name="gen" class="gen" value="여자" id="female">
+                                <label for="female">여자</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>비밀번호</td>
+                            <td><input type="password" id="user_pw"></td>
+                        </tr>
+                        <tr>
+                            <td>비밀번호 확인</td>
+                            <td><input type="password" id="pw_confirm"></td>
+                        </tr>
+                        <tr>
+                            <td>이메일</td>
+                            <td>
+                                <input type="text" id="mail_id">
+                                <span>@</span>
+                                <input type="text" id="mail_publisher">
+                                <select id="publisher">
+                                    <option>직접입력</option>
+                                    <option value="naver.com">naver.com</option>
+                                    <option value="gmail.com">gmail.com</option>
+                                    <option value="daum.net">daum.net</option>
+                                    <option value="nate.com">nate.com</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>주소</td>
+                            <td>
+                                <input type="text" id="user_address">
+                                <button>주소찾기</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>휴대전화</td>
+                            <td>
+                                <input type="radio" id="skt" name="phone" value="SKT" class="phone">
+                                <label for="skt">SKT</label>
+                                <input type="radio" id="kt" name="phone" value="KT" class="phone">
+                                <label for="kt">KT</label>
+                                <input type="radio" id="uplus" name="phone" value="LG U+" class="phone">
+                                <label for="uplus">LG U+</label>
+                                <input type="radio" id="other" name="phone" value="알뜰폰" class="phone">
+                                <label for="other">알뜰폰</label>
+                                <br>
+                                <input type="text" id="phone1">
+                                <span>-</span>
+                                <input type="text" id="phone2">
+                                <span>-</span>
+                                <input type="text" id="phone3">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <input type="checkbox" id="agreement">
+                <label for="agreement">이용약관을 확인하였으며 이에 동의합니다.</label>
+                <br>
+                <button id="confirm"><a href="">가입완료</a></button>
             </div>
         </div>
     </div>
