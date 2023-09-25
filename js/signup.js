@@ -36,7 +36,11 @@ window.addEventListener("load", function() {
         if (!agreement) {
             alert("약관에 동의하셔야 회원가입을 하실 수 있습니다.");
             return;
+        }else {
+            location.href = 'index.html'
+
         }
+        
         var pwmask = "";
         for (var i = 0; i < userpw.length; i++) {
             pwmask += "*"
