@@ -290,7 +290,7 @@ z-index: 9999999999;
 }
 /* 모달 팝업 스타일 */
 .popup {
-border-radius: 5px;
+border-radius: 10px;
 width: 300px;
 font-size: 20px;
 text-align: center;

@@ -16,10 +16,6 @@ padding: 70px 0 40px 0;
 .banner02_inner {
 width: 100%;
 }
-/* 이미지 */
-/* .banner02_inner img {
-width: 40%;
-} */
 /* 내용 */
 .banner02_inner {
 display: flex;
@@ -86,7 +82,6 @@ background-color: #ae85c9;
 }
 
 /* 반응형 */
-
 @media all and (max-width: 1145px){
 .banner02_inner h3 {
 font-size: 16px;
@@ -95,9 +90,10 @@ padding: 18px 0 13px 0;
 .banner02_inner p {
 font-size: 15px;
 text-align: center;
+padding-bottom: 55px;
 }
 .b2anner0_span {
-    font-size: 16px;
+font-size: 16px;
 }
 .banner02 button {
 border-radius: 10px;
@@ -124,7 +120,6 @@ padding-bottom: 0;
 .banner02_inner p {
 font-size: 15px;
 text-align: center;
-padding-bottom: 45px;
 }
 .banner02_section1 {
 margin-right:0px ;
