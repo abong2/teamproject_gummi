@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 .fixedmenu {
   position: fixed;
   z-index: 999999999;

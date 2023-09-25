@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 .header {
     position: relative;
     display: block;
@@ -363,6 +365,8 @@
 @media all and (max-width: 480px){
     
 }
-@media all and (max-width: 320px){
-    
+@media all and (max-width: 330px){
+    .mb_nav_gnb {
+        right: -15px;
+    }
 }
