@@ -1,0 +1,84 @@
+.signup{
+    background-color: #f7f7f7;
+}
+table {
+    text-align: left;
+}
+
+#agreement+label {
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+    margin: 20px 0;
+}
+
+#signup_wrap {
+    width: 575px;
+    margin: 0 auto;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#signup_wrap> h2 {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+table {
+    border: 1px solid #f1f1f1
+}
+
+table tr {
+    padding: 20px 10px;
+    display: block;
+}
+table tr:nth-child(2n+1){
+    background-color: #fff;
+}
+table tr:nth-child(2n) {
+    background-color:rgba(164,127,188,0.5);
+}
+
+table td {
+    font-size: 13px;
+    vertical-align: top;
+}
+
+table td:first-child {
+    width: 110px;
+    font-weight: bold;
+}
+
+table input[type="text"],
+table input[type="password"] {
+    border: 0;
+    border-bottom: 1px solid #333;
+    width: 150px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+table #phone1,
+table #phone2,
+table #phone3 {
+    width: 40px;
+    margin-top: 10px;
+}
+
+table textarea {
+    width: 400px;
+    height: 100%;
+}
+
+table td * {
+    vertical-align: top;
+}
+#confirm{
+    padding: 20px;
+    background-color: #ae85c9;
+    border: none;
+    border-radius: 10px;
+}
+#confirm > a{
+    color: #fff;
+}
