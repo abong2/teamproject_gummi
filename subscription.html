@@ -33,6 +33,8 @@
     <!-- aos -->
     <link rel="stylesheet" href="css/aos.css" />
     <script src="js/aos.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <!-- XEIcon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
     <!-- css -->
@@ -69,6 +71,13 @@
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <div class="wrap">
+        <!-- 모달 배경 어둡게 -->
+        <div class="overlay" id="overlay"></div>
+        <!-- 수강신청 확인 팝업 -->
+        <div id="confirmationPopup" class="popup">
+            <p>수강신청이 되었습니다.</p>
+            <a href="index.html"><button id="closeButton">닫기</button></a>
+        </div>
         <!-- 헤더 -->
         <header class="header">
             <div class="inner">
@@ -295,63 +304,50 @@
                         <p><span class="review_rating">5.0 </span><span class="review_total">리뷰 12건</span></p>
                     </div>
                     <div class="subscription_left_inner">
-                        <h3>선생님 소개</h3>
-                        <p>‘향기’가 인생 자체가 된 날을 선명하게 기억합니다. <br>
+                        <h3 type="button" class="collapsible" onclick="collapse(this);"> 선생님 소개</h3>
+                        <p class="content">‘향기’가 인생 자체가 된 날을 선명하게 기억합니다. <br>
                             생활용품 중에도 필수품이 있듯이 향도 자연스럽게 사람들의 일상에 스며있었으면 좋겠어요. <br>
                             향을 매개로 지친 일상 또는 마음에 편안함을 주는역할을 했으면 합니다.</p>
 
-                        <h3>경력</h3>
-                        <p>2013년 : 국내 최초 조향 학원 초급, 고급반 이수 (천연향료, 인공향료)</p>
-                        <p>2013 - 2014년 : 아쿠아 디 파르마(ACQUA DI PARMA) 매장에서 아르바이트</p>
-                        <p>2014 - 2016년 : DIY업계가 성정하던 시기에 DIY재료 업계에 도매, 소매로 유명한 회사에 근무</p>
-                        <p>2016 - 2022년 : 천연 향료로만 룸프스레이를 제작하고 판매하는 회사에서 근무</p>
-                        <p>2019 - 2022년 : 그린 창작소에서 ‘천연 향기 만들기’ 수업 진행</p>
+                        <h3 type="button" class="collapsible" onclick="collapse(this);"> 경력</h3>
+                        <p class="content">2013년 : 국내 최초 조향 학원 초급, 고급반 이수 (천연향료, 인공향료)
+                        <br>2013 - 2014년 : 아쿠아 디 파르마(ACQUA DI PARMA) 매장에서 아르바이트
+                        <br>2014 - 2016년 : DIY업계가 성정하던 시기에 DIY재료 업계에 도매, 소매로 유명한 회사에 근무
+                        <br>2016 - 2022년 : 천연 향료로만 룸프스레이를 제작하고 판매하는 회사에서 근무
+                        <br>2019 - 2022년 : 그린 창작소에서 ‘천연 향기 만들기’ 수업 진행</br><p></p>
                         
-                        <h3>카카오톡 ID</h3>
-                        <p><i class="fa-solid fa-caret-right"></i> green_blaire_jin</p>
-                        <p>문의사항이 있으면 카카오톡으로 편하게 연락주세요!</p>
+                        <h3 type="button" class="collapsible" onclick="collapse(this);"> 카카오톡 ID</h3>
+                        <p class="content"><i class="fa-solid fa-caret-right"></i> green_blaire_jin
+                        <br> 문의사항이 있으면 카카오톡으로 편하게 연락주세요!</p>
 
-                        <h3>수업에 사용되는 향료</h3>
-                        <p>향료 10-20 가지 사용</p>
+                        <h3 type="button" class="collapsible" onclick="collapse(this);"> 수업에 사용되는 향료</h3>
+                        <p class="content">향료 10-20 가지 사용
+                        <br> 스파이시, 발삼, 허브, 등 다양한 후드 향료</p>
 
-                        <h3>수업 내용</h3>
-                        <p><i class="fa-solid fa-caret-right"></i> 천연 향과 인공 향의 차이점</p>
-                        <p><i class="fa-solid fa-caret-right"></i> 천연 향과 인공 향의 현재 방향성</p>
-                        <p><i class="fa-solid fa-caret-right"></i> 향기 훈련 방법</p>
-                        <p><i class="fa-solid fa-caret-right"></i> 에센셜오일을 이용한 레시피 안내</p>
-                        <p><i class="fa-solid fa-caret-right"></i> 에센셜 오일 향기 맡기</p>
-                        <p><i class="fa-solid fa-caret-right"></i> 에센셜 오일을 이용한 향기 만들기</p>
-                        <p><i class="fa-solid fa-caret-right"></i> 라벨링 작업</p>
+                        <h3 type="button" class="collapsible" onclick="collapse(this);"> 수업 내용</h3>
+                        <p class="content"><i class="fa-solid fa-caret-right"></i> 천연 향과 인공 향의 차이점
+                        <br><i class="fa-solid fa-caret-right"></i> 천연 향과 인공 향의 현재 방향성
+                        <br><i class="fa-solid fa-caret-right"></i> 향기 훈련 방법
+                        <br><i class="fa-solid fa-caret-right"></i> 에센셜오일을 이용한 레시피 안내
+                        <br><i class="fa-solid fa-caret-right"></i> 에센셜 오일 향기 맡기
+                        <br><i class="fa-solid fa-caret-right"></i> 에센셜 오일을 이용한 향기 만들기
+                        <br><i class="fa-solid fa-caret-right"></i> 라벨링 작업</p>
 
-                        <h3>장소</h3>
-                        <p>대구광역시 중구 중앙대로 394 제일빌딩 4F</p>
+                        <h3 type="button" class="collapsible" onclick="collapse(this);"> 장소</h3>
+                        <p class="content">대구광역시 중구 중앙대로 394 제일빌딩 4F</p>
                         
-                        <h3>방향성</h3>
-                        <p>제 수업은 향기를 전혀 모르셔도 부담스럽지 않으실 거예요.<br>화장품이나 향수에서 느껴지는 인공향을 선호하지 않으시는 분들이 많이 찾아주시는 수업입니다.<br>부담가지실 필요 없이 향에 대한 표현력을 길러보고 싶으신 분에게도 도움이 될 거예요. <br>‘향’ 자체에 대한 흥미로움을 더해주고 즐거움을 찾아가는 시간입니다.</p>
+                        <h3 type="button" class="collapsible" onclick="collapse(this);"> 방향성</h3>
+                        <p class="content">제 수업은 향기를 전혀 모르셔도 부담스럽지 않으실 거예요.<br>화장품이나 향수에서 느껴지는 인공향을 선호하지 않으시는 분들이 많이 찾아주시는 수업입니다.<br>부담가지실 필요 없이 향에 대한 표현력을 길러보고 싶으신 분에게도 도움이 될 거예요. <br>‘향’ 자체에 대한 흥미로움을 더해주고 즐거움을 찾아가는 시간입니다.</p>
 
-                        <h3>추천 드려요</h3>
-                        <p>‘향’에 관심이 생기기 시작하신 분</p>
-                        <p>‘향’에 초보이신 분</p>
-                        <p>천연 향료에 관심이 있으신 분</p>
-                        <p>향을 통해 명상 또는 자기만의 시간이 필요하신 분</p>
-                        <p>취미를 만들고 싶으신 분</p>
-                        <p>향기 취향을 알아보고 싶으신 분</p>
-                        <p>표현하기를 좋아하시는 분</p>
-                        <p>향에 전문가여서 향이 지치신 분</p>
-
-                        <h3>비추천 드려요</h3>
-                        <p>향료 업계에 대한 정보를 알고 싶으신 분</p>
-                        <p>시중에 판매되는 향수에 대한 정보를 알고 싶으신 분</p>
-                        <p>아로마테라피에 기반한 치료법이 알고 싶으신 분</p>
-
-                        <h3>인원</h3>
-                        <p>수업 가능한 최소 인원은 2인 이며, 최대 4명 까지 가능합니다. <br>
+                        <h3 type="button" class="collapsible" onclick="collapse(this);"> 인원</h3>
+                        <p class="content">수업 가능한 최소 인원은 2인 이며, 최대 4명 까지 가능합니다. <br>
                             문의하기 -> 인원 모집 -> 수업 날짜를 정합니다.</p>
 
-                        <h3>준비물</h3>
-                        <p>준비물은 따로 필요 없습니다.</p>
-                        <p>편한 마음으로 오시면 되고 다른 분들과 함께 하는 수업이니 약속 시간만 지켜주시면 됩니다!</p>
-                    </div>
+                        <h3 type="button" class="collapsible" onclick="collapse(this);"> 준비물</h3>
+                        <p class="content">준비물은 따로 필요 없습니다.
+                        <br> 편한 마음으로 오시면 되고 다른 분들과 함께 하는 수업이니 약속 시간만 지켜주시면 됩니다.</p>
+
+                        </div>
                 </div>
                 <!-- 오른쪽 섹션 -->
                 <div class="subscription_right">
@@ -417,10 +413,11 @@
                         <!-- 수강신청 버튼 -->
                         <div class="subscription_btn">
                             <button class="subscription_btn_mobile"><i class="fa-solid fa-heart" style="color: white;"></i> <span class="subscription_btn_heart"> 24</span></button>
-                            <button>수강하기</button>
+                            <button id="subscribeButton">수강하기</button>
                             <button>문의<span class="subscription_btn_hide">하기</span></button>
                         </div>
-                    </div></div>
+                    </div>
+                </div>
                 </div>
             </div> 
         </div> 

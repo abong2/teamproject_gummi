@@ -57,23 +57,24 @@ position: sticky;
 top: 0;
 }
 .subscription_left_inner {
-    width: 100%;
-    border: 1px solid #dddd;
-    background-color: white;
-    padding: 20px 30px;
+width: 100%;
+border: 1px solid #dddd;
+background-color: white;
+padding: 20px 30px;
 }
 .subscription_left_inner h3 {
-    padding: 45px 0 8px 0;
+font-size: 17px;
+padding: 45px 0 8px 0;
 }
 .subscription_left_inner h3:first-child {
-    padding: 25px 0 8px 0;
+padding: 25px 0 8px 0;
 }
 .subscription_left_inner p {
-    font-size: 16px;
-    line-height: 27px;
+font-size: 15px;
+line-height: 27px;
 }
 .subscription_left_inner p:last-child {
-    padding: 0 0 20px 0;
+padding: 0 0 20px 0;
 }
 /* 이미지 */
 .subscription_img {
@@ -275,10 +276,86 @@ display: none;
 cursor: pointer;
 text-decoration: underline;
 }
+/* 팝업창 */
+/* 배경 어둡게 만들기 */
+.overlay {
+display: none;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.7);
+z-index: 9999999999;
+}
+/* 모달 팝업 스타일 */
+.popup {
+border-radius: 5px;
+width: 300px;
+font-size: 20px;
+text-align: center;
+display: none;
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-color: white;
+padding: 30px;
+border: 1px solid #ccc;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+z-index: 99999999999999999;
+}
+.popup button {
+font-size: 15px;
+margin-top: 20px;
+padding: 3px 10px;
+cursor: pointer;
+}
 
 /* 반응형 */
-
 @media all and (max-width: 1023px){
+/* 목록 펼치고 접기 */
+.collapsible {
+cursor: pointer;
+padding: 18px;
+width: 100%;
+border: none;
+text-align: left;
+outline: none;
+font-size: 15px;
+}
+.active,
+.collapsible:hover {
+background-color: #a7a7a7;
+color: #ffff;
+}
+.content {
+padding: 0 18px;
+max-height: 0;
+overflow: hidden;
+transition: max-height 0.2s ease-out;
+/* background-color: #f7f7f7; */
+}
+.collapsible:after {
+content: '\002B';
+color: #ae85c9;
+font-weight: bold;
+float: right;
+margin-left: 5px;
+}
+.active:after {
+content: "\2212";
+}
+
+.subscription_left_inner h3 {
+font-size: 15px;
+}
+.subscription_left_inner p {
+font-size: 14px;
+}
+.subscription_left_inner {
+margin-top:3%;
+}
 .subscription_wrap{
 padding-bottom: 10%;
 }
@@ -399,6 +476,27 @@ width: 93%;
 }
 .subscription_btn button {
 padding: 2.8% 1%;
+}
+.popup {
+border-radius: 5px;
+width: 200px;
+font-size: 17px;
+text-align: center;
+display: none;
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-color: white;
+padding: 20px;
+border: 1px solid #ccc;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.popup button {
+font-size: 12px;
+margin-top: 15px;
+padding: 3px 10px;
+cursor: pointer;
 }
 }
 
