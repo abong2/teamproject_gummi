@@ -20,7 +20,7 @@ window.addEventListener("load", function() {
     breakpoints: {
         
       320: {
-        slidesPerView: 1,  //브라우저가 320보다 클 때
+        slidesPerView: 1,
       },
       480: {
         slidesPerView: 2,

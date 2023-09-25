@@ -6,7 +6,6 @@ window.addEventListener("load", function() {
     },
     loop: true,
     slidesPerView: 1,
-    // spaceBetween: 30,
     autoWidth: true,
     autoHeight: true,
 
