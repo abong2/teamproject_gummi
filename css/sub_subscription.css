@@ -558,6 +558,12 @@ font-size: 14px;
 .subscription_info p {
 font-size: 13px;
 }
+.subscription_left_inner h3 {
+font-size: 14px;
+}
+.subscription_left_inner p {
+font-size: 13px;
+}
 .subscription_info li {
 font-size: 14px;
 }
@@ -620,6 +626,12 @@ font-size: 13px;
 }
 .subscription_info li {
 font-size: 13px;
+}
+.subscription_left_inner h3 {
+font-size: 13px;
+}
+.subscription_left_inner p {
+font-size: 12px;
 }
 .subscription_info .caution {
 font-size: 12px;
@@ -743,6 +755,9 @@ font-size: 11px;
 }
 .subscription_profile h3 {
 font-size: 14px;
+}
+.subscription_left_inner h3 {
+font-size: 12px;
 }
 .subscription_profile_basic span {
 font-size: 12px;
