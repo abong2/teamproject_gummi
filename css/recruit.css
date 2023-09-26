@@ -88,12 +88,6 @@ line-height: 20px;
 
 /* 반응형 */
 @media all and (max-width: 990px){
-.recruit_with_opacity {
-width: 40%;
-}
-.recruit_place_opacity {
-width:40%;
-}
 .recruit_with_txt h1 {
 font-size: 20px;
 padding-bottom: 19px;
