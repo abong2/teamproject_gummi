@@ -15,7 +15,7 @@ window.addEventListener("load", function() {
         var mailpub = $("#mail_publisher").val()
         var pubsel = $("#publisher option:selected").val()
 
-        var mailFull = mailid + "@" + mailpub;
+        // var mailFull = mailid + "@" + mailpub;
 
         var useraddr = $("#user_address").val()
 
@@ -35,9 +35,8 @@ window.addEventListener("load", function() {
         var agreement = $("#agreement:checked").length
         if (!agreement) {
             alert("약관에 동의하셔야 회원가입을 하실 수 있습니다.");
-            return;
         }else {
-            location.href = 'login.html'
+            location.href = "login.html"
 
         }
         

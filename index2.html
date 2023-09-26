@@ -65,6 +65,7 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/podo.css">
     <link rel="stylesheet" href="css/fixedmenu.css">
+    <link rel="stylesheet" href="css/podo.css"> 
     <!--js  -->
     <script src="js/header.js"></script>
     <script src="js/visual.js"></script>
@@ -143,7 +144,7 @@
                     <ul class="login">
                         <li><a href="login.html">로그인</a></li>
                         <li>&ensp;|&ensp;</li>
-                        <li><a href="login.html">회원가입</a></li>
+                        <li><a href="signup.html">회원가입</a></li>
                     </ul>
                 </nav>
                 <nav class="mb_nav">
@@ -154,8 +155,8 @@
                     <div class="mb_nav_gnb">
                         <div class="mb_nav_top">
                             <ul class="mb_login">
-                                <li><a href="login.html"><i class="fa-regular fa-user"></i></a></li>
-                                <li><a href="login.html">로그인&ensp;<i class="fa-solid fa-chevron-right"></i></a></li>
+                                <li><i class="fa-regular fa-user"></i></li>
+                                <li><a href="login.html">로그인&ensp;</a>|<a href="signup.html">&ensp;회원가입&ensp;<i class="fa-solid fa-chevron-right"></i></a></li>
                             </ul>
                             <a href="#"><i class="fa-solid fa-xmark"></i></a>
                         </div>
@@ -284,23 +285,21 @@
         <div class="main">
             <!-- 비주얼부분 -->
             <section class="visual">
-                <div class="inner">
-                    <div class="swiper visualswiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img src="images/visual_slider01.svg" alt="이미지 슬라이더">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="images/visual_slider02.svg" alt="이미지 슬라이더">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="images/visual_slider03.svg" alt="이미지 슬라이더">
-                            </div>
+                <div class="swiper visualswiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="images/visual_slider01_text.svg" alt="이미지 슬라이더">
                         </div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-pagination"></div>
+                        <div class="swiper-slide">
+                            <img src="images/visual_slider02.svg" alt="이미지 슬라이더">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/visual_slider03.svg" alt="이미지 슬라이더">
+                        </div>
                     </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </section>
             <!-- 카테고리 -->
@@ -357,22 +356,13 @@
             <!-- 배너01 -->
             <section class="banner01">
                 <div class="inner">
-                    <div class="banner_left">
-                        <img src="images/banner_people.png" alt="bannerpeople">
-                    </div>
-                    <div class="banner_right">
-                        <img src="images/banner01_text.png" alt="bannertext">
-                            <div class="banner_right_txt">
-                                <p>#당신의 재능으로 취약 계층을 도와주세요</p>
-                                <button type="button" id="banner_btn">
-                                    <a href="success.html">
-                                        <span class="b_span">재능 기부</span>성공사례 보러가기
-                                    </a>
-                                </button>
-                         </div>
+                    <div class="banner_wrap">
+                        <div class="banner_img">
+                            <a href="success.html"><img src="images/banner01.png" alt="banner01"></a>
+                        </div>
                     </div>
                 </div>
-            </section>                      
+            </section>                   
             <!-- 이달의선생님 -->
             <section class="teacher">
                 <div class="inner">
@@ -1154,6 +1144,20 @@
             </div>
         </footer>
     </div>
+    <div class="modal-podo">
+        <div class="modal-main">  
+            <h3>포도 보유 현황</h3>
+            <div class="modal-txt">
+                <img src="images/podomodal.png" alt="">
+                <div class="modal-txt2">
+                포도 개수: 2개<br />
+                잔여 포인트: 1000점
+                </div>
+            </div>
+            <p>당신의 Gummi 활동을 응원합니다!</p>
+            <button class="modal-close">닫기</button>
+        </div>
+    </div>
     <!-- 고정메뉴 -->
     <div class="fixedmenu">
         <ul>
@@ -1162,6 +1166,7 @@
                     <img src="images/fixedmenu_grape.png" alt="포도 보유 현황">
                     <span>포도 보유 현황</span>
                 </a>
+                
             </li>
             <li>
                 <a href="subscription.html">
