@@ -74,12 +74,14 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/fixedmenu.css">
-    <link rel="stylesheet" href="css/footer.css">   
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/podo.css"> 
     <!--js  -->
     <script src="js/header.js"></script>
     <script src="js/signup.js"></script>
     <script src="js/footer.js"></script>
     <script src="js/fixedmenu.js"></script>
+    <script src="js/podo.js"></script>
 </head>
 <body>
     <!-- Google Tag Manager (noscript) -->
@@ -162,7 +164,7 @@
                 <div class="mb_nav_gnb">
                     <div class="mb_nav_top">
                         <ul class="mb_login">
-                            <li><a href="login.html"><i class="fa-regular fa-user"></i></a></li>
+                            <li><i class="fa-regular fa-user"></i></li>
                             <li><a href="login.html">로그인&ensp;</a>|<a href="signup.html">&ensp;회원가입&ensp;<i class="fa-solid fa-chevron-right"></i></a></li>
                         </ul>
                         <a href="#"><i class="fa-solid fa-xmark"></i></a>
@@ -420,29 +422,44 @@
           </div>
       </div>
   </footer>
-  <!-- 고정메뉴 -->
-  <div class="fixedmenu">
-    <ul>
-        <li>
-            <a href="#">
-                <img src="images/fixedmenu_grape.png" alt="포도 보유 현황">
-                <span>포도 보유 현황</span>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <img src="images/fixedmenu_check.png" alt="신청하기">
-                <span>신청하기</span>
-            </a>
-        </li>
-    </ul>
+</div>
+<div class="modal-podo">
+  <div class="modal-main">  
+      <h3>포도 보유 현항</h3>
+      <div class="modal-txt">
+          <img src="images/podomodal.png" alt="">
+          <div class="modal-txt2">
+          포도 개수: 2개<br />
+          잔여 포인트: 1000점
+          </div>
+      </div>
+      <p>당신의 Gummi 활동을 응원합니다!</p>
+      <button class="modal-close">닫기</button>
+  </div>
+</div>
+<!-- 고정메뉴 -->
+<div class="fixedmenu">
+  <ul>
+      <li>
+          <a href="#" class="podocheck">
+              <img src="images/fixedmenu_grape.png" alt="포도 보유 현황">
+              <span>포도 보유 현황</span>
+          </a>
+          
+      </li>
+      <li>
+          <a href="subscription.html">
+              <img src="images/fixedmenu_check.png" alt="신청하기">
+              <span>신청하기</span>
+          </a>
+      </li>
+  </ul>
 </div>
 <!-- 탑 버튼 -->
 <div class="top-button">
-    <a href="#" class="top-btn" id="top-btn">
-        <img src="images/top-btn.png" alt="top-btn" id="top-btn-img"/>
-    </a>
-</div>
+  <a href="#" class="top-btn" id="top-btn">
+      <img src="images/top-btn.png" alt="top-btn" id="top-btn-img"/>
+  </a>
 </div>
 </body>
 </html>

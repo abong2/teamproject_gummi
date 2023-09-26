@@ -63,7 +63,8 @@
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/common.css"> 
-    <link rel="stylesheet" href="css/podo.css">  
+    <link rel="stylesheet" href="css/podo.css"> 
+    <link rel="stylesheet" href="css/fixedmenu.css">
     <!--js  -->
     <script src="js/header.js"></script>
     <script src="js/visual.js"></script>
@@ -153,7 +154,7 @@
                     <div class="mb_nav_gnb">
                         <div class="mb_nav_top">
                             <ul class="mb_login">
-                                <li><a href="login.html"><i class="fa-regular fa-user"></i></a></li>
+                                <li><i class="fa-regular fa-user"></i></li>
                                 <li><a href="login.html">로그인&ensp;</a>|<a href="signup.html">&ensp;회원가입&ensp;<i class="fa-solid fa-chevron-right"></i></a></li>
                             </ul>
                             <a href="#"><i class="fa-solid fa-xmark"></i></a>
@@ -283,23 +284,21 @@
         <div class="main">
             <!-- 비주얼부분 -->
             <section class="visual">
-                <div class="inner">
-                    <div class="swiper visualswiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img src="images/visual_slider01.svg" alt="이미지 슬라이더">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="images/visual_slider02.svg" alt="이미지 슬라이더">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="images/visual_slider03.svg" alt="이미지 슬라이더">
-                            </div>
+                <div class="swiper visualswiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="images/visual_slider01_text.svg" alt="이미지 슬라이더">
                         </div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-pagination"></div>
+                        <div class="swiper-slide">
+                            <img src="images/visual_slider02.svg" alt="이미지 슬라이더">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/visual_slider03.svg" alt="이미지 슬라이더">
+                        </div>
                     </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </section>
             <!-- 카테고리 -->
@@ -1142,20 +1141,20 @@
             </div>
         </footer>
     </div>
-        <div class="modal-podo">
-            <div class="modal-main">  
-                <h3>포도 보유 현항</h3>
-                <div class="modal-txt">
-                    <img src="images/podomodal.png" alt="">
-                    <div class="modal-txt2">
-                    포도 개수: 2개<br />
-                    잔여 포인트: 1000점
-                    </div>
+    <div class="modal-podo">
+        <div class="modal-main">  
+            <h3>포도 보유 현항</h3>
+            <div class="modal-txt">
+                <img src="images/podomodal.png" alt="">
+                <div class="modal-txt2">
+                포도 개수: 2개<br />
+                잔여 포인트: 1000점
                 </div>
-                <p>당신의 Gummi 활동을 응원합니다!</p>
-                <button class="modal-close">닫기</button>
             </div>
+            <p>당신의 Gummi 활동을 응원합니다!</p>
+            <button class="modal-close">닫기</button>
         </div>
+    </div>
     
     <!-- 고정메뉴 -->
     <div class="fixedmenu">
