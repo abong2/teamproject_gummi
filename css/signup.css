@@ -1,10 +1,18 @@
 .signup{
-    background-color: #f7f7f7;
+    /* background-color: #f7f7f7; */
 }
 table {
     text-align: left;
 }
-
+button{
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    margin-left: 5px;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 11px;
+    padding: 5px;
+}
 #agreement+label {
     font-size: 14px;
     font-weight: bold;
@@ -34,7 +42,7 @@ table {
 }
 
 table tr {
-    padding: 20px;
+    padding:10px 20px;
     display: block;
     color: #333;
 }
@@ -42,12 +50,12 @@ table tr:nth-child(2n+1){
     background-color: #fff;
 }
 table tr:nth-child(2n) {
-    background-color:rgba(164,127,188,0.5);
+    background-color:rgba(231, 231, 231, 0.5);
 }
 
 table td {
     font-size: 13px;
-    vertical-align: top;
+    vertical-align: middle;
     color: #333;
     /* white-space: nowrap; */
 }
@@ -59,22 +67,40 @@ table td:first-child {
 
     /* padding-bottom: 20px; */
 }
-
+table input{
+    
+    height: 30px;
+}
 table input[type="text"],
 table input[type="password"] {
+    margin-left: 10px;
     border: 0;
-    border-bottom: 1px solid #333;
-    width: 150px;
+    border-bottom: 1px solid #a3a3a3;
+    width: 100px;
     background-color: rgba(0, 0, 0, 0);
 }
-
+#male{
+    height: 10px;
+}
+#female{
+    height: 10px;
+}
+#registeration > tbody > tr:nth-child(3){
+    padding-top: 20px;
+    height: 50px;
+}
 table #phone1,
 table #phone2,
 table #phone3 {
     width: 40px;
-    margin-top: 10px;
+    height: 10px;
+    margin-right: 20px;
+    margin-top: 25px;
 }
-
+td input[type="radio"]{
+    height: 10px;
+    
+}
 table textarea {
     width: 400px;
     height: 100%;
@@ -91,8 +117,8 @@ table textarea {
     font-size: 16px;
     font-weight: bold;
 }
-#registeration > tbody > tr > td > label{
-    padding-right: 0 100px !important;
+#registeration > tbody > tr > td> label{
+    margin: 0;
 }
 
 /* 반응형 */
@@ -146,10 +172,21 @@ table textarea {
     #phone2,
     #phone3{
         margin: 0;
+        
     }
 }
-/* @media all and (max-width: 450px) {
-    .inner{
-        padding: 0 20px;
+@media all and (max-width: 320px) {
+    #publisher{
+        margin-top: 10px;
+        margin-left: 10px;
     }
-} */
+    #registeration > tbody > tr:nth-child(7) > td:nth-child(2) > button{
+        margin-left: 10px;
+    }
+    #registeration > tbody > tr:nth-child(8) > td:nth-child(2){
+        width: 140px;
+    }
+    button{
+        margin-left: 10px;
+    }
+}
