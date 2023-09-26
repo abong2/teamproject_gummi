@@ -54,17 +54,18 @@ window.addEventListener("load", function() {
         for (var i = 0; i < userpw.length; i++) {
             pwmask += "*"
         }
-        // var joinInfo =
-        //     "아이디 : " + userID + "\n" +
-        //     "이름 : " + userName + "\n" +
-        //     "성별 : " + userGen + "\n" +
-        //     "비밀번호 : " + pwmask + "\n" +
-        //     "메일주소 : " + mailFull + "\n" +
-        //     "휴대전화 : " + phoneInfo + "\n" +
-        //     "주소 : " + useraddr + "\n";
-        // var con = confirm(joinInfo + "입력하신 정보가 맞습니까?");
+        var joinInfo =
+            "아이디 : " + userID + "\n" +
+            "이름 : " + userName + "\n" +
+            "성별 : " + userGen + "\n" +
+            "비밀번호 : " + pwmask + "\n" +
+            "메일주소 : " + mailFull + "\n" +
+            "휴대전화 : " + phoneInfo + "\n" +
+            "주소 : " + useraddr + "\n";
+        var con = confirm(joinInfo + "입력하신 정보가 맞습니까?");
         if (con) {
             alert("회원가입이 완료되었습니다.");
+            location.href = "login.html"
         }
     })
 })
