@@ -90,7 +90,8 @@
 }
 #login_form > div.login_link > a> strong::after {
     content: "";
-	margin-left: 5px;
+	/* margin-left: 5px; */
+    
     border-right: 1px solid #292929 ;
     /* background-color: #b83737; */
 }
@@ -266,7 +267,7 @@ div.login > div > div > div.tab > ul > li > p{
 }
 #login_form > div.login_link > a > strong{
     color: #555;
-    padding-right: 1%;
+    /* padding-right: 1%; */
 }
 @media all and (max-width: 1110px) {
     .benefit_wrap li .benefit_txt{

@@ -1,4 +1,8 @@
-window.addEventListener("load", function() {  
+window.addEventListener("load", function() { 
+    $("#publisher").change(function () {
+        var selectedOption = $("#publisher option:selected").val();
+        $("#mail_publisher").attr("placeholder", selectedOption); // 선택한 값으로 input의 placeholder를 업데이트
+    }); 
     $("#confirm").click(function () {
         var userID = $("#user_id").val()
         var userName = $("#user_name").val()
@@ -11,9 +15,15 @@ window.addEventListener("load", function() {
             return;
         }
 
-        var mailid = $("#mail_id").val()
-        var mailpub = $("#mail_publisher").val()
-        var pubsel = $("#publisher option:selected").val()
+        var mailId = $("#mail_id").val();
+        var mailpub = $("#mail_publisher").val();
+        var selectedPublisher = $("#publisher option:selected").text();
+
+        if (selectedPublisher === "직접입력") {
+        var mailFull = mailId + "@" + mailpub;
+        } else {
+        var mailFull = mailId + "@" + selectedPublisher;
+        }
 
         // var mailFull = mailid + "@" + mailpub;
 
