@@ -8,12 +8,13 @@
 }
 .login_head h2{
     font-weight: bold;
-    font-size: 20px;
+    font-size: 23px;
 }
-.login_head h3{
+.login_head h3 {
 	font-weight: normal;
-	padding-top: 20px;
+	padding-top: 10px;
 	padding-bottom: 50px;
+    color: #878787;
 }
 .tab {
   display: flex;
@@ -38,6 +39,10 @@
 .tab_list li.active {
 	color:#333;
 	background-color: #AE85C9;
+    border-radius:5px;
+}
+.tab_list li.active p {
+    color: #ffff;
 }
 #login_form{
 	/* background-color: aqua; */
@@ -74,6 +79,9 @@
 	border-radius: 10px;
 	font-size: 15px;
 	font-weight: bold;
+}
+#btnLogin a {
+    color:#ffff;
 }
 .login_save{
 	margin: 30px 0;
