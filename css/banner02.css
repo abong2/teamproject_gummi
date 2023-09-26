@@ -6,12 +6,12 @@ height: 100%;
 /* 배너 전체 */
 .banner02_wrap {
 width: 100%;
-margin-bottom:70px;
+margin-bottom: 50px;
 }
 /* 배너 타이틀 */
 .banner02_title {
 font-size: 20px;
-padding: 70px 0 40px 0;
+padding: 50px 0 40px 0;
 }
 .banner02_inner {
 width: 100%;
@@ -32,7 +32,14 @@ font-size: 16px;
 text-align: center;
 }
 .banner02_inner img {
-    border-radius: 10px;
+border-radius: 10px;
+}
+.banner02_inner img:hover {
+transition: 0.3s;
+scale: 1.05;
+}
+.banner02_section1_img {
+overflow: hidden;
 }
 .banner02_section1 {
 margin-right:25px ;

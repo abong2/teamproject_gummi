@@ -189,6 +189,7 @@
   cursor: pointer;
   min-width: 80px;
   font-size: 17px;
+  font-weight: 700;
 }
 #bt1:hover {
   background-color:  #a07bb9;

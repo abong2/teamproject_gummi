@@ -5,10 +5,10 @@ height: 100%;
 }
 .recruit_wrap {
 display: flex;
-padding-bottom: 70px;
+padding-bottom: 50px;
 }
 .recruit_title {
-padding: 70px 0 40px 0;
+padding: 50px 0 40px 0;
 }
 .recruit h1 {
 font-size: 20px;
