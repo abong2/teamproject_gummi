@@ -129,6 +129,7 @@
 }
 
 .diy2 {
+  border-radius: 10px 10px 0 0;
   background-color: #fff;
   height: 82%;
   opacity: 0.96;
@@ -176,6 +177,7 @@
 }
 
 #bt1 {
+  border-radius: 0 0 10px 10px;
   color: #fff;
   background-color: #ae85c9;
   padding: 21px 18px;

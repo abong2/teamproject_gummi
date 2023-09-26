@@ -75,6 +75,7 @@ td {
     vertical-align: top; /* 위 */
     vertical-align: bottom; /* 아래 */
     vertical-align: middle; /* 가운데 */
+    white-space: nowrap;
 }
 .th1 {
     font-size: 18px;
@@ -112,7 +113,9 @@ td {
     background-color: #ffffff;
     border-radius: 10px;
 }
-
+.myclass3_ham {
+    color: #ae85c9;
+}
 .podo22 {
     font-size: 30px;
     color: #ae85c9;
@@ -374,10 +377,14 @@ td {
     }
 }
 
+ 
 @media all and (max-width: 1024px) {
     .class h1 {
         font-size: 20px;
         padding-bottom: 20px;
+    }
+    .podo22 {
+        font-size: 20px;
     }
     .myclass2podo {
         font-size: 20px;
@@ -427,6 +434,13 @@ td {
         animation: none;
     }
 }
+@media all and (max-width: 1000px) {
+th,
+td {
+    white-space: wrap;
+}
+}
+
 @media all and (max-width: 760px) {
     .myclass33 {
         width: 100%;
@@ -560,6 +574,9 @@ td {
     .myclass2-2 h2 {
         font-size: 16px;
         padding-left: 20px;
+    }
+    .podo22 {
+        font-size: 24px;
     }
     .myclass2-3 {
         padding: 0;
