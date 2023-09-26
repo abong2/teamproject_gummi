@@ -65,29 +65,26 @@ content.style.maxHeight = content.scrollHeight + "px";  // 접혀있는 경우 �
 }
 
 // 수강신청 확인 팝업
-
 window.addEventListener("load",function(){
 /// 모달 열기
 document.getElementById('subscribeButton').addEventListener('click', function() {
-    var overlay = document.getElementById('overlay');
-    var popup = document.getElementById('confirmationPopup');
-    overlay.style.display = 'block';
-    popup.style.display = 'block';
+var overlay = document.getElementById('overlay');
+var popup = document.getElementById('confirmationPopup');
+overlay.style.display = 'block';
+popup.style.display = 'block';
 });
-
 // 모달 닫기
 document.getElementById('closeButton').addEventListener('click', function() {
-    var overlay = document.getElementById('overlay');
-    var popup = document.getElementById('confirmationPopup');
-    overlay.style.display = 'none';
-    popup.style.display = 'none';
+var overlay = document.getElementById('overlay');
+var popup = document.getElementById('confirmationPopup');
+overlay.style.display = 'none';
+popup.style.display = 'none';
 });
-
 // 배경 클릭 시 모달 닫기
 document.getElementById('overlay').addEventListener('click', function() {
-    var overlay = document.getElementById('overlay');
-    var popup = document.getElementById('confirmationPopup');
-    overlay.style.display = 'none';
-    popup.style.display = 'none';
+var overlay = document.getElementById('overlay');
+var popup = document.getElementById('confirmationPopup');
+overlay.style.display = 'none';
+popup.style.display = 'none';
 });
 })
