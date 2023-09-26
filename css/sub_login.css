@@ -39,7 +39,7 @@
 .tab_list li.active {
 	color:#333;
 	background-color: #AE85C9;
-    border-radius:5px;
+    border-radius: 5px;
 }
 .tab_list li.active p {
     color: #ffff;
@@ -81,7 +81,7 @@
 	font-weight: bold;
 }
 #btnLogin a {
-    color:#ffff;
+    color: #ffff;
 }
 .login_save{
 	margin: 30px 0;

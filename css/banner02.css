@@ -32,7 +32,14 @@ font-size: 16px;
 text-align: center;
 }
 .banner02_inner img {
-    border-radius: 10px;
+border-radius: 10px;
+}
+.banner02_inner img:hover {
+transition: 0.3s;
+scale: 1.05;
+}
+.banner02_section1_img {
+overflow: hidden;
 }
 .banner02_section1 {
 margin-right:25px ;
