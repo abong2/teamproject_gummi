@@ -28,7 +28,7 @@ window.addEventListener("load", function () {
 
   var swiper111 = new Swiper(".visualswiper3", {
       autoplay: {
-          delay: 4000,
+          delay: 2300,
       },
       loop: true,
       slidesPerView: 5,
@@ -78,7 +78,7 @@ window.addEventListener("load", function () {
   });
   var swiper444 = new Swiper(".visualswiper4", {
       autoplay: {
-          delay: 4000,
+          delay:2300,
       },
       loop: true,
       slidesPerView: 5,
