@@ -335,7 +335,7 @@ font-weight: bold;
 .subscription_cate {
 display: flex;
 }
-#confirmationPopup #GoButton {
+#confirmationPopup #GoButton1 {
 border: none;
 font-size: 17px;
 background-color: #ae85c9;
@@ -345,17 +345,21 @@ margin: 30px 0 0 0;
 color: white;
 cursor: pointer;
 }
-#confirmationPopup #GoButton:hover {
+#confirmationPopup #GoButton2 {
+display: none;
+}
+#confirmationPopup #GoButton1:hover {
 background-color: #a07bb9;
 }
 .subscription_cate_list {
-    display: flex;
-    justify-content: space-between;
+display: flex;
+justify-content: space-between;
+position: sticky;
+top: 0;
+background-color: #F2F3F7;
+height: 50px;
+line-height: 50px;
 }
-
-
-
-
 
 /* 반응 형 */
 @media all and (max-width: 1023px){
@@ -564,8 +568,26 @@ margin: 0 2.1% 2.1%;
 .subscription_btn button {
 padding: 2.9% 1%;
 }
+#confirmationPopup #GoButton1 {
+display: none;
 }
-
+#confirmationPopup #GoButton2 {
+display: block;
+}
+#confirmationPopup #GoButton2 {
+border: none;
+font-size: 17px;
+background-color: #ae85c9;
+border-radius: 10px;
+padding: 15px;
+margin: 30px 0 0 0;
+color: white;
+cursor: pointer;
+}
+#confirmationPopup #GoButton2:hover {
+background-color: #a07bb9;
+}
+}
 @media all and (max-width: 600px){
 .subscription_left {
 width: 95%;
