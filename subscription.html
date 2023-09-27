@@ -66,6 +66,8 @@
     <script src="js/footer.js"></script>
     <script src="js/fixedmenu.js"></script>
     <script src="js/podo.js"></script>
+    <!-- fivicon -->
+    <link rel="icon" href="images/fcon.png">
 </head>
 
 <body>
@@ -87,7 +89,7 @@
         <header class="header">
             <div class="inner">
                 <h1 class="h_logo">
-                    <a href="index2.html"><img src="images/logo3_text.svg" alt="로고"></a>
+                    <a href="index2.html"><img src="images/logo3.svg" alt="로고"></a>
                 </h1>
                 <nav class="h_nav">
                     <ul class="searchbar">
@@ -319,7 +321,7 @@
                             <a href="#cate_list_07"><li><h1>인원</h1></li></a>
                             <a href="#cate_list_08"><li><h1>준비물</h1></li></a>
                         </ul> -->
-                        <h3 id="cate_list_01" type="button" class="collapsible" onclick="collapse(this);"> 선생님 소개</h3>
+                        <h3 type="button" class="collapsible" onclick="collapse(this);"> 선생님 소개</h3>
                         <p class="content">‘향기’가 인생 자체가 된 날을 선명하게 기억합니다. <br>
                             생활용품 중에도 필수품이 있듯이 향도 자연스럽게 사람들의 일상에 스며있었으면 좋겠어요. <br>
                             향을 매개로 지친 일상 또는 마음에 편안함을 주는역할을 했으면 합니다.</p>
@@ -356,14 +358,15 @@
                 <!-- 오른쪽 섹션 -->
                 <div class="subscription_right">
                     <div class="subscription_right_wrap">
-                    <!-- 강좌 명 -->
-                    <div class="subscription_title">
-                        <h2>나의 이미지에 맞는 향수 만들기</h2>
-                        <div class="subscription_icon">
+                    <!-- 공유하기, 찜하기 아이콘 -->
+                    <div class="subscription_icon">
                         <i class="fa-solid fa-share-nodes" style="color: #303441"></i>
                         <!-- <i class="fa-regular fa-heart" style="color: #303441"><span> 24</span></i> -->
                         <i class="fa-solid fa-heart" style="color: #AE85C9;"><span> 24</span></i>
                     </div>
+                    <!-- 강좌 명 -->
+                    <div class="subscription_title">
+                        <h2>나의 이미지에 맞는 향수 만들기</h2>
                     </div>
                     <!-- 강좌 전체 박스 -->
                     <div class="subscription_box">
@@ -468,16 +471,18 @@
     <!-- 고정메뉴 -->
     <div class="fixedmenu">
         <ul>
-            <li>
+            <li class="fixedmenu01">
                 <a href="#" class="podocheck">
-                    <img src="images/fixedmenu_grape.png" alt="포도 보유 현황">
+                    <img src="images/fixedmenu_grape.png" alt="포도 보유 현황" class="fixedmenu_grape">
+                    <img src="images/fixedmenu_grape_color.png" alt="포도 보유 현황 컬러" class="color_fixed_grape">
                     <span>포도 보유 현황</span>
                 </a>
                 
             </li>
-            <li>
-                <a href="subscription.html">
-                    <img src="images/fixedmenu_check.png" alt="신청하기">
+            <li class="fixedmenu02">
+                <a href="login.html">
+                    <img src="images/fixedmenu_check.png" alt="신청하기" class="fixedmenu_check">
+                    <img src="images/fixedmenu_check_color.png" alt="신청하기 컬러" class="color_fixed_check">
                     <span>신청하기</span>
                 </a>
             </li>

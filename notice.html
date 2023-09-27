@@ -58,6 +58,8 @@
     <script src="js/footer.js"></script>
     <script src="js/fixedmenu.js"></script>
     <script src="js/podo.js"></script>
+    <!-- fivicon -->
+    <link rel="icon" href="images/fcon.png">
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -283,7 +285,7 @@
                                     placeholder="검색어를 입력해주세요."
                                     value=""
                                     />
-                                    <button type="submit" class="btn btn-dark" style="background-color: #ae85c9;">
+                                    <button type="submit" class="btn btn-dark">
                                         검색
                                     </button>
                                 </div>
@@ -486,23 +488,25 @@
             </div>
         </div>
         <!-- 고정메뉴 -->
-        <div class="fixedmenu">
-            <ul>
-                <li>
-                    <a href="#" class="podocheck">
-                        <img src="images/fixedmenu_grape.png" alt="포도 보유 현황">
-                        <span>포도 보유 현황</span>
-                    </a>
-                    
-                </li>
-                <li>
-                    <a href="subscription.html">
-                        <img src="images/fixedmenu_check.png" alt="신청하기">
-                        <span>신청하기</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
+    <div class="fixedmenu">
+        <ul>
+            <li class="fixedmenu01">
+                <a href="#" class="podocheck">
+                    <img src="images/fixedmenu_grape.png" alt="포도 보유 현황" class="fixedmenu_grape">
+                    <img src="images/fixedmenu_grape_color.png" alt="포도 보유 현황 컬러" class="color_fixed_grape">
+                    <span>포도 보유 현황</span>
+                </a>
+                
+            </li>
+            <li class="fixedmenu02">
+                <a href="login.html">
+                    <img src="images/fixedmenu_check.png" alt="신청하기" class="fixedmenu_check">
+                    <img src="images/fixedmenu_check_color.png" alt="신청하기 컬러" class="color_fixed_check">
+                    <span>신청하기</span>
+                </a>
+            </li>
+        </ul>
+    </div>
     <!-- 탑 버튼 -->
     <div class="top-button">
         <a href="#" class="top-btn" id="top-btn">

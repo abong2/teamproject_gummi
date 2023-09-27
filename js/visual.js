@@ -2,7 +2,7 @@ window.addEventListener("load", function () {
     new Swiper(".visualswiper", {
         autoHeight: true,
         autoplay: {
-            delay: 4000,
+            delay: 3000,
         },
         loop: true,
         slidesPerView: 1,
