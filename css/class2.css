@@ -119,6 +119,7 @@ width: 100%;
   }
 .myclass2-1 img{
   filter:brightness(92%);
+  cursor: pointer;
 }
 .myclass2-1 img:hover{
   filter: brightness(1.1);
