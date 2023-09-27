@@ -10,31 +10,16 @@ $(function(){
         $(".fixedmenu_grape").fadeIn(150);
         $(".color_fixed_grape").fadeOut(0);
     });
+    $(".fixedmenu02").on("mouseenter", function() {
+        $(".fixedmenu_check").fadeOut(0);
+        $(".color_fixed_check").fadeIn(150);
+    });
+    $(".fixedmenu02").on("mouseleave", function() {
+        $(".fixedmenu_check").fadeIn(150);
+        $(".color_fixed_check").fadeOut(0);
+    });
 });
 window.addEventListener("load", function () {
-    // 고정메뉴 호버시
-    const fixedmenu01 = document.querySelector(".fixedmenu01");
-    const grape = document.querySelector(".fixedmenu_grape");
-    const colorgrape = document.querySelector(".color_fixed_grape");
-    const fixedmenu02 = document.querySelector(".fixedmenu02");
-    const check = document.querySelector(".fixedmenu_check");
-    const colorcheck = document.querySelector(".color_fixed_check");
-    // fixedmenu01.addEventListener("mouseover", function() {
-    //     colorgrape.style.display = "flex";
-    //     grape.style.display = "none";
-    // });
-    // fixedmenu01.addEventListener("mouseout", function() {
-    //     colorgrape.style.display = "none";
-    //     grape.style.display = "flex";
-    // });
-    fixedmenu02.addEventListener("mouseover", function() {
-        colorcheck.style.display = "flex";
-        check.style.display = "none";
-    });
-    fixedmenu02.addEventListener("mouseout", function() {
-        colorcheck.style.display = "none";
-        check.style.display = "flex";
-    });
     // top 버튼 스크롤 기능
     const topBtn = document.getElementById("top-btn");
     topBtn.addEventListener("click", function (event) {
