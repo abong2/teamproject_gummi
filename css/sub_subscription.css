@@ -21,7 +21,7 @@ align-items: center;
 } */
 /* 페이지 공간 */
 .sub_subscription {
-    background-color: #f7f7f7;
+background-color: #f7f7f7;
 }
 .title_mobile {
 display: none;
@@ -35,7 +35,7 @@ height: 100%;
 /* background-color: aquamarine; */
 display: flex;
 padding-top: 20px;
-padding-bottom: 90px;
+padding-bottom: 50px;
 }
 .subscription_cate {
 padding: 25px 0 15px 0;
@@ -54,7 +54,7 @@ width: 40%;
 }
 .subscription_right_wrap {
 position: sticky;
-top: 0;
+top: 50px;
 }
 .subscription_left_inner {
 width: 100%;
@@ -77,7 +77,7 @@ line-height: 27px;
 padding: 0 0 20px 0;
 }
 .subscription_left_inner strong {
-    font-weight: bold;
+font-weight: bold;
 } 
 /* 이미지 */
 .subscription_img {
@@ -131,7 +131,6 @@ background-color: white;
 .subscription_icon {
 display: flex;
 justify-content: space-between;
-padding: 55px 0 15px 0;
 }
 .subscription_icon i {
 cursor: pointer;
@@ -142,11 +141,19 @@ padding-left: 5px;
 }
 /* 강좌명 */
 .subscription_title {
-padding-bottom: 20px;
+padding: 25px 0 15px 3px;
+display: flex;
+justify-content: space-between;
 }
 .subscription_title > h2{
 font-weight: bold;
 font-size: 19px;
+}
+.subscription_icon {
+padding-right:10px ;
+}
+.fa-share-nodes {
+padding-right: 20px;
 }
 /* 선생님 프로필 */
 .subscription_profile_wrap {
@@ -339,8 +346,16 @@ color: white;
 cursor: pointer;
 }
 #confirmationPopup #GoButton:hover {
-    background-color: #a07bb9;
+background-color: #a07bb9;
 }
+.subscription_cate_list {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
 
 /* 반응 형 */
 @media all and (max-width: 1023px){
