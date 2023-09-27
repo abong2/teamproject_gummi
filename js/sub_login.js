@@ -17,12 +17,16 @@
   //         $tab_cont.addClass("account2")
   //     }
   // })
-
+  
   //tab menu
   window.addEventListener("load", function() {
-  var tabListItems = document.querySelectorAll(".tab_list li");
-  var tabContents = document.querySelectorAll(".tab_cont");
-  var idx = 0;
+    var tabListItems = document.querySelectorAll(".tab_list li");
+    var tabContents = document.querySelectorAll(".tab_cont");
+    var idx = 0;
+    const loginBtn = document.querySelector(".login-field__action > p");
+    loginBtn.addEventListener("click", function() {
+      window.location.href = "index2.html";
+    });
 
   tabListItems.forEach(function (item, index) {
     item.addEventListener("click", function () {
