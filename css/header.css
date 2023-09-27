@@ -322,6 +322,9 @@
     background-color: #fff;
     color: #333;
 }
+.purple {
+    color: #AE85C9;
+}
 @media all and (max-width: 1680px){
     .searchbar > li > #searchtext {
         width: 230px;
