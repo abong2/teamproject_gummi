@@ -97,6 +97,10 @@
   font-size: 18px;
   cursor: pointer;
  }
+ 
+ .modallogin:hover{
+  background-color: #a07bb9;
+ }
  .modallogin a{
   color: #fff;
   font-size: 18px;
