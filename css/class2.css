@@ -55,6 +55,16 @@
     padding-top: 20px;
     
 }
+.classopen{
+    color: #747474;
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+    font-weight: 500;
+    position: absolute;
+    right: 83px;
+    top: 21px;
+    cursor: pointer;
+}
 .myclass2-1{
     width: 100%;
 }
@@ -74,7 +84,7 @@ width: 100%;
 .myclass2-2 h4 {
     color: #ababab;
     font-size: 12px;
-    line-height: 0.875rem;
+    line-height: 1.125rem;
     font-weight: 400;
     text-align: left;
 }
@@ -123,11 +133,11 @@ width: 100%;
   cursor: pointer;
 }
 .myclass2-1 img:hover{
-  filter: brightness(1.1);
+    filter: brightness(1.03);
 }
   .class .swiper-slide img:hover{
     width: 100%;
-    filter: brightness(1.1);
+    filter: brightness(1.03);
 }
 
 .podo22 {
