@@ -87,4 +87,5 @@ var popup = document.getElementById('confirmationPopup');
 overlay.style.display = 'none';
 popup.style.display = 'none';
 });
-})
+}) 
+

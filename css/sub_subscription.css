@@ -292,30 +292,57 @@ background-color: rgba(0, 0, 0, 0.7);
 z-index: 9999999999;
 }
 /* 모달 팝업 스타일 */
-.popup {
-border-radius: 10px;
-width: 300px;
+#confirmationPopup {
+display: none;
+}
+#confirmationPopup {
+border-radius: 20px;
 font-size: 20px;
 text-align: center;
-display: none;
 position: fixed;
 top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
 background-color: white;
-padding: 30px;
+padding: 66px 50px 35px 50px;
 border: 1px solid #ccc;
 box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 z-index: 99999999999999999;
 }
-.popup button {
+#confirmationPopup #closeButton {
 font-size: 15px;
-margin-top: 20px;
-padding: 3px 10px;
+cursor: pointer;
+border: none;
+top: 12px;
+right: 25px;
+background-color: white;
+position: absolute;
+}
+#confirmationPopup #closeButton {
+font-size: 20px;
 cursor: pointer;
 }
+.subscription_popup_txt {
+font-weight: bold;
+}
+.subscription_cate {
+display: flex;
+}
+#confirmationPopup #GoButton {
+border: none;
+font-size: 17px;
+background-color: #ae85c9;
+border-radius: 10px;
+padding: 15px;
+margin: 30px 0 0 0;
+color: white;
+cursor: pointer;
+}
+#confirmationPopup #GoButton:hover {
+    background-color: #a07bb9;
+}
 
-/* 반응형 */
+/* 반응 형 */
 @media all and (max-width: 1023px){
 /* 목록 펼치고 접기 */
 .collapsible {
