@@ -360,7 +360,6 @@ background-color: #F2F3F7;
 height: 50px;
 line-height: 50px;
 }
-
 /* 반응 형 */
 @media all and (max-width: 1023px){
 /* 목록 펼치고 접기 */
@@ -395,17 +394,21 @@ margin-left: 5px;
 .active:after {
 content: "\2212";
 }
-
 .subscription_left_inner h3 {
 font-size: 15px;
+padding: 3% 2%;
 }
 .subscription_left_inner p {
 font-size: 14px;
+margin: 2% 0 6% 0;
+}
+.subscription_left_inner p:last-child {
+margin: 0;
 }
 .subscription_left_inner {
 margin-top:3%;
 }
-.subscription_wrap{
+.subscription_wrap {
 padding-bottom: 10%;
 }
 .subscription_title {
