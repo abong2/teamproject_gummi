@@ -202,7 +202,7 @@ width: 100%;
 .myclass3-2 {
     width: 100%;
     padding: 5px 0px;
-    max-width: 125px;
+    max-width: 133px;
 }
 .myclass3-1 h3 {
     font-size: 0.875rem;
@@ -653,18 +653,38 @@ width: 100%;
 
 @media all and (max-width: 1200px) {
     .banner_txt3  {
-        font-size: 4.4vw
+        font-size: 4.6vw
     }
-    .banner_img3 {
-        background:none;
+    .banner_wrap3{
+        padding: 2% 0;
     }
-    .banner_img3 p{
-       
+    .banner_img3{
+        display: none;
     }
-    .banner03{
-       margin-bottom: 20px;  
+}
+@media all and (max-width: 580px) {
+    .banner_txt3  {
+        font-size: 4.5vw;
+      
     }
-   
+    .banner_wrap3{
+        padding: 5% 0;
+    }
+    .banner_img3{
+        display: none;
+    }
+}
+@media all and (max-width: 320px) {
+    .banner_txt3  {
+        font-size: 3.5vw;
+      
+    }
+    .banner_wrap3{
+        padding: 5% 0;
+    }
+    .banner_img3{
+        display: none;
+    }
 }
 /* myclass5 */
 .myclass5 {
