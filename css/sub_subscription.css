@@ -317,15 +317,12 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 z-index: 99999999999999999;
 }
 #confirmationPopup #closeButton {
-font-size: 15px;
 cursor: pointer;
 border: none;
 top: 12px;
 right: 25px;
 background-color: white;
 position: absolute;
-}
-#confirmationPopup #closeButton {
 font-size: 20px;
 cursor: pointer;
 }
@@ -340,7 +337,7 @@ border: none;
 font-size: 17px;
 background-color: #ae85c9;
 border-radius: 10px;
-padding: 15px;
+padding: 25px 15px;
 margin: 30px 0 0 0;
 color: white;
 cursor: pointer;
@@ -382,7 +379,6 @@ padding: 0 18px;
 max-height: 0;
 overflow: hidden;
 transition: max-height 0.2s ease-out;
-/* background-color: #f7f7f7; */
 }
 .collapsible:after {
 content: '\002B';
@@ -578,17 +574,23 @@ display: none;
 display: block;
 }
 #confirmationPopup #GoButton2 {
+width: 100%;
 border: none;
-font-size: 17px;
+font-size: 14px;
 background-color: #ae85c9;
 border-radius: 10px;
-padding: 15px;
+padding: 12px;
 margin: 30px 0 0 0;
 color: white;
 cursor: pointer;
+line-height: 25px;
 }
-#confirmationPopup #GoButton2:hover {
-background-color: #a07bb9;
+#confirmationPopup {
+font-size: 20px;
+padding: 61px 45px 30px 45px;
+}
+.subscription_popup_txt {
+    font-size: 15px;
 }
 }
 @media all and (max-width: 600px){
@@ -727,6 +729,12 @@ right: 45px;
 .subscription_btn button {
 padding: 3.2% 1%;
 }
+#confirmationPopup {
+padding: 45px 40px 25px 40px;
+}
+#confirmationPopup #GoButton2 {
+padding: 10px;
+}
 }
 
 @media all and (max-width: 480px){
@@ -750,6 +758,15 @@ right: 41px;
 }
 .subscription_btn button {
 padding: 3.4% 1%;
+}
+#confirmationPopup {
+padding: 40px 35px 20px 35px;
+}
+#confirmationPopup #GoButton2 {
+padding: 10px;
+margin-top: 20px;
+font-size: 13px;
+line-height: 20px;
 }
 }
 
@@ -792,6 +809,16 @@ margin: 0 2.5% 2.5%;
 }
 .subscription_btn button {
 padding: 3.8% 1%;
+}
+#confirmationPopup {
+padding: 45px 37px 20px 37px;
+}
+#confirmationPopup #GoButton2 {
+font-size: 12px;
+line-height: 20px;
+}
+.subscription_popup_txt {
+font-size: 13px;
 }
 }
 
@@ -865,6 +892,9 @@ margin: 0 2.6% 2.6%;
 .subscription_btn button {
 padding: 4% 1%;
 }
+#confirmationPopup {
+padding: 42px 30px 20px 30px;
+}
 }
 
 @media all and (max-width: 380px){
@@ -880,6 +910,9 @@ font-size: 11px;
 .subscription_profile_basic span {
 font-size: 11px;
 }
+#confirmationPopup {
+padding: 42px 24px 20px 24px;
+}
 }
 
 @media all and (max-width: 360px){
@@ -888,6 +921,9 @@ right: 27px;
 }
 .subscription_profile_box ul {
 margin: 0 2.7% 2.7%;
+}
+#confirmationPopup {
+padding: 42px 20px 20px 20px;
 }
 }
 
