@@ -585,6 +585,87 @@ width: 100%;
 #myclass33{
     font-size: 20px;
 }
+
+/* banner03 */
+.banner03{
+    width: 100%;
+    font-family: "GangwonState";
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+.banner03 .inner {
+    width: 100%;
+    height: 100%;
+}
+.banner_wrap3{
+    width: 100%;
+    border-radius: 10px;
+    /* background-color: #8295db; */
+    background-color: #FFDF6C;
+}
+.banner_wrap3 > a {
+    /* display: block; */
+    cursor: pointer;
+    display: flex;
+    width: 100%;
+    /* background-color: #393836; */
+   
+}
+.banner_txt3{
+    width:65%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.1;
+    /* padding: 5% 0; */  
+     font-size: 2.5vw;
+    font-weight: 700;
+    color: #fff;
+    width: 100%;
+    padding-left: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    white-space: nowrap;
+}
+.banner_img3{
+    width: 64%;
+    padding-top: 7.5%;
+    padding-bottom: 0.5%;
+    padding-right: -12%;
+    color: #fff;
+    background: url("../images/wheelchair.svg")no-repeat top;
+    background-size: contain;
+}
+.banner_img3 p{
+    padding:4px;
+ padding-right: -12%;
+ color: #fff;
+ padding-left: 296px;
+ white-space: nowrap;
+
+}
+.banner_txt3 >  i{
+    font-size: 3vw;
+    padding-left: 30px;
+    color: #fff;
+}
+
+@media all and (max-width: 1200px) {
+    .banner_txt3  {
+        font-size: 4.4vw
+    }
+    .banner_img3 {
+        background:none;
+    }
+    .banner_img3 p{
+       
+    }
+    .banner03{
+       margin-bottom: 20px;  
+    }
+   
+}
 /* myclass5 */
 .myclass5 {
     width: 50%;
@@ -756,7 +837,11 @@ width: 100%;
        }
        .class2-1 {
         padding-top: 10px;
+        padding-bottom: 5px;
        }
+       .banner03 {
+        margin-bottom: 40px;
+    }
 }
 
 @media screen and (max-width: 720px) {
@@ -831,6 +916,30 @@ width: 100%;
     padding-top: 10px;
    }
 }
+@media screen and (max-width: 370px){
+   .classtop h2{
+    font-size: 16px;
+   }
+   .classopen{
+    font-size: 0.875rem;
+    right: 66px;   
+}
+.classtop .swiper-button-prev {
+    right: 33px;
+    left: auto;
+}
+.classopen {
+    color: #747474;
+    font-size: 0.975rem;
+    line-height: 1.125rem;
+    font-weight: 500;
+    position: absolute;
+    right: 83px;
+    top: 21px;
+    cursor: pointer;
+}
+
+}
 @media screen and (max-width: 320px) {
     .qna-item .question {
         font-size: 12px;
@@ -862,4 +971,15 @@ width: 100%;
        .class2-1 {
         padding-top: 10px;
        }
+       .classtop h2{
+        font-size: 16px;
+       }
+       .classopen{
+        font-size: 0.875rem;
+        right: 66px;   
+    }
+    .classtop .swiper-button-prev {
+        right: 33px;
+        left: auto;
+    }
 }
