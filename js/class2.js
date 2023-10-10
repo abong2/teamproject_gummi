@@ -27,106 +27,134 @@ window.addEventListener("load", function () {
   // 스크롤할 내용의 DOM 요소
 
   var swiper111 = new Swiper(".visualswiper3", {
-      autoplay: {
-          delay: 2300,
+    autoplay: {
+      delay: 4000,
+    },
+    loop: true,
+    slidesPerView: 5,
+    spaceBetween: 40,
+    navigation: {
+      prevEl: ".myclass1 .swiper-button-prev",
+      nextEl: ".myclass1 .swiper-button-next",
+    },
+    breakpoints: {
+      0: {
+        spaceBetween: 20,
+        slidesPerView: 1,
       },
-      loop: true,
-      slidesPerView: 5,
-      spaceBetween: 40,
-      navigation: {
-          prevEl: ".myclass1 .swiper-button-prev",
-          nextEl: ".myclass1 .swiper-button-next",
+      200: {
+        spaceBetween: 20,
+        slidesPerView: 1,
       },
-      breakpoints: {
-        0: {
-          spaceBetween:20,
-          slidesPerView: 1,
-        },
-        200: {
-          spaceBetween:20,
-          slidesPerView: 1,
-        },
-        320: {
-          spaceBetween:10,
-          slidesPerView: 2,
-        },
-        480: {
-          spaceBetween: 10,
-          slidesPerView: 2,
-        },
-        740: {
-          spaceBetween: 20,
-          slidesPerView: 2,
-        },
-        800: {
-          spaceBetween: 20,
-          slidesPerView: 3,
-        },
-        1200: {
-          spaceBetween: 20,
-          slidesPerView: 4,
-        },
-       1420: {
-          spaceBetween:40,
-          slidesPerView:5,
-        },
-       1920: {
-          spaceBetween:40,
-          slidesPerView:5,
-        },
-      }
+      320: {
+        spaceBetween: 10,
+        slidesPerView: 2,
+      },
+      480: {
+        spaceBetween: 10,
+        slidesPerView: 2,
+      },
+      740: {
+        spaceBetween: 20,
+        slidesPerView: 2,
+      },
+      800: {
+        spaceBetween: 20,
+        slidesPerView: 3,
+      },
+      1200: {
+        spaceBetween: 20,
+        slidesPerView: 4,
+      },
+      1420: {
+        spaceBetween: 40,
+        slidesPerView: 5,
+      },
+      1920: {
+        spaceBetween: 40,
+        slidesPerView: 5,
+      },
+    }
   });
+  
+  // 마우스 오버 시 슬라이드 일시 정지
+  swiper111.el.onmouseenter = function() {
+    swiper111.autoplay.stop();
+  };
+  
+  // 마우스 아웃 시 슬라이드 다시 재생
+  swiper111.el.onmouseleave = function() {
+    swiper111.autoplay.start();
+  };
+  
   var swiper444 = new Swiper(".visualswiper4", {
-      autoplay: {
-          delay:2300,
+    // effect: "coverflow", // Coverflow 효과 설정
+    autoplay: {
+      delay: 3000,
+    },
+    loop: true,
+    slidesPerView: 5,
+    spaceBetween: 40,
+    // coverflowEffect: {
+    //   rotate: 23, // 슬라이드 회전 각도
+    //   stretch: 14, // 슬라이드 사이의 간격
+    //   depth: 100, // 슬라이드의 거리(depth) 설정
+    //   modifier: 1, // 변경된 슬라이드 크기
+    //   slideShadows: false, // 슬라이드 그림자 표시 여부
+    // },
+    navigation: {
+      prevEl: ".myclass2 .swiper-button-prev",
+      nextEl: ".myclass2 .swiper-button-next",
+    },
+    breakpoints: {
+      0: {
+        spaceBetween: 20,
+        slidesPerView: 1,
       },
-      loop: true,
-      slidesPerView: 5,
-      spaceBetween: 40,
-      navigation: {
-          prevEl: ".myclass2 .swiper-button-prev",
-          nextEl: ".myclass2 .swiper-button-next",
+      200: {
+        spaceBetween: 20,
+        slidesPerView: 1,
       },
-      breakpoints: {
-        0: {
-          spaceBetween:20,
-          slidesPerView: 1,
-        },
-        200: {
-          spaceBetween:20,
-          slidesPerView: 1,
-        },
-        320: {
-          spaceBetween:10,
-          slidesPerView: 2,
-        },
-        480: {
-          spaceBetween: 10,
-          slidesPerView: 2,
-        },
-        740: {
-          spaceBetween: 20,
-          slidesPerView: 2,
-        },
-        800: {
-          spaceBetween: 20,
-          slidesPerView: 3,
-        },
-        1200: {
-          spaceBetween: 20,
-          slidesPerView: 4,
-        },
-       1420: {
-          spaceBetween:40,
-          slidesPerView:5,
-        },
-       1920: {
-          spaceBetween:40,
-          slidesPerView:5,
-        },
-      }
+      320: {
+        spaceBetween: 10,
+        slidesPerView: 2,
+      },
+      480: {
+        spaceBetween: 10,
+        slidesPerView: 2,
+      },
+      740: {
+        spaceBetween: 20,
+        slidesPerView: 2,
+      },
+      800: {
+        spaceBetween: 20,
+        slidesPerView: 3,
+      },
+      1200: {
+        spaceBetween: 20,
+        slidesPerView: 4,
+      },
+      1420: {
+        spaceBetween: 40,
+        slidesPerView: 5,
+      },
+      1920: {
+        spaceBetween: 40,
+        slidesPerView: 5,
+      },
+    },
   });
-});
+  
+  // 마우스 오버 시 슬라이드 일시 정지
+  swiper444.el.onmouseenter = function() {
+    swiper444.autoplay.stop();
+  };
+  
+  // 마우스 아웃 시 슬라이드 다시 재생
+  swiper444.el.onmouseleave = function() {
+    swiper444.autoplay.start();
+  };
 $(function () {
   $(".btn-fold").on("click", function () {
       if (!$(this).closest(".qna-item").hasClass("on")) {
@@ -165,3 +193,45 @@ $(function () {
   items.forEach((item) => item.addEventListener("click", toggleAccordion));
 });
 
+$(function(){
+  $('.customer-logos').slick({
+      slidesToShow: 8,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 1500,
+      arrows: false,
+      dots: false,
+      pauseOnHover: false,
+      responsive: [{
+          breakpoint:1920,
+          settings: {
+              slidesToShow: 8,
+          }
+      },
+      {
+          breakpoint:1024,
+          settings: {
+              slidesToShow: 6,
+          }
+      },
+      {
+          breakpoint:768,
+          settings: {
+              slidesToShow: 3,
+          }
+      },
+      {
+          breakpoint:480,
+          settings: {
+              slidesToShow:2,
+          }
+      },
+      {
+          breakpoint: 320,
+          settings: {
+              slidesToShow: 2,
+          }
+      }]
+  });
+});
+});
