@@ -1,21 +1,26 @@
 /* 공통요소 */
-  h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 700;
-  }
-  .inner {
+}
+.inner {
     position: relative;
     width: 100%;
     margin: 0 auto;
     max-width: 1460px;
     height: 100%;
     padding: 0 30px;
-  }
-  section {
+}
+section {
     position: relative;
     display: block;
     width: 100%;
-  }
-  ::selection{
+}
+::selection {
     background-color: #ae85c9;
     color: white;
-  }
+}
