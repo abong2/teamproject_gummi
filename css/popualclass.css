@@ -94,22 +94,7 @@
 .tooltiptext{
   color: #fff;
 }
-.popualclass .slide1 .popualclass-contents {
 
-  /* background: url("../images/popularclass-diy.png.jpg") no-repeat center / cover; */
-}
-.popualclass .slide2 .popualclass-contents {
-  /* background: url("../images/popularclass-it.jpg") no-repeat center / cover; */
-}
-.popualclass .slide3 .popualclass-contents {
-  /* background: url("../images/popularclasscook.png") no-repeat center / cover; */
-}
-.popualclass .slide4 .popualclass-contents {
-  /* background: url("../images//popularclassmarimo.png") no-repeat center / cover; */
-}
-.popualclass .slide5 .popualclass-contents {
-  /* background: url("../images/keyhos.jpg") no-repeat center / cover; */
-}
 .popualclass .swiper-slide.swiper-slide-active {
   transform: scale(1);
 }
