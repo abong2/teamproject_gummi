@@ -44,6 +44,12 @@
     font-size: 17px;
     padding: 25px 0 8px 0;
 }
+.zoomBtnZone {
+display: none;
+}
+/* .subscription_left_inner h3:first-child {
+padding: 25px 0 8px 0;
+} */
 .subscription_left_inner p {
     font-size: 15px;
     line-height: 27px;
@@ -330,139 +336,138 @@
     line-height: 50px;
 }
 /* 반응 형 */
-@media all and (max-width: 1023px) {
-    /* 목록 펼치고 접기 */
-    .collapsible {
-        cursor: pointer;
-        padding: 18px;
-        width: 100%;
-        border: none;
-        text-align: left;
-        outline: none;
-        font-size: 15px;
-    }
-    .active,
-    .collapsible:hover {
-        background-color: #a7a7a7;
-        color: #ffff;
-    }
-    .content {
-        padding: 0 18px;
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.2s ease-out;
-    }
-    .collapsible:after {
-        content: "\002B";
-        color: #ae85c9;
-        font-weight: bold;
-        float: right;
-        margin-left: 5px;
-    }
-    .active:after {
-        content: "\2212";
-    }
-    .subscription_left_inner h3 {
-        font-size: 15px;
-        padding: 3% 2%;
-    }
-    .subscription_left_inner p {
-        font-size: 14px;
-        margin: 2% 0 6% 0;
-    }
-    .subscription_left_inner p:last-child {
-        margin: 0;
-    }
-    .subscription_left_inner {
-        margin-top: 3%;
-    }
-    .subscription_wrap {
-        padding-bottom: 10%;
-    }
-    .subscription_title {
-        padding-bottom: 3%;
-    }
-    /* 강좌 명 */
-    .title_mobile {
-        padding: 3% 0 0 0;
-        font-size: 19px;
-        display: block;
-    }
-    .subscription_cate {
-        padding: 3vw 0 2.5vw 0;
-    }
-    /* 리뷰, 아이콘 창 */
-    .subscription_review {
-        display: none;
-    }
-    .subscription_icon {
-        display: none;
-    }
-    .subscription_wrap {
-        display: flex;
-        flex-direction: column;
-    }
-    .subscription_left {
-        width: 90%;
-        padding: 0;
-        margin: 0 auto;
-    }
-    .subscription_right {
-        width: 90%;
-        margin: 0 auto;
-    }
-    .subscription_title > h2 {
-        display: none;
-    }
-    /* 이미지 */
-    .subscription_img_main {
-        width: 100%;
-        padding: 10px 10px 0 10px;
-    }
-    /* 선생님 프로필 이미지 */
-    .subscription_profile img {
-        width: 17%;
-    }
-    .subscription_profile_box ul {
-        padding: 2vw;
-        margin: 0 2% 2%;
-    }
-    .subscription_info p {
-        padding-bottom: 11%;
-    }
-    /* 주의 */
-    .subscription_info .caution {
-        padding: 5% 0;
-    }
-    /* 버튼 */
-    .subscription_btn {
-        width: 95%;
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: center;
-        margin: 0px auto;
-    }
-    .subscription_btn button {
-        padding: 2.5% 1%;
-    }
-    .subscription_btn button:first-child {
-        width: 40%;
-        margin-bottom: 8px;
-        margin-left: 1%;
-    }
-    .subscription_btn button:nth-child(2) {
-        width: 100%;
-    }
-    .subscription_btn button:last-child {
-        width: 40%;
-        margin-bottom: 8px;
-        margin-right: 1%;
-    }
-    .subscription_btn_mobile {
-        display: block;
-    }
+@media all and (max-width: 1023px){
+/* 목록 펼치고 접기 */
+.collapsible {
+cursor: pointer;
+padding: 18px;
+width: 100%;
+border: none;
+text-align: left;
+outline: none;
+font-size: 15px;
 }
-
+.active,
+.collapsible:hover {
+background-color: #a7a7a7;
+color: #ffff;
+}
+.content {
+padding: 0 18px;
+max-height: 0;
+overflow: auto;
+transition: max-height 0.2s ease-out;
+}
+.collapsible:after {
+content: '\002B';
+color: #ae85c9;
+font-weight: bold;
+float: right;
+margin-left: 5px;
+}
+.active:after {
+content: "\2212";
+}
+.subscription_left_inner h3 {
+font-size: 15px;
+padding: 3% 2%;
+}
+.subscription_left_inner p {
+font-size: 14px;
+margin: 2% 0 6% 0;
+}
+.subscription_left_inner p:last-child {
+margin: 0;
+}
+.subscription_left_inner {
+margin-top:3%;
+}
+.subscription_wrap {
+padding-bottom: 10%;
+}
+.subscription_title {
+padding-bottom: 3%;
+}
+/* 강좌 명 */
+.title_mobile {
+padding: 3% 0 0 0;
+font-size: 19px;
+display: block;
+}
+.subscription_cate {
+padding: 3vw 0 2.5vw 0;
+}
+/* 리뷰, 아이콘 창 */
+.subscription_review {
+display: none;
+}
+.subscription_icon {
+display: none;
+}
+.subscription_wrap {
+display: flex;
+flex-direction: column;
+}
+.subscription_left {
+width: 90%;
+padding: 0;
+margin: 0 auto;
+}
+.subscription_right {
+width: 90%;
+margin: 0 auto;
+}
+.subscription_title > h2{
+display: none;
+}
+/* 이미지 */
+.subscription_img_main {
+width: 100%;
+padding: 10px 10px 0 10px;
+}
+/* 선생님 프로필 이미지 */
+.subscription_profile img{
+width: 17%;
+}
+.subscription_profile_box ul {
+padding: 2vw;
+margin: 0 2% 2%;
+}
+.subscription_info p {
+padding-bottom: 11%;
+}
+/* 주의 */
+.subscription_info .caution {
+padding: 5% 0;
+}
+/* 버튼 */
+.subscription_btn {
+width: 95%;
+display: flex;
+flex-direction: row-reverse;
+justify-content: center;
+margin: 0px auto;
+}
+.subscription_btn button {
+padding: 2.5% 1%;
+}
+.subscription_btn button:first-child {
+width: 40%;
+margin-bottom: 8px;
+margin-left: 1%;
+}
+.subscription_btn button:nth-child(2) {
+width: 100%;
+}
+.subscription_btn button:last-child { 
+width: 40%;
+margin-bottom: 8px;
+margin-right: 1%;
+}
+.subscription_btn_mobile {
+display: block;
+}
+}
 @media all and (max-width: 1000px) {
     .subscription_left {
         width: 91%;
@@ -627,73 +632,92 @@
         padding: 3% 1%;
     }
 }
-
-@media all and (max-width: 500px) {
-    .subscription_left {
-        width: 96%;
-    }
-    .subscription_right {
-        width: 96%;
-    }
-    .title_mobile {
-        font-size: 17px;
-    }
-    .subscription_cate {
-        font-size: 12px;
-    }
-    .subscription_profile h3 {
-        font-size: 15px;
-    }
-    .subscription_profile_basic span {
-        font-size: 13px;
-    }
-    .subscription_profile_basic li {
-        font-size: 12px;
-    }
-    .subscription_profile_box .subscription_profile_box_1 {
-        font-size: 13px;
-    }
-    .subscription_profile_box span {
-        font-size: 12px;
-    }
-    .subscription_info h3 {
-        font-size: 13px;
-    }
-    .subscription_info p {
-        font-size: 12px;
-    }
-    .subscription_info ul {
-        font-size: 13px;
-    }
-    .subscription_info li {
-        font-size: 13px;
-    }
-    .subscription_left_inner h3 {
-        font-size: 13px;
-    }
-    .subscription_left_inner p {
-        font-size: 12px;
-    }
-    .subscription_info .caution {
-        font-size: 12px;
-    }
-    .subscription_btn button {
-        font-size: 13px;
-    }
-    .subscription_btn .subscription_btn_heart {
-        font-size: 13px;
-    }
-    .subscription_profile img {
-        right: 47px;
-    }
-    .subscription_profile_box ul {
-        margin: 0 2.3% 2.3%;
-    }
-    .subscription_btn button {
-        padding: 3.1% 1%;
-    }
+@media all and (max-width: 500px){
+.subscription_left {
+width: 96%;
 }
-
+.subscription_right {
+width: 96%;
+}
+.title_mobile {
+font-size: 17px;
+}
+.subscription_cate {
+font-size: 12px;
+}
+.subscription_profile h3 {
+font-size: 15px;
+}
+.subscription_profile_basic span {
+font-size: 13px;
+}
+.subscription_profile_basic li {
+font-size: 12px;
+}
+.subscription_profile_box .subscription_profile_box_1 {
+font-size: 13px;
+}
+.subscription_profile_box span {
+font-size: 12px;
+}
+.subscription_info h3 {
+font-size: 13px;
+}
+.subscription_info p {
+font-size: 12px;
+}
+.subscription_info ul {
+font-size: 13px;
+}
+.subscription_info li {
+font-size: 13px;
+}
+.subscription_left_inner h3 {
+font-size: 13px;
+}
+.subscription_left_inner p {
+font-size: 12px;
+}
+.subscription_info .caution {
+font-size: 12px;
+}
+.subscription_btn button {
+font-size: 13px;
+}
+.subscription_btn .subscription_btn_heart {
+font-size: 13px;
+}
+.subscription_profile img {
+right: 47px;
+}
+.subscription_profile_box ul {
+margin: 0 2.3% 2.3%;
+}
+.subscription_btn button {
+padding: 3.1% 1%;
+}
+.zoomBtnZone {
+display: block;
+display: flex;
+justify-content: center;
+border-top: 1px solid #dddd;
+}
+.zoomBtnZone button {
+padding: 7px 10px;
+background-color: #ebebeb;
+font-weight: bold;
+border-radius: 4px;
+border: none;
+margin-top: 20px;
+}
+.zoomBtnZone button:hover {
+cursor: pointer;
+}
+.zoomBtnZone button:nth-child(2) {
+margin-left: 7px;
+margin-right: 7px;
+}
+}
 @media all and (max-width: 490px) {
     .subscription_profile img {
         right: 45px;
@@ -762,16 +786,17 @@
         padding: 3.6% 1%;
     }
 }
-
-@media all and (max-width: 440px) {
-    .subscription_profile img {
-        right: 35px;
-    }
-    .subscription_btn button {
-        padding: 3.7% 1%;
-    }
+@media all and (max-width: 440px){
+.subscription_profile img {
+right: 35px;
 }
-
+.subscription_btn button {
+padding: 3.7% 1%;
+}
+.zoomTxt {
+display: none;
+}
+}
 @media all and (max-width: 430px) {
     .subscription_profile img {
         right: 33px;
@@ -802,71 +827,76 @@
         padding: 3.9% 1%;
     }
 }
-
-@media all and (max-width: 400px) {
-    .subscription_left {
-        width: 98%;
-    }
-    .subscription_right {
-        width: 98%;
-    }
-    .subscription_btn button {
-        padding: 2.8% 2%;
-    }
-    .title_mobile {
-        font-size: 16px;
-    }
-    .subscription_cate {
-        font-size: 11px;
-    }
-    .subscription_profile h3 {
-        font-size: 14px;
-    }
-    .subscription_left_inner h3 {
-        font-size: 12px;
-    }
-    .subscription_profile_basic span {
-        font-size: 12px;
-    }
-    .subscription_profile_basic li {
-        font-size: 11px;
-    }
-    .subscription_profile_box .subscription_profile_box_1 {
-        font-size: 12px;
-    }
-    .subscription_profile_box span {
-        font-size: 11px;
-    }
-    .subscription_info h3 {
-        font-size: 12px;
-    }
-    .subscription_info p {
-        font-size: 12px;
-    }
-    .subscription_info ul {
-        font-size: 12px;
-    }
-    .subscription_info li {
-        font-size: 12px;
-    }
-    .subscription_info .caution {
-        font-size: 11px;
-    }
-    .subscription_btn button {
-        font-size: 12px;
-    }
-    .subscription_btn .subscription_btn_heart {
-        font-size: 12px;
-    }
-    .subscription_profile_box ul {
-        margin: 0 2.6% 2.6%;
-    }
-    .subscription_btn button {
-        padding: 4% 1%;
-    }
-    #confirmationPopup {
-        padding: 42px 30px 20px 30px;
-    }
+@media all and (max-width: 400px){
+.subscription_left {
+width: 98%;
+}
+.subscription_right {
+width: 98%;
+}
+.subscription_btn button {
+padding: 2.8% 2%;
+}
+.title_mobile {
+font-size: 16px;
+}
+.subscription_cate {
+font-size: 11px;
+}
+.subscription_profile h3 {
+font-size: 14px;
+}
+.subscription_left_inner h3 {
+font-size: 12px;
+}
+.subscription_profile_basic span {
+font-size: 12px;
+}
+.subscription_profile_basic li {
+font-size: 11px;
+}
+.subscription_profile_box .subscription_profile_box_1 {
+font-size: 12px;
+}
+.subscription_profile_box span {
+font-size: 11px;
+}
+.subscription_info h3 {
+font-size: 12px;
+}
+.subscription_info p {
+font-size: 12px;
+}
+.subscription_info ul {
+font-size: 12px;
+}
+.subscription_info li {
+font-size: 12px;
+}
+.subscription_info .caution {
+font-size: 11px;
+}
+.subscription_btn button {
+font-size: 12px;
+}
+.subscription_btn .subscription_btn_heart {
+font-size: 12px;
+}
+.subscription_profile_box ul {
+margin: 0 2.6% 2.6%;
+}
+.subscription_btn button {
+padding: 4% 1%;
+}
+#confirmationPopup {
+padding: 42px 30px 20px 30px;
+}
+.zoomBtnZone button {
+font-size: 12px;
+}
+.zoomBtnZone {
+padding-bottom: 16px;
+}
 }
 
 @media all and (max-width: 380px) {
@@ -887,16 +917,22 @@
     }
 }
 
-@media all and (max-width: 360px) {
-    .subscription_profile img {
-        right: 27px;
-    }
-    .subscription_profile_box ul {
-        margin: 0 2.7% 2.7%;
-    }
-    #confirmationPopup {
-        padding: 42px 20px 20px 20px;
-    }
+@media all and (max-width: 370px){
+.zoomTxt2 {
+display: none;
+}
+}
+
+@media all and (max-width: 360px){
+.subscription_profile img {
+right: 27px;
+}
+.subscription_profile_box ul {
+margin: 0 2.7% 2.7%;
+}
+#confirmationPopup {
+padding: 42px 20px 20px 20px;
+}
 }
 
 @media all and (max-width: 350px) {
