@@ -25,8 +25,6 @@ window.addEventListener("load", function() {
         var mailFull = mailId + "@" + selectedPublisher;
         }
 
-        // var mailFull = mailid + "@" + mailpub;
-
         var useraddr = $("#user_address").val()
 
         var carrier = $(".phone:checked").val();
